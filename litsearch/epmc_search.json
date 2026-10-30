@@ -1,0 +1,12 @@
+{
+ "E1_operator": {
+  "query": "(TITLE:\"t-norm\" OR ABSTRACT:\"t-norm\" OR TITLE:\"t-norms\" OR ABSTRACT:\"t-norms\" OR TITLE:\"triangular norm\" OR ABSTRACT:\"triangular norm\" OR TITLE:\"triangular norms\" OR ABSTRACT:\"triangular norms\" OR TITLE:\"fuzzy relation composition\" OR ABSTRACT:\"fuzzy relation composition\" OR TITLE:\"max-product composition\" OR ABSTRACT:\"max-product composition\" OR TITLE:\"max-min composition\" OR ABSTRACT:\"max-min composition\" OR TITLE:\"sup-min composition\" OR ABSTRACT:\"sup-min composition\" OR TITLE:\"fuzzy operators\" OR ABSTRACT:\"fuzzy operators\" OR TITLE:\"fuzzy conjunction\" OR ABSTRACT:\"fuzzy conjunction\" OR TITLE:\"Hamacher\" OR ABSTRACT:\"Hamacher\" OR TITLE:\"Lukasiewicz\" OR ABSTRACT:\"Lukasiewicz\" OR TITLE:\"fuzzy logic operators\" OR ABSTRACT:\"fuzzy logic operators\")",
+  "count": 263,
+  "n_fetched": 263
+ },
+ "E3_operator_clinical": {
+  "query": "(TITLE:\"t-norm\" OR ABSTRACT:\"t-norm\" OR TITLE:\"t-norms\" OR ABSTRACT:\"t-norms\" OR TITLE:\"triangular norm\" OR ABSTRACT:\"triangular norm\" OR TITLE:\"triangular norms\" OR ABSTRACT:\"triangular norms\" OR TITLE:\"fuzzy relation composition\" OR ABSTRACT:\"fuzzy relation composition\" OR TITLE:\"max-product composition\" OR ABSTRACT:\"max-product composition\" OR TITLE:\"max-min composition\" OR ABSTRACT:\"max-min composition\" OR TITLE:\"sup-min composition\" OR ABSTRACT:\"sup-min composition\" OR TITLE:\"fuzzy operators\" OR ABSTRACT:\"fuzzy operators\" OR TITLE:\"fuzzy conjunction\" OR ABSTRACT:\"fuzzy conjunction\" OR TITLE:\"Hamacher\" OR ABSTRACT:\"Hamacher\" OR TITLE:\"Lukasiewicz\" OR ABSTRACT:\"Lukasiewicz\" OR TITLE:\"fuzzy logic operators\" OR ABSTRACT:\"fuzzy logic operators\") AND (TITLE:clinical OR ABSTRACT:clinical OR TITLE:medical OR ABSTRACT:medical OR TITLE:medicine OR ABSTRACT:medicine OR TITLE:health OR ABSTRACT:health OR TITLE:disease OR ABSTRACT:disease OR TITLE:patient OR ABSTRACT:patient OR TITLE:patients OR ABSTRACT:patients OR TITLE:depression OR ABSTRACT:depression OR TITLE:psychiatric OR ABSTRACT:psychiatric OR TITLE:biomedical OR ABSTRACT:biomedical OR TITLE:diagnosis OR ABSTRACT:diagnosis OR TITLE:survey OR ABSTRACT:survey OR TITLE:epidemiology OR ABSTRACT:epidemiology)",
+  "count": 48,
+  "n_fetched": 48
+ }
+}

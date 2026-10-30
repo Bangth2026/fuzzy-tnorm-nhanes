@@ -1,0 +1,17 @@
+{
+ "S2_1_operator": {
+  "query": "(\"t-norm\" | \"t-norms\" | \"triangular norm\" | \"triangular norms\" | \"fuzzy relation composition\" | \"max-product composition\" | \"max-min composition\" | \"sup-min composition\" | \"fuzzy operators\" | \"fuzzy conjunction\" | Hamacher | Lukasiewicz | \"fuzzy logic operators\")",
+  "count": 11196,
+  "n_fetched": 0
+ },
+ "S2_2_operator_graph": {
+  "query": "(\"t-norm\" | \"t-norms\" | \"triangular norm\" | \"triangular norms\" | \"fuzzy relation composition\" | \"max-product composition\" | \"max-min composition\" | \"sup-min composition\" | \"fuzzy operators\" | \"fuzzy conjunction\" | Hamacher | Lukasiewicz | \"fuzzy logic operators\") + (graph | graphs | network | networks | \"multi-hop\" | multihop | transitivity | transitive | \"knowledge base\" | \"cognitive map\" | \"cognitive maps\" | reasoning | inference)",
+  "count": 2210,
+  "n_fetched": 0
+ },
+ "S2_3_full": {
+  "query": "(\"t-norm\" | \"t-norms\" | \"triangular norm\" | \"triangular norms\" | \"fuzzy relation composition\" | \"max-product composition\" | \"max-min composition\" | \"sup-min composition\" | \"fuzzy operators\" | \"fuzzy conjunction\" | Hamacher | Lukasiewicz | \"fuzzy logic operators\") + (graph | graphs | network | networks | \"multi-hop\" | multihop | transitivity | transitive | \"knowledge base\" | \"cognitive map\" | \"cognitive maps\" | reasoning | inference) + (clinical | medical | medicine | health | disease | patient | patients | depression | depressive | psychiatric | biomedical | diagnosis | survey | epidemiology)",
+  "count": 152,
+  "n_fetched": 152
+ }
+}

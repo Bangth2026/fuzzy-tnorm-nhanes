@@ -1,0 +1,47 @@
+[
+ {
+  "src": "arXiv",
+  "id": "http://arxiv.org/abs/1303.7451v2",
+  "year": "2013",
+  "journal": "arXiv",
+  "doi": "",
+  "title": "Tropical convexity over max-min semiring",
+  "abstract": "This is a survey on an analogue of tropical convexity developed over the max-min semiring, starting with the descriptions of max-min segments, semispaces, hyperplanes and an account of separation and non-separation results based on semispaces. There are some new results. In particular, we give new \"colorful\" extensions of the max-min Caratheodory theorem. In the end of the paper, we list some consequences of the topological Radon and Tverberg theorems (like Helly and Centerpoint theorems), valid over a more general class of max-T semirings, where multiplication is a triangular norm."
+ },
+ {
+  "src": "arXiv",
+  "id": "http://arxiv.org/abs/2609.04470v1",
+  "year": "2026",
+  "journal": "arXiv",
+  "doi": "",
+  "title": "A bipolar fuzzy relation equation framework for clinical decision support systems",
+  "abstract": "Clinical decision support frequently involves heterogeneous measurements, expert assessments, and guideline-based knowledge whose relationships to clinical decisions are gradual rather than purely binary. This paper develops a clinical decision-support framework based on bipolar fuzzy relational optimization, in which favorable and unfavorable clinical relationships are represented jointly through positive and negative fuzzy relational matrices together with a fuzzy requirement vector. The simultaneous participation of each decision variable and its complement in the relational constraints enables bipolar clinical information to be incorporated within a unified optimization model. The minimum \\(t\\)-norm is adopted to provide a noncompensatory, bottleneck-type interpretation of the interaction between fuzzy relational grades and decision levels. We characterize the feasible recommendation set by deriving clinical admissibility intervals and effective evidence activation sets, which provide the basis for feasibility analysis and systematic reduction of the relational system. The complete feasible set is then represented as a finite union of clinical recommendation regions associated with admissible Clinical Evidence-Assignment Functions. A region-wise optimal candidate is constructed for each admissible evidence assignment, and comparison of the resulting finite collection of candidates yields a globally optimal recommendation. An algorithm integrating feasibility analysis, system reduction, region-wise optimization, and global selection is developed and illustrated through a numerical CDSS example. The results show that bipolar fuzzy relational optimization provides a structured and mathematically rigorous mechanism for transforming fuzzy clinical relational information into feasible and optimized decision-support recommendations."
+ },
+ {
+  "src": "arXiv",
+  "id": "http://arxiv.org/abs/2104.05190v1",
+  "year": "2021",
+  "journal": "arXiv",
+  "doi": "",
+  "title": "QZNs: Quantum Z-numbers",
+  "abstract": "Because of the efficiency of modeling fuzziness and vagueness, Z-number plays an important role in real practice. However, Z-numbers, defined in the real number field, lack the ability to process the quantum information in quantum environment. It is reasonable to generalize Z-number into its quantum counterpart. In this paper, we propose quantum Z-numbers (QZNs), which are the quantum generalization of Z-numbers. In addition, seven basic quantum fuzzy operations of QZNs and their corresponding quantum circuits are presented and illustrated by numerical examples. Moreover, based on QZNs, a novel quantum multi-attributes decision making (MADM) algorithm is proposed and applied in medical diagnosis. The results show that, with the help of quantum computation, the proposed algorithm can make diagnoses correctly and efficiently."
+ },
+ {
+  "src": "arXiv",
+  "id": "http://arxiv.org/abs/q-bio/0406045v2",
+  "year": "2004",
+  "journal": "arXiv",
+  "doi": "",
+  "title": "Complex Systems Analysis of Cell Cycling Models in Carcinogenesis",
+  "abstract": "Carcinogenesis is a complex process that involves dynamically inter-connected modular sub-networks that evolve under the influence of micro-environmentally induced perturbations, in non-random, pseudo-Markov chain processes. An appropriate n-stage model of carcinogenesis involves therefore n-valued Logic treatments of nonlinear dynamic transformations of complex functional genomes and cell interactomes. Lukasiewicz Algebraic Logic models of genetic networks and signaling pathways in cells are formulated in terms of nonlinear dynamic systems with n-state components that allow for the generalization of previous, Boolean or \"fuzzy\", logic models of genetic activities in vivo. Such models are then applied to cell transformations during carcinogenesis based on very extensive genomic transcription and translation data from the CGAP databases supported by NCI. Such models are represented in a Lukasiewicz-Topos with an n-valued Lukasiewicz Algebraic Logics subobject classifier description that represents non-random and nonlinear network activities as well as their transformations in carcinogeness. Specific models for different types of cancer are then derived from representations of the dynamic state-space of LT non-random, pseudo-Markov chain process, network models in terms of cDNA and proteomic, high throughput analyses by ultra-sensitive techniques. This novel theoretical analysis is based on extensive CGAP genomic data for human tumors, as well as recently published studies of cyclin signaling. Several such specific models suggest novel clinical trials and rational therapies of cancer through re-establishment of cell cycling inhibition in stage III cancers."
+ },
+ {
+  "src": "arXiv",
+  "id": "http://arxiv.org/abs/0707.3205v1",
+  "year": "2007",
+  "journal": "arXiv",
+  "doi": "",
+  "title": "Neutrality and Many-Valued Logics",
+  "abstract": "In this book, we consider various many-valued logics: standard, linear, hyperbolic, parabolic, non-Archimedean, p-adic, interval, neutrosophic, etc. We survey also results which show the tree different proof-theoretic frameworks for many-valued logics, e.g. frameworks of the following deductive calculi: Hilbert's style, sequent, and hypersequent. We present a general way that allows to construct systematically analytic calculi for a large family of non-Archimedean many-valued logics: hyperrational-valued, hyperreal-valued, and p-adic valued logics characterized by a special format of semantics with an appropriate rejection of Archimedes' axiom. These logics are built as different extensions of standard many-valued logics (namely, Lukasiewicz's, Goedel's, Product, and Post's logics). The informal sense of Archimedes' axiom is that anything can be measured by a ruler. Also logical multiple-validity without Archimedes' axiom consists in that the set of truth values is infinite and it is not well-founded and well-ordered. On the base of non-Archimedean valued logics, we construct non-Archimedean valued interval neutrosophic logic INL by which we can describe neutrality phenomena."
+ }
+]
