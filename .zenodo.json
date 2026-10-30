@@ -1,7 +1,7 @@
 {
   "title": "Code and derived results for: Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates",
   "upload_type": "software",
-  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5. Version 1.1.0 adds the analyses of two review rounds: predictors without paths, parametric t-norms, scale transformations, withheld relation blocks with cross-validated completion rank, simulations matched to the data's noise and scale, a strength-preserving null and the literature-search records.",
+  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5. Versions 1.1.0 and 1.2.0 add the analyses of the review rounds: predictors without paths, parametric t-norms, scale transformations, withheld relation blocks with cross-validated completion rank, simulations matched to the data's noise and scale, a strength-preserving null and the literature-search records; and, in 1.2.0, RQ3 with the periods swapped, on PSU-split halves of 2013–2018, with binary PHQ-9 items and under every sensitivity setting.",
   "creators": [
     {
       "name": "Truong, Hai Bang",
@@ -25,6 +25,6 @@
     "depression",
     "NHANES"
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "access_right": "open"
 }
