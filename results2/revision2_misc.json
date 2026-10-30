@@ -1,0 +1,131 @@
+{
+ "symmetric_rq2": {
+  "edges_directed_copies": 486,
+  "Q": 0.23189248299734844,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  },
+  "null_mean": 0.2111786184845178,
+  "null_sd": 0.005270355445840493,
+  "z": 3.930259491165549,
+  "p": 0.004975124378109453
+ },
+ "marginal_network": {
+  "n_positive": 252,
+  "n_negative": 24,
+  "walktrap": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "low_income",
+    "low_education",
+    "uninsured",
+    "smoking",
+    "heavy_drinking"
+   ],
+   "2": [
+    "no_partner",
+    "short_sleep",
+    "poor_self_rated_health"
+   ],
+   "3": [
+    "inactivity",
+    "obesity",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ]
+  },
+  "NMI_walktrap_main": 0.842292462690875,
+  "louvain": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ],
+   "2": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ]
+  },
+  "NMI_louvain_main": 1.0
+ },
+ "complete_cases": {
+  "n_dev": 11294,
+  "n_hold": 11726,
+  "Q": 0.21903298342426453,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "edge_spearman_vs_pairwise": 0.9958605559824464,
+  "rho": {
+   "product": 0.8866479082386322,
+   "hamacher": 0.8646587373513881,
+   "yager2": 0.6774275706884478,
+   "lukasiewicz": 0.3393428305385938,
+   "min": 0.7299218707304976
+  }
+ }
+}

@@ -1,0 +1,7 @@
+{
+ "tuned_vs_product_spearman": {
+  "hamacher_lambda": 0.9944968507466073,
+  "frank_s": 0.9950357218839899,
+  "schweizer_sklar_p": 0.9936805890383065
+ }
+}
