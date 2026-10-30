@@ -1,0 +1,4 @@
+{
+ "query": "(\"fuzzy knowledge graph\"[tiab] OR \"fuzzy knowledge graphs\"[tiab] OR \"fuzzy graph\"[tiab] OR \"fuzzy graphs\"[tiab] OR \"fuzzy relation\"[tiab] OR \"fuzzy relations\"[tiab] OR \"fuzzy relational\"[tiab] OR \"compositional rule of inference\"[tiab] OR \"fuzzy transitive\"[tiab] OR \"fuzzy transitivity\"[tiab]) AND (clinical[tiab] OR medical[tiab] OR medicine[tiab] OR health[tiab] OR disease[tiab] OR diseases[tiab] OR patient[tiab] OR patients[tiab] OR depression[tiab] OR depressive[tiab] OR psychiatric[tiab] OR biomedical[tiab] OR diagnosis[tiab] OR survey[tiab] OR epidemiolog*[tiab]) AND (\"1965/01/01\"[dp] : \"2026/10/30\"[dp])",
+ "count": 46
+}

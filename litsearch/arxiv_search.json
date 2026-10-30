@@ -1,0 +1,4 @@
+{
+ "query": "(abs:\"t-norm\" OR abs:\"t-norms\" OR abs:\"triangular norm\" OR abs:\"triangular norms\" OR abs:\"fuzzy logic operators\" OR abs:\"fuzzy operators\" OR abs:Lukasiewicz OR abs:Hamacher) AND (abs:clinical OR abs:medical OR abs:health OR abs:disease OR abs:patient OR abs:patients OR abs:depression OR abs:psychiatric OR abs:biomedical OR abs:diagnosis OR abs:survey)",
+ "count": 5
+}
