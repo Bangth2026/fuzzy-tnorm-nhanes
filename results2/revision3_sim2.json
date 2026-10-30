@@ -1,0 +1,120 @@
+{
+ "observed": {
+  "median_mu": 0.0822025063083094,
+  "dev_hold_rho": 0.9543925780608186
+ },
+ "settings": {
+  "min_closure": {
+   "scale": 0.4,
+   "median_mu": 0.08294881740446541,
+   "noise_sd": 0.05,
+   "dev_hold_rho": 0.961282058494786
+  },
+  "product_closure": {
+   "scale": 1.0,
+   "median_mu": 0.05510823667769158,
+   "noise_sd": 0.3,
+   "dev_hold_rho": 0.9640193863782962
+  },
+  "hamacher_closure": {
+   "scale": 0.8,
+   "median_mu": 0.08202652479660923,
+   "noise_sd": 0.15,
+   "dev_hold_rho": 0.9402867332636278
+  },
+  "rank1_factor": {
+   "scale": 1.0,
+   "median_mu": 0.0877267153561551,
+   "noise_sd": 0.2,
+   "dev_hold_rho": 0.9446812687028917
+  },
+  "rank3_blocks": {
+   "scale": 1.0,
+   "median_mu": 0.04021635145976608,
+   "noise_sd": 0.2,
+   "dev_hold_rho": 0.9613559358148367
+  }
+ },
+ "matched": {
+  "min_closure": {
+   "share_first": {
+    "product": 0.0,
+    "hamacher": 0.005,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.995
+   },
+   "mean_rho": {
+    "product": 0.8455836808080164,
+    "hamacher": 0.8976743131450285,
+    "yager2": 0.07724193793765484,
+    "lukasiewicz": NaN,
+    "min": 0.9362330525965891
+   }
+  },
+  "product_closure": {
+   "share_first": {
+    "product": 1.0,
+    "hamacher": 0.0,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   },
+   "mean_rho": {
+    "product": 0.7736313099170852,
+    "hamacher": 0.740190693227435,
+    "yager2": 0.545668361910745,
+    "lukasiewicz": 0.24355776771542953,
+    "min": 0.6816018156575765
+   }
+  },
+  "hamacher_closure": {
+   "share_first": {
+    "product": 0.0,
+    "hamacher": 1.0,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   },
+   "mean_rho": {
+    "product": 0.8157814135329844,
+    "hamacher": 0.8515133737681444,
+    "yager2": 0.43746260693904604,
+    "lukasiewicz": 0.10039891759451824,
+    "min": 0.7975442169554625
+   }
+  },
+  "rank1_factor": {
+   "share_first": {
+    "product": 0.99,
+    "hamacher": 0.01,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   },
+   "mean_rho": {
+    "product": 0.93044572395653,
+    "hamacher": 0.9142317871056003,
+    "yager2": 0.6759243833199379,
+    "lukasiewicz": 0.26517660570682433,
+    "min": 0.8447001375056553
+   }
+  },
+  "rank3_blocks": {
+   "share_first": {
+    "product": 0.93,
+    "hamacher": 0.07,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   },
+   "mean_rho": {
+    "product": 0.9038999689887446,
+    "hamacher": 0.8721297558610263,
+    "yager2": 0.3520644393409264,
+    "lukasiewicz": 0.16380334372312977,
+    "min": 0.7010125043152271
+   }
+  }
+ }
+}

@@ -1,7 +1,7 @@
 {
-  "title": "Code and derived results for: Which t-norm should a clinical fuzzy graph reason with? An audited population graph of depressive symptoms and their correlates",
+  "title": "Code and derived results for: Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates",
   "upload_type": "software",
-  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5.",
+  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5. Version 1.1.0 adds the analyses of two review rounds: predictors without paths, parametric t-norms, scale transformations, withheld relation blocks with cross-validated completion rank, simulations matched to the data's noise and scale, a strength-preserving null and the literature-search records.",
   "creators": [
     {
       "name": "Truong, Hai Bang",
@@ -11,11 +11,20 @@
     {
       "name": "Phan Thi, Van An",
       "orcid": "0009-0005-4135-5689",
-      "affiliation": "Nguyen Tat Thanh University"
+      "affiliation": "VNU University of Education, Vietnam National University, Hanoi"
     }
   ],
   "license": "MIT",
-  "keywords": ["fuzzy graph", "t-norm", "fuzzy relation composition", "certainty factor", "modularity", "null model", "depression", "NHANES"],
-  "version": "1.0.0",
+  "keywords": [
+    "fuzzy graph",
+    "t-norm",
+    "fuzzy relation composition",
+    "certainty factor",
+    "modularity",
+    "null model",
+    "depression",
+    "NHANES"
+  ],
+  "version": "1.1.0",
   "access_right": "open"
 }

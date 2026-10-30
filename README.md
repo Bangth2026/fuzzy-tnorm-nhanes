@@ -6,6 +6,8 @@ Code and derived results for the manuscript
 
 > Truong Hai Bang, Van An Phan Thi. *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates* (earlier title: *Which t-norm should a clinical fuzzy graph reason with?*). Submitted to the Journal of Biomedical Informatics.
 
+Version 1.1.0 contains every analysis reported in the revised manuscript. The literature search behind Supplementary Table S3 is in `litsearch/` (`tableS3_v7.md` gives the search strings, eligibility criteria and record flow).
+
 The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine PHQ-9 symptoms and 15 correlates) from NHANES 2013–2018 (development) and 2007–2012 (held-out), using a survey-weighted fuzzy certainty factor. It then audits:
 
 - the cost of binarisation (RQ1)
@@ -49,7 +51,8 @@ Run all steps with `bash run_all.sh`, or run them one at a time:
 | 9 | `python3 revision.py m1` … `minor` | analyses requested in review (`results2/revision_*.json`) |
 | 10 | `python3 sanity2.py` | implementation checks (`results2/sanity2.json`) |
 | 11 | `python3 revision2.py r3`, `boot`, `sim`, `null`, `misc`; `python3 revision2_extra.py` | second-review analyses: non-path predictors, parametric t-norms, scale, withheld blocks, simulation, strength-preserving null, detectable cost (`results2/revision2_*.json`) |
-| 12 | `python3 stats2.py` | `results2/paper_stats.json` |
+| 12 | `python3 revision3.py blocks`, `sim2`, `reverse` | third-review analyses: withheld blocks with cross-validated completion rank, bootstrap intervals and sign tests; simulation matched to the data's noise and scale; zero reverse edges (`results2/revision3_*.json`) |
+| 13 | `python3 stats2.py` | `results2/paper_stats.json` |
 
 Master seed: 20261029. The full run takes several hours on one CPU, mostly in the null models and bootstraps.
 
