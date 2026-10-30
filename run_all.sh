@@ -12,4 +12,6 @@ python3 describe2.py
 python3 sens_expert.py
 for p in m1 m2 m3 m4 m5 m6 m9 minor; do python3 revision.py "$p"; done
 python3 sanity2.py
+for p in r3 boot sim null misc; do python3 revision2.py "$p"; done
+python3 revision2_extra.py
 python3 stats2.py

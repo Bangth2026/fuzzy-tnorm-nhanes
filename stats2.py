@@ -33,3 +33,6 @@ S["sanity"] = L("sanity2.json")
 S["pre_review"] = json.load(open("results2_pre_expert_review/paper_stats.json"))
 json.dump(S, open("results2/paper_stats.json", "w"), indent=1)
 print(json.dumps(S["binarised"], indent=0)[:3000])
+# second review
+S["revision2"] = {p: L(f"revision2_{p}.json") for p in ["r3", "sim", "misc", "boot", "null", "extra"] if os.path.exists(f"results2/revision2_{p}.json")}
+json.dump(S, open("results2/paper_stats.json", "w"), indent=1)

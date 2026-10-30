@@ -4,7 +4,7 @@
 
 Code and derived results for the manuscript
 
-> Truong Hai Bang, Van An Phan Thi. *Which t-norm should a clinical fuzzy graph reason with? An audited population graph of depressive symptoms and their correlates.* Submitted to the Journal of Biomedical Informatics.
+> Truong Hai Bang, Van An Phan Thi. *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates* (earlier title: *Which t-norm should a clinical fuzzy graph reason with?*). Submitted to the Journal of Biomedical Informatics.
 
 The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine PHQ-9 symptoms and 15 correlates) from NHANES 2013–2018 (development) and 2007–2012 (held-out), using a survey-weighted fuzzy certainty factor. It then audits:
 
@@ -48,7 +48,8 @@ Run all steps with `bash run_all.sh`, or run them one at a time:
 | 8 | `python3 sens_expert.py` | membership-function variants (`results2/sens_expert.json`) |
 | 9 | `python3 revision.py m1` … `minor` | analyses requested in review (`results2/revision_*.json`) |
 | 10 | `python3 sanity2.py` | implementation checks (`results2/sanity2.json`) |
-| 11 | `python3 stats2.py` | `results2/paper_stats.json` |
+| 11 | `python3 revision2.py r3`, `boot`, `sim`, `null`, `misc`; `python3 revision2_extra.py` | second-review analyses: non-path predictors, parametric t-norms, scale, withheld blocks, simulation, strength-preserving null, detectable cost (`results2/revision2_*.json`) |
+| 12 | `python3 stats2.py` | `results2/paper_stats.json` |
 
 Master seed: 20261029. The full run takes several hours on one CPU, mostly in the null models and bootstraps.
 

@@ -1,0 +1,98 @@
+{
+ "simulation": {
+  "min_closure": {
+   "mean_rho": {
+    "product": 0.65791727997338,
+    "hamacher": 0.6741549999655931,
+    "yager2": 0.6291541519223715,
+    "lukasiewicz": 0.37451981727847267,
+    "min": 0.6783121741777017,
+    "direct": 0.6718585659357449
+   },
+   "share_first": {
+    "product": 0.05,
+    "hamacher": 0.315,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.635
+   }
+  },
+  "product_closure": {
+   "mean_rho": {
+    "product": 0.7544469731488438,
+    "hamacher": 0.7207679382990833,
+    "yager2": 0.5554125554329183,
+    "lukasiewicz": 0.2746541675747058,
+    "min": 0.6633691355223224,
+    "direct": 0.9491951854057905
+   },
+   "share_first": {
+    "product": 1.0,
+    "hamacher": 0.0,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   }
+  },
+  "hamacher_closure": {
+   "mean_rho": {
+    "product": 0.7119958325527488,
+    "hamacher": 0.7306537312819068,
+    "yager2": 0.5404810428799376,
+    "lukasiewicz": 0.24502915528781358,
+    "min": 0.7030733277478193,
+    "direct": 0.8043327410113505
+   },
+   "share_first": {
+    "product": 0.06,
+    "hamacher": 0.91,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.03
+   }
+  },
+  "rank1_factor": {
+   "mean_rho": {
+    "product": 0.831655291874089,
+    "hamacher": 0.8221026672156952,
+    "yager2": 0.6536953849369592,
+    "lukasiewicz": 0.27736415449147256,
+    "min": 0.7670951967064675,
+    "direct": 0.8376338004812902
+   },
+   "share_first": {
+    "product": 0.795,
+    "hamacher": 0.205,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   }
+  },
+  "rank3_blocks": {
+   "mean_rho": {
+    "product": 0.8385468712479239,
+    "hamacher": 0.8075952482659033,
+    "yager2": 0.39067309205020545,
+    "lukasiewicz": 0.1791159055278068,
+    "min": 0.6712006673519056,
+    "direct": 0.8908222116644063
+   },
+   "share_first": {
+    "product": 0.92,
+    "hamacher": 0.08,
+    "yager2": 0.0,
+    "lukasiewicz": 0.0,
+    "min": 0.0
+   }
+  }
+ },
+ "simulation_settings": {
+  "replicates": 200,
+  "noise_sd_log": 0.35,
+  "base_density": 0.12,
+  "base_weights": "Beta(2,5)",
+  "factor_loadings": "Beta(2,4)",
+  "between_block_factor": 0.25,
+  "observed_log_sd_dev": 1.213294690148719
+ }
+}
