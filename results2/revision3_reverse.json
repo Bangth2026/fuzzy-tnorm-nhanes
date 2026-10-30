@@ -1,0 +1,11 @@
+{
+ "reverse": {
+  "n_pairs": 552,
+  "n_reverse_zero": 49,
+  "rho_all": 0.9532911155742693,
+  "rho_positive_reverse_only": 0.940610826742009,
+  "product_rho_positive_reverse_only": 0.873499911529687,
+  "heldout_mean_when_reverse_zero": 0.0011588158835909956,
+  "heldout_mean_when_reverse_positive": 0.1341168168868119
+ }
+}
