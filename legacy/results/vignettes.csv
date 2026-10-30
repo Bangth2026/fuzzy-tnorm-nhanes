@@ -1,0 +1,13 @@
+vignette,phq9_total,item_anhedonia,item_depressed_mood,item_sleep,item_fatigue,item_appetite,item_worthlessness,item_concentration,item_psychomotor,top3_product,top3_binary,top_score_product,n_binary_reachable,cluster_size_in_sample
+V01,5,0,1,1,1,0,1,1,0,"['thoughts_not_facts', 'sitting_meditation', 'breathing_space']","['body_scan', 'mindful_movement', 'sitting_meditation']",0.09374999999999999,0,346
+V02,5,1,1,1,1,1,0,0,0,"['thoughts_not_facts', 'sitting_meditation', 'breathing_space']","['body_scan', 'mindful_movement', 'sitting_meditation']",0.09374999999999999,0,383
+V03,6,0,0,3,3,0,0,0,0,"['breathing_space', 'thoughts_not_facts', 'sitting_meditation']","['breathing_space', 'body_scan', 'mindful_movement']",0.12500000000000003,1,162
+V04,6,2,0,3,1,0,0,0,0,"['breathing_space', 'thoughts_not_facts', 'sitting_meditation']","['sitting_meditation', 'breathing_space', 'thoughts_not_facts']",0.12500000000000003,5,230
+V05,6,0,0,3,2,0,0,1,0,"['breathing_space', 'thoughts_not_facts', 'sitting_meditation']","['breathing_space', 'body_scan', 'mindful_movement']",0.12500000000000003,1,57
+V06,6,1,1,1,1,1,1,0,0,"['thoughts_not_facts', 'sitting_meditation', 'breathing_space']","['body_scan', 'mindful_movement', 'sitting_meditation']",0.09374999999999999,0,236
+V07,6,0,0,2,2,2,0,0,0,"['breathing_space', 'thoughts_not_facts', 'sitting_meditation']","['breathing_space', 'body_scan', 'mindful_movement']",0.08333333333333333,1,371
+V08,8,1,1,1,1,1,1,1,1,"['thoughts_not_facts', 'sitting_meditation', 'breathing_space']","['body_scan', 'mindful_movement', 'sitting_meditation']",0.09374999999999999,0,471
+V09,10,1,1,3,3,1,0,0,1,"['breathing_space', 'thoughts_not_facts', 'sitting_meditation']","['breathing_space', 'body_scan', 'mindful_movement']",0.12500000000000003,1,354
+V10,15,2,2,2,1,0,2,3,3,"['thoughts_not_facts', 'body_scan', 'sitting_meditation']","['body_scan', 'sitting_meditation', 'breathing_space']",0.1875,6,57
+V11,17,2,2,3,2,2,2,2,2,"['thoughts_not_facts', 'breathing_space', 'sitting_meditation']","['body_scan', 'sitting_meditation', 'breathing_space']",0.1875,6,142
+V12,17,2,3,2,3,3,3,1,0,"['thoughts_not_facts', 'sitting_meditation', 'breathing_space']","['sitting_meditation', 'breathing_space', 'turning_toward_difficulty']",0.28125000000000006,5,191

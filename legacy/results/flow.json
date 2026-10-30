@@ -1,0 +1,52 @@
+{
+  "development_2013_2018": {
+    "H": {
+      "dpq_file_adults": 5924,
+      "complete_phq9_positive_weight": 5372
+    },
+    "I": {
+      "dpq_file_adults": 5735,
+      "complete_phq9_positive_weight": 5134
+    },
+    "J": {
+      "dpq_file_adults": 5533,
+      "complete_phq9_positive_weight": 5068
+    },
+    "total_analytic": 15574,
+    "item9_positive": 566,
+    "phq_ge20": 155,
+    "safety_fail_any": 622,
+    "phq_ge10": 1385,
+    "weighted_prev_phq_ge10": 0.08199023583056853,
+    "missing_low_income": 1527,
+    "missing_obesity": 165,
+    "missing_smoking": 8,
+    "missing_inactivity": 19,
+    "missing_chronic_illness": 6
+  },
+  "heldout_2007_2012": {
+    "E": {
+      "dpq_file_adults": 5995,
+      "complete_phq9_positive_weight": 5415
+    },
+    "F": {
+      "dpq_file_adults": 6360,
+      "complete_phq9_positive_weight": 5546
+    },
+    "G": {
+      "dpq_file_adults": 5615,
+      "complete_phq9_positive_weight": 4925
+    },
+    "total_analytic": 15886,
+    "item9_positive": 638,
+    "phq_ge20": 160,
+    "safety_fail_any": 699,
+    "phq_ge10": 1486,
+    "weighted_prev_phq_ge10": 0.07888246774399357,
+    "missing_low_income": 1347,
+    "missing_obesity": 174,
+    "missing_smoking": 818,
+    "missing_inactivity": 5,
+    "missing_chronic_illness": 3
+  }
+}

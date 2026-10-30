@@ -1,0 +1,2288 @@
+{
+  "rq1_main": {
+    "n_nodes": 31,
+    "n_edges": 142,
+    "Q_mean": 0.2778850359641634,
+    "Q_best": 0.27793478407648026,
+    "n_comm": 3,
+    "communities": {
+      "0": [
+        "cognitive_reactivity",
+        "low_mindfulness",
+        "rumination",
+        "worry",
+        "low_meta_awareness",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "relapse_action_plan",
+        "reduced_relapse_vulnerability"
+      ],
+      "1": [
+        "anhedonia",
+        "depressed_mood",
+        "sleep",
+        "fatigue",
+        "appetite",
+        "worthlessness",
+        "concentration",
+        "psychomotor",
+        "low_income",
+        "obesity",
+        "smoking",
+        "inactivity",
+        "chronic_illness"
+      ],
+      "2": [
+        "emotional_reactivity",
+        "low_self_compassion",
+        "psychological_inflexibility",
+        "turning_toward_difficulty",
+        "activity_and_self_care"
+      ]
+    },
+    "binarised": {
+      "0.25": {
+        "edges_kept": 105,
+        "Q_on_GF_mean": 0.2000030575676082,
+        "cost": 0.07788197839655522,
+        "NMI": 0.8008686174388476,
+        "ARI": 0.7426235790011496,
+        "n_comm": 4,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "rumination",
+            "worry",
+            "low_meta_awareness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "breathing_space",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "sleep",
+            "fatigue",
+            "low_income",
+            "obesity",
+            "smoking",
+            "inactivity",
+            "chronic_illness"
+          ],
+          "2": [
+            "anhedonia",
+            "depressed_mood",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "emotional_reactivity"
+          ],
+          "3": [
+            "low_self_compassion",
+            "psychological_inflexibility",
+            "turning_toward_difficulty",
+            "activity_and_self_care"
+          ]
+        }
+      },
+      "0.5": {
+        "edges_kept": 56,
+        "Q_on_GF_mean": 0.19211720427169843,
+        "cost": 0.08576783169246499,
+        "NMI": 0.5030126108347522,
+        "ARI": 0.3698834175131309,
+        "n_comm": 10,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "activity_and_self_care",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "anhedonia",
+            "depressed_mood",
+            "sleep",
+            "fatigue",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "low_self_compassion"
+          ],
+          "2": [
+            "emotional_reactivity",
+            "rumination",
+            "worry",
+            "breathing_space",
+            "turning_toward_difficulty"
+          ],
+          "3": [
+            "low_income"
+          ],
+          "4": [
+            "obesity"
+          ],
+          "5": [
+            "smoking"
+          ],
+          "6": [
+            "inactivity"
+          ],
+          "7": [
+            "chronic_illness"
+          ],
+          "8": [
+            "low_meta_awareness"
+          ],
+          "9": [
+            "psychological_inflexibility"
+          ]
+        }
+      },
+      "0.75": {
+        "edges_kept": 9,
+        "Q_on_GF_mean": -0.0026467809476358405,
+        "cost": 0.28053181691179924,
+        "NMI": 0.4579064042338581,
+        "ARI": 0.029774324445411605,
+        "n_comm": 26,
+        "communities": {
+          "0": [
+            "depressed_mood",
+            "worthlessness",
+            "rumination"
+          ],
+          "1": [
+            "fatigue",
+            "concentration",
+            "psychomotor"
+          ],
+          "2": [
+            "cognitive_reactivity",
+            "thoughts_not_facts"
+          ],
+          "3": [
+            "anhedonia"
+          ],
+          "4": [
+            "sleep"
+          ],
+          "5": [
+            "appetite"
+          ],
+          "6": [
+            "low_income"
+          ],
+          "7": [
+            "obesity"
+          ],
+          "8": [
+            "smoking"
+          ],
+          "9": [
+            "inactivity"
+          ],
+          "10": [
+            "chronic_illness"
+          ],
+          "11": [
+            "emotional_reactivity"
+          ],
+          "12": [
+            "low_mindfulness"
+          ],
+          "13": [
+            "worry"
+          ],
+          "14": [
+            "low_self_compassion"
+          ],
+          "15": [
+            "low_meta_awareness"
+          ],
+          "16": [
+            "psychological_inflexibility"
+          ],
+          "17": [
+            "body_scan"
+          ],
+          "18": [
+            "mindful_movement"
+          ],
+          "19": [
+            "sitting_meditation"
+          ],
+          "20": [
+            "breathing_space"
+          ],
+          "21": [
+            "turning_toward_difficulty"
+          ],
+          "22": [
+            "pleasant_unpleasant_events"
+          ],
+          "23": [
+            "activity_and_self_care"
+          ],
+          "24": [
+            "relapse_action_plan"
+          ],
+          "25": [
+            "reduced_relapse_vulnerability"
+          ]
+        }
+      },
+      "0+": {
+        "edges_kept": 142,
+        "Q_on_GF_mean": 0.27785423951368166,
+        "cost": 3.0796450481762605e-05,
+        "NMI": 1.0,
+        "ARI": 1.0,
+        "n_comm": 3,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "rumination",
+            "worry",
+            "low_meta_awareness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "breathing_space",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "anhedonia",
+            "depressed_mood",
+            "sleep",
+            "fatigue",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "low_income",
+            "obesity",
+            "smoking",
+            "inactivity",
+            "chronic_illness"
+          ],
+          "2": [
+            "emotional_reactivity",
+            "low_self_compassion",
+            "psychological_inflexibility",
+            "turning_toward_difficulty",
+            "activity_and_self_care"
+          ]
+        }
+      }
+    }
+  },
+  "rq1_boot_ci": {
+    "0.25": [
+      0.06466288935590846,
+      0.08257188047433003
+    ],
+    "0.5": [
+      0.07647183368319486,
+      0.10952360905374632
+    ],
+    "0.75": [
+      0.22362880358549497,
+      0.2986696831754456
+    ],
+    "0+": [
+      -3.731200714826716e-05,
+      0.00016006362638997795
+    ]
+  },
+  "edge_weight_boot_sd_median": 0.004332231277322041,
+  "edge_weight_boot_sd_max": 0.012318423901589923,
+  "heldout_rq1": {
+    "n_nodes": 31,
+    "n_edges": 142,
+    "Q_mean": 0.2765078518046179,
+    "Q_best": 0.2765078518046179,
+    "n_comm": 2,
+    "communities": {
+      "0": [
+        "cognitive_reactivity",
+        "emotional_reactivity",
+        "low_mindfulness",
+        "rumination",
+        "worry",
+        "low_self_compassion",
+        "low_meta_awareness",
+        "psychological_inflexibility",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan",
+        "reduced_relapse_vulnerability"
+      ],
+      "1": [
+        "anhedonia",
+        "depressed_mood",
+        "sleep",
+        "fatigue",
+        "appetite",
+        "worthlessness",
+        "concentration",
+        "psychomotor",
+        "low_income",
+        "obesity",
+        "smoking",
+        "inactivity",
+        "chronic_illness"
+      ]
+    },
+    "binarised": {
+      "0.25": {
+        "edges_kept": 109,
+        "Q_on_GF_mean": 0.24446233452704436,
+        "cost": 0.03204551727757354,
+        "NMI": 0.7985776534291061,
+        "ARI": 0.7199132634622335,
+        "n_comm": 3,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "rumination",
+            "worry",
+            "low_meta_awareness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "breathing_space",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "anhedonia",
+            "depressed_mood",
+            "sleep",
+            "fatigue",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "low_income",
+            "obesity",
+            "smoking",
+            "inactivity",
+            "chronic_illness"
+          ],
+          "2": [
+            "emotional_reactivity",
+            "low_self_compassion",
+            "psychological_inflexibility",
+            "turning_toward_difficulty",
+            "activity_and_self_care"
+          ]
+        }
+      },
+      "0.5": {
+        "edges_kept": 56,
+        "Q_on_GF_mean": 0.19247478547272717,
+        "cost": 0.08403306633189073,
+        "NMI": 0.4679494849820773,
+        "ARI": 0.32638734120793406,
+        "n_comm": 10,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "activity_and_self_care",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "anhedonia",
+            "depressed_mood",
+            "sleep",
+            "fatigue",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "low_self_compassion"
+          ],
+          "2": [
+            "emotional_reactivity",
+            "rumination",
+            "worry",
+            "breathing_space",
+            "turning_toward_difficulty"
+          ],
+          "3": [
+            "low_income"
+          ],
+          "4": [
+            "obesity"
+          ],
+          "5": [
+            "smoking"
+          ],
+          "6": [
+            "inactivity"
+          ],
+          "7": [
+            "chronic_illness"
+          ],
+          "8": [
+            "low_meta_awareness"
+          ],
+          "9": [
+            "psychological_inflexibility"
+          ]
+        }
+      },
+      "0.75": {
+        "edges_kept": 9,
+        "Q_on_GF_mean": 0.028811810659744377,
+        "cost": 0.24769604114487354,
+        "NMI": 0.31098683249912656,
+        "ARI": 0.017754948214734372,
+        "n_comm": 24,
+        "communities": {
+          "0": [
+            "depressed_mood",
+            "worthlessness",
+            "cognitive_reactivity",
+            "rumination",
+            "thoughts_not_facts"
+          ],
+          "1": [
+            "anhedonia",
+            "fatigue",
+            "concentration",
+            "psychomotor"
+          ],
+          "2": [
+            "sleep"
+          ],
+          "3": [
+            "appetite"
+          ],
+          "4": [
+            "low_income"
+          ],
+          "5": [
+            "obesity"
+          ],
+          "6": [
+            "smoking"
+          ],
+          "7": [
+            "inactivity"
+          ],
+          "8": [
+            "chronic_illness"
+          ],
+          "9": [
+            "emotional_reactivity"
+          ],
+          "10": [
+            "low_mindfulness"
+          ],
+          "11": [
+            "worry"
+          ],
+          "12": [
+            "low_self_compassion"
+          ],
+          "13": [
+            "low_meta_awareness"
+          ],
+          "14": [
+            "psychological_inflexibility"
+          ],
+          "15": [
+            "body_scan"
+          ],
+          "16": [
+            "mindful_movement"
+          ],
+          "17": [
+            "sitting_meditation"
+          ],
+          "18": [
+            "breathing_space"
+          ],
+          "19": [
+            "turning_toward_difficulty"
+          ],
+          "20": [
+            "pleasant_unpleasant_events"
+          ],
+          "21": [
+            "activity_and_self_care"
+          ],
+          "22": [
+            "relapse_action_plan"
+          ],
+          "23": [
+            "reduced_relapse_vulnerability"
+          ]
+        }
+      },
+      "0+": {
+        "edges_kept": 142,
+        "Q_on_GF_mean": 0.27647006285960335,
+        "cost": 3.778894501454966e-05,
+        "NMI": 0.7985776534291061,
+        "ARI": 0.7199132634622335,
+        "n_comm": 3,
+        "communities": {
+          "0": [
+            "cognitive_reactivity",
+            "low_mindfulness",
+            "rumination",
+            "worry",
+            "low_meta_awareness",
+            "body_scan",
+            "mindful_movement",
+            "sitting_meditation",
+            "breathing_space",
+            "thoughts_not_facts",
+            "pleasant_unpleasant_events",
+            "relapse_action_plan",
+            "reduced_relapse_vulnerability"
+          ],
+          "1": [
+            "anhedonia",
+            "depressed_mood",
+            "sleep",
+            "fatigue",
+            "appetite",
+            "worthlessness",
+            "concentration",
+            "psychomotor",
+            "low_income",
+            "obesity",
+            "smoking",
+            "inactivity",
+            "chronic_illness"
+          ],
+          "2": [
+            "emotional_reactivity",
+            "low_self_compassion",
+            "psychological_inflexibility",
+            "turning_toward_difficulty",
+            "activity_and_self_care"
+          ]
+        }
+      }
+    }
+  },
+  "heldout_NMI_with_dev": 0.7985776534291061,
+  "heldout_ARI_with_dev": 0.7199132634622335,
+  "heldout_weight_corr": {
+    "pearson": 0.9944284208276036,
+    "max_abs_diff": 0.06555803196683357,
+    "n_edges": 96
+  },
+  "sensitivity": {
+    "eps_0.02": {
+      "n_nodes": 31,
+      "n_edges": 142,
+      "Q_mean": 0.2778850359641634,
+      "Q_best": 0.27793478407648026,
+      "n_comm": 3,
+      "communities": {
+        "0": [
+          "cognitive_reactivity",
+          "low_mindfulness",
+          "rumination",
+          "worry",
+          "low_meta_awareness",
+          "body_scan",
+          "mindful_movement",
+          "sitting_meditation",
+          "breathing_space",
+          "thoughts_not_facts",
+          "pleasant_unpleasant_events",
+          "relapse_action_plan",
+          "reduced_relapse_vulnerability"
+        ],
+        "1": [
+          "anhedonia",
+          "depressed_mood",
+          "sleep",
+          "fatigue",
+          "appetite",
+          "worthlessness",
+          "concentration",
+          "psychomotor",
+          "low_income",
+          "obesity",
+          "smoking",
+          "inactivity",
+          "chronic_illness"
+        ],
+        "2": [
+          "emotional_reactivity",
+          "low_self_compassion",
+          "psychological_inflexibility",
+          "turning_toward_difficulty",
+          "activity_and_self_care"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 105,
+          "Q_on_GF_mean": 0.2000030575676082,
+          "cost": 0.07788197839655522,
+          "NMI": 0.8008686174388476,
+          "ARI": 0.7426235790011496,
+          "n_comm": 4,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "sleep",
+              "fatigue",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "2": [
+              "anhedonia",
+              "depressed_mood",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "emotional_reactivity"
+            ],
+            "3": [
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 56,
+          "Q_on_GF_mean": 0.19211720427169843,
+          "cost": 0.08576783169246499,
+          "NMI": 0.5030126108347522,
+          "ARI": 0.3698834175131309,
+          "n_comm": 10,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_self_compassion"
+            ],
+            "2": [
+              "emotional_reactivity",
+              "rumination",
+              "worry",
+              "breathing_space",
+              "turning_toward_difficulty"
+            ],
+            "3": [
+              "low_income"
+            ],
+            "4": [
+              "obesity"
+            ],
+            "5": [
+              "smoking"
+            ],
+            "6": [
+              "inactivity"
+            ],
+            "7": [
+              "chronic_illness"
+            ],
+            "8": [
+              "low_meta_awareness"
+            ],
+            "9": [
+              "psychological_inflexibility"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 9,
+          "Q_on_GF_mean": -0.0026467809476358405,
+          "cost": 0.28053181691179924,
+          "NMI": 0.4579064042338581,
+          "ARI": 0.029774324445411605,
+          "n_comm": 26,
+          "communities": {
+            "0": [
+              "depressed_mood",
+              "worthlessness",
+              "rumination"
+            ],
+            "1": [
+              "fatigue",
+              "concentration",
+              "psychomotor"
+            ],
+            "2": [
+              "cognitive_reactivity",
+              "thoughts_not_facts"
+            ],
+            "3": [
+              "anhedonia"
+            ],
+            "4": [
+              "sleep"
+            ],
+            "5": [
+              "appetite"
+            ],
+            "6": [
+              "low_income"
+            ],
+            "7": [
+              "obesity"
+            ],
+            "8": [
+              "smoking"
+            ],
+            "9": [
+              "inactivity"
+            ],
+            "10": [
+              "chronic_illness"
+            ],
+            "11": [
+              "emotional_reactivity"
+            ],
+            "12": [
+              "low_mindfulness"
+            ],
+            "13": [
+              "worry"
+            ],
+            "14": [
+              "low_self_compassion"
+            ],
+            "15": [
+              "low_meta_awareness"
+            ],
+            "16": [
+              "psychological_inflexibility"
+            ],
+            "17": [
+              "body_scan"
+            ],
+            "18": [
+              "mindful_movement"
+            ],
+            "19": [
+              "sitting_meditation"
+            ],
+            "20": [
+              "breathing_space"
+            ],
+            "21": [
+              "turning_toward_difficulty"
+            ],
+            "22": [
+              "pleasant_unpleasant_events"
+            ],
+            "23": [
+              "activity_and_self_care"
+            ],
+            "24": [
+              "relapse_action_plan"
+            ],
+            "25": [
+              "reduced_relapse_vulnerability"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 142,
+          "Q_on_GF_mean": 0.27785423951368166,
+          "cost": 3.0796450481762605e-05,
+          "NMI": 1.0,
+          "ARI": 1.0,
+          "n_comm": 3,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "2": [
+              "emotional_reactivity",
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ]
+          }
+        }
+      }
+    },
+    "eps_0.1": {
+      "n_nodes": 31,
+      "n_edges": 138,
+      "Q_mean": 0.2786213556079029,
+      "Q_best": 0.2787334633492077,
+      "n_comm": 3,
+      "communities": {
+        "0": [
+          "anhedonia",
+          "depressed_mood",
+          "sleep",
+          "fatigue",
+          "appetite",
+          "worthlessness",
+          "concentration",
+          "psychomotor",
+          "low_income",
+          "obesity",
+          "smoking",
+          "inactivity",
+          "chronic_illness"
+        ],
+        "1": [
+          "cognitive_reactivity",
+          "low_mindfulness",
+          "rumination",
+          "worry",
+          "low_meta_awareness",
+          "body_scan",
+          "mindful_movement",
+          "sitting_meditation",
+          "breathing_space",
+          "thoughts_not_facts",
+          "pleasant_unpleasant_events",
+          "relapse_action_plan",
+          "reduced_relapse_vulnerability"
+        ],
+        "2": [
+          "emotional_reactivity",
+          "low_self_compassion",
+          "psychological_inflexibility",
+          "turning_toward_difficulty",
+          "activity_and_self_care"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 105,
+          "Q_on_GF_mean": 0.20364474156484824,
+          "cost": 0.07497661404305467,
+          "NMI": 0.8008686174388476,
+          "ARI": 0.7426235790011496,
+          "n_comm": 4,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "sleep",
+              "fatigue",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "2": [
+              "anhedonia",
+              "depressed_mood",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "emotional_reactivity"
+            ],
+            "3": [
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 56,
+          "Q_on_GF_mean": 0.19417585165469944,
+          "cost": 0.08444550395320347,
+          "NMI": 0.5030126108347522,
+          "ARI": 0.3698834175131309,
+          "n_comm": 10,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_self_compassion"
+            ],
+            "2": [
+              "emotional_reactivity",
+              "rumination",
+              "worry",
+              "breathing_space",
+              "turning_toward_difficulty"
+            ],
+            "3": [
+              "low_income"
+            ],
+            "4": [
+              "obesity"
+            ],
+            "5": [
+              "smoking"
+            ],
+            "6": [
+              "inactivity"
+            ],
+            "7": [
+              "chronic_illness"
+            ],
+            "8": [
+              "low_meta_awareness"
+            ],
+            "9": [
+              "psychological_inflexibility"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 9,
+          "Q_on_GF_mean": -0.0020784460490237177,
+          "cost": 0.28069980165692665,
+          "NMI": 0.4579064042338581,
+          "ARI": 0.029774324445411605,
+          "n_comm": 26,
+          "communities": {
+            "0": [
+              "depressed_mood",
+              "worthlessness",
+              "rumination"
+            ],
+            "1": [
+              "fatigue",
+              "concentration",
+              "psychomotor"
+            ],
+            "2": [
+              "cognitive_reactivity",
+              "thoughts_not_facts"
+            ],
+            "3": [
+              "anhedonia"
+            ],
+            "4": [
+              "sleep"
+            ],
+            "5": [
+              "appetite"
+            ],
+            "6": [
+              "low_income"
+            ],
+            "7": [
+              "obesity"
+            ],
+            "8": [
+              "smoking"
+            ],
+            "9": [
+              "inactivity"
+            ],
+            "10": [
+              "chronic_illness"
+            ],
+            "11": [
+              "emotional_reactivity"
+            ],
+            "12": [
+              "low_mindfulness"
+            ],
+            "13": [
+              "worry"
+            ],
+            "14": [
+              "low_self_compassion"
+            ],
+            "15": [
+              "low_meta_awareness"
+            ],
+            "16": [
+              "psychological_inflexibility"
+            ],
+            "17": [
+              "body_scan"
+            ],
+            "18": [
+              "mindful_movement"
+            ],
+            "19": [
+              "sitting_meditation"
+            ],
+            "20": [
+              "breathing_space"
+            ],
+            "21": [
+              "turning_toward_difficulty"
+            ],
+            "22": [
+              "pleasant_unpleasant_events"
+            ],
+            "23": [
+              "activity_and_self_care"
+            ],
+            "24": [
+              "relapse_action_plan"
+            ],
+            "25": [
+              "reduced_relapse_vulnerability"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 138,
+          "Q_on_GF_mean": 0.2786213556079029,
+          "cost": 0.0,
+          "NMI": 1.0,
+          "ARI": 1.0,
+          "n_comm": 3,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "2": [
+              "emotional_reactivity",
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ]
+          }
+        }
+      }
+    },
+    "gamma_0.5": {
+      "n_nodes": 31,
+      "n_edges": 142,
+      "Q_mean": 0.5660766685509568,
+      "Q_best": 0.566612607606584,
+      "n_comm": 2,
+      "communities": {
+        "0": [
+          "cognitive_reactivity",
+          "emotional_reactivity",
+          "low_mindfulness",
+          "worry",
+          "low_self_compassion",
+          "low_meta_awareness",
+          "psychological_inflexibility",
+          "body_scan",
+          "mindful_movement",
+          "sitting_meditation",
+          "breathing_space",
+          "turning_toward_difficulty",
+          "thoughts_not_facts",
+          "pleasant_unpleasant_events",
+          "activity_and_self_care",
+          "relapse_action_plan",
+          "reduced_relapse_vulnerability"
+        ],
+        "1": [
+          "anhedonia",
+          "depressed_mood",
+          "sleep",
+          "fatigue",
+          "appetite",
+          "worthlessness",
+          "concentration",
+          "psychomotor",
+          "low_income",
+          "obesity",
+          "smoking",
+          "inactivity",
+          "chronic_illness",
+          "rumination"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 105,
+          "Q_on_GF_mean": 0.5639999047104013,
+          "cost": 0.002076763840555551,
+          "NMI": 1.0,
+          "ARI": 1.0,
+          "n_comm": 2,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "emotional_reactivity",
+              "low_mindfulness",
+              "worry",
+              "low_self_compassion",
+              "low_meta_awareness",
+              "psychological_inflexibility",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "turning_toward_difficulty",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness",
+              "rumination"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 56,
+          "Q_on_GF_mean": 0.45193960590580745,
+          "cost": 0.11413706264514939,
+          "NMI": 0.47379329080845195,
+          "ARI": 0.4351417518548282,
+          "n_comm": 9,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "emotional_reactivity",
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "turning_toward_difficulty",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "rumination",
+              "worry",
+              "low_self_compassion"
+            ],
+            "2": [
+              "low_income"
+            ],
+            "3": [
+              "obesity"
+            ],
+            "4": [
+              "smoking"
+            ],
+            "5": [
+              "inactivity"
+            ],
+            "6": [
+              "chronic_illness"
+            ],
+            "7": [
+              "low_meta_awareness"
+            ],
+            "8": [
+              "psychological_inflexibility"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 9,
+          "Q_on_GF_mean": 0.08328707369267853,
+          "cost": 0.4827895948582783,
+          "NMI": 0.30874522789775877,
+          "ARI": 0.005752237506859165,
+          "n_comm": 25,
+          "communities": {
+            "0": [
+              "depressed_mood",
+              "worthlessness",
+              "cognitive_reactivity",
+              "rumination",
+              "thoughts_not_facts"
+            ],
+            "1": [
+              "fatigue",
+              "concentration",
+              "psychomotor"
+            ],
+            "2": [
+              "anhedonia"
+            ],
+            "3": [
+              "sleep"
+            ],
+            "4": [
+              "appetite"
+            ],
+            "5": [
+              "low_income"
+            ],
+            "6": [
+              "obesity"
+            ],
+            "7": [
+              "smoking"
+            ],
+            "8": [
+              "inactivity"
+            ],
+            "9": [
+              "chronic_illness"
+            ],
+            "10": [
+              "emotional_reactivity"
+            ],
+            "11": [
+              "low_mindfulness"
+            ],
+            "12": [
+              "worry"
+            ],
+            "13": [
+              "low_self_compassion"
+            ],
+            "14": [
+              "low_meta_awareness"
+            ],
+            "15": [
+              "psychological_inflexibility"
+            ],
+            "16": [
+              "body_scan"
+            ],
+            "17": [
+              "mindful_movement"
+            ],
+            "18": [
+              "sitting_meditation"
+            ],
+            "19": [
+              "breathing_space"
+            ],
+            "20": [
+              "turning_toward_difficulty"
+            ],
+            "21": [
+              "pleasant_unpleasant_events"
+            ],
+            "22": [
+              "activity_and_self_care"
+            ],
+            "23": [
+              "relapse_action_plan"
+            ],
+            "24": [
+              "reduced_relapse_vulnerability"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 142,
+          "Q_on_GF_mean": 0.5624889046602994,
+          "cost": 0.0035877638906574028,
+          "NMI": 0.8240525441021322,
+          "ARI": 0.8709480461811723,
+          "n_comm": 2,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "emotional_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_self_compassion",
+              "low_meta_awareness",
+              "psychological_inflexibility",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "turning_toward_difficulty",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ]
+          }
+        }
+      }
+    },
+    "gamma_1.5": {
+      "n_nodes": 31,
+      "n_edges": 142,
+      "Q_mean": 0.06934420437993798,
+      "Q_best": 0.07340801287343303,
+      "n_comm": 5,
+      "communities": {
+        "0": [
+          "emotional_reactivity",
+          "low_mindfulness",
+          "worry",
+          "low_self_compassion",
+          "psychological_inflexibility",
+          "body_scan",
+          "mindful_movement",
+          "sitting_meditation",
+          "breathing_space",
+          "turning_toward_difficulty",
+          "pleasant_unpleasant_events",
+          "activity_and_self_care",
+          "relapse_action_plan",
+          "reduced_relapse_vulnerability"
+        ],
+        "1": [
+          "sleep",
+          "fatigue",
+          "appetite",
+          "low_income",
+          "obesity",
+          "smoking",
+          "inactivity",
+          "chronic_illness"
+        ],
+        "2": [
+          "depressed_mood",
+          "worthlessness",
+          "cognitive_reactivity",
+          "rumination",
+          "low_meta_awareness",
+          "thoughts_not_facts"
+        ],
+        "3": [
+          "concentration",
+          "psychomotor"
+        ],
+        "4": [
+          "anhedonia"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 105,
+          "Q_on_GF_mean": 0.04195719561564417,
+          "cost": 0.027387008764293806,
+          "NMI": 0.554026604833128,
+          "ARI": 0.3310189528992306,
+          "n_comm": 5,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "sleep",
+              "fatigue",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "2": [
+              "anhedonia",
+              "depressed_mood",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor"
+            ],
+            "3": [
+              "emotional_reactivity",
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ],
+            "4": [
+              "rumination",
+              "worry",
+              "sitting_meditation",
+              "breathing_space"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 56,
+          "Q_on_GF_mean": 0.036069980772526246,
+          "cost": 0.03327422360741173,
+          "NMI": 0.5869077375244648,
+          "ARI": 0.2811973018549747,
+          "n_comm": 13,
+          "communities": {
+            "0": [
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "concentration",
+              "psychomotor"
+            ],
+            "2": [
+              "emotional_reactivity",
+              "worry",
+              "breathing_space",
+              "turning_toward_difficulty"
+            ],
+            "3": [
+              "cognitive_reactivity",
+              "rumination",
+              "thoughts_not_facts",
+              "relapse_action_plan"
+            ],
+            "4": [
+              "sleep",
+              "fatigue",
+              "appetite"
+            ],
+            "5": [
+              "worthlessness",
+              "low_self_compassion"
+            ],
+            "6": [
+              "low_income"
+            ],
+            "7": [
+              "obesity"
+            ],
+            "8": [
+              "smoking"
+            ],
+            "9": [
+              "inactivity"
+            ],
+            "10": [
+              "chronic_illness"
+            ],
+            "11": [
+              "low_meta_awareness"
+            ],
+            "12": [
+              "psychological_inflexibility"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 9,
+          "Q_on_GF_mean": -0.06652074936814156,
+          "cost": 0.13586495374807955,
+          "NMI": 0.5448880027783966,
+          "ARI": 0.012272834552749587,
+          "n_comm": 28,
+          "communities": {
+            "0": [
+              "fatigue",
+              "concentration",
+              "psychomotor"
+            ],
+            "1": [
+              "cognitive_reactivity",
+              "thoughts_not_facts"
+            ],
+            "2": [
+              "anhedonia"
+            ],
+            "3": [
+              "depressed_mood"
+            ],
+            "4": [
+              "sleep"
+            ],
+            "5": [
+              "appetite"
+            ],
+            "6": [
+              "worthlessness"
+            ],
+            "7": [
+              "low_income"
+            ],
+            "8": [
+              "obesity"
+            ],
+            "9": [
+              "smoking"
+            ],
+            "10": [
+              "inactivity"
+            ],
+            "11": [
+              "chronic_illness"
+            ],
+            "12": [
+              "emotional_reactivity"
+            ],
+            "13": [
+              "low_mindfulness"
+            ],
+            "14": [
+              "rumination"
+            ],
+            "15": [
+              "worry"
+            ],
+            "16": [
+              "low_self_compassion"
+            ],
+            "17": [
+              "low_meta_awareness"
+            ],
+            "18": [
+              "psychological_inflexibility"
+            ],
+            "19": [
+              "body_scan"
+            ],
+            "20": [
+              "mindful_movement"
+            ],
+            "21": [
+              "sitting_meditation"
+            ],
+            "22": [
+              "breathing_space"
+            ],
+            "23": [
+              "turning_toward_difficulty"
+            ],
+            "24": [
+              "pleasant_unpleasant_events"
+            ],
+            "25": [
+              "activity_and_self_care"
+            ],
+            "26": [
+              "relapse_action_plan"
+            ],
+            "27": [
+              "reduced_relapse_vulnerability"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 142,
+          "Q_on_GF_mean": 0.03955600370300194,
+          "cost": 0.029788200676936036,
+          "NMI": 0.5602607791937014,
+          "ARI": 0.2652370203160271,
+          "n_comm": 14,
+          "communities": {
+            "0": [
+              "cognitive_reactivity",
+              "low_mindfulness",
+              "rumination",
+              "worry",
+              "low_meta_awareness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "breathing_space",
+              "thoughts_not_facts",
+              "pleasant_unpleasant_events",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ],
+            "2": [
+              "appetite",
+              "psychomotor",
+              "emotional_reactivity"
+            ],
+            "3": [
+              "worthlessness"
+            ],
+            "4": [
+              "depressed_mood"
+            ],
+            "5": [
+              "anhedonia"
+            ],
+            "6": [
+              "low_income"
+            ],
+            "7": [
+              "obesity"
+            ],
+            "8": [
+              "smoking"
+            ],
+            "9": [
+              "inactivity"
+            ],
+            "10": [
+              "chronic_illness"
+            ],
+            "11": [
+              "sleep"
+            ],
+            "12": [
+              "concentration"
+            ],
+            "13": [
+              "fatigue"
+            ]
+          }
+        }
+      }
+    },
+    "layer_data": {
+      "n_nodes": 13,
+      "n_edges": 96,
+      "Q_mean": -6.551827529310938e-17,
+      "Q_best": -5.092945170728162e-17,
+      "n_comm": 3,
+      "communities": {
+        "0": [
+          "anhedonia",
+          "depressed_mood",
+          "sleep",
+          "fatigue",
+          "appetite",
+          "worthlessness",
+          "concentration",
+          "psychomotor"
+        ],
+        "1": [
+          "obesity",
+          "inactivity",
+          "chronic_illness"
+        ],
+        "2": [
+          "low_income",
+          "smoking"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 59,
+          "Q_on_GF_mean": -0.007491360851193062,
+          "cost": 0.007491360851192996,
+          "NMI": 0.426088200193832,
+          "ARI": 0.272,
+          "n_comm": 2,
+          "communities": {
+            "0": [
+              "sleep",
+              "fatigue",
+              "low_income",
+              "obesity",
+              "smoking",
+              "inactivity",
+              "chronic_illness"
+            ],
+            "1": [
+              "anhedonia",
+              "depressed_mood",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 26,
+          "Q_on_GF_mean": -0.019725915927551626,
+          "cost": 0.01972591592755156,
+          "NMI": 0.706869663370788,
+          "ARI": 0.44660194174757284,
+          "n_comm": 7,
+          "communities": {
+            "0": [
+              "anhedonia",
+              "depressed_mood",
+              "worthlessness",
+              "concentration",
+              "psychomotor"
+            ],
+            "1": [
+              "sleep",
+              "fatigue",
+              "appetite"
+            ],
+            "2": [
+              "low_income"
+            ],
+            "3": [
+              "obesity"
+            ],
+            "4": [
+              "smoking"
+            ],
+            "5": [
+              "inactivity"
+            ],
+            "6": [
+              "chronic_illness"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 4,
+          "Q_on_GF_mean": -0.09063059330418508,
+          "cost": 0.090630593304185,
+          "NMI": 0.5301480177036345,
+          "ARI": 0.0,
+          "n_comm": 13,
+          "communities": {
+            "0": [
+              "anhedonia"
+            ],
+            "1": [
+              "depressed_mood"
+            ],
+            "2": [
+              "sleep"
+            ],
+            "3": [
+              "fatigue"
+            ],
+            "4": [
+              "appetite"
+            ],
+            "5": [
+              "worthlessness"
+            ],
+            "6": [
+              "concentration"
+            ],
+            "7": [
+              "psychomotor"
+            ],
+            "8": [
+              "low_income"
+            ],
+            "9": [
+              "obesity"
+            ],
+            "10": [
+              "smoking"
+            ],
+            "11": [
+              "inactivity"
+            ],
+            "12": [
+              "chronic_illness"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 96,
+          "Q_on_GF_mean": -5.092945170728161e-17,
+          "cost": -1.4588823585827774e-17,
+          "NMI": 0.8370610123312372,
+          "ARI": 0.8919667590027701,
+          "n_comm": 6,
+          "communities": {
+            "0": [
+              "anhedonia",
+              "depressed_mood",
+              "sleep",
+              "fatigue",
+              "appetite",
+              "worthlessness",
+              "concentration",
+              "psychomotor"
+            ],
+            "1": [
+              "low_income"
+            ],
+            "2": [
+              "obesity"
+            ],
+            "3": [
+              "smoking"
+            ],
+            "4": [
+              "inactivity"
+            ],
+            "5": [
+              "chronic_illness"
+            ]
+          }
+        }
+      }
+    },
+    "layer_lit": {
+      "n_nodes": 26,
+      "n_edges": 46,
+      "Q_mean": 0.3802377686328304,
+      "Q_best": 0.38576436518823354,
+      "n_comm": 4,
+      "communities": {
+        "0": [
+          "fatigue",
+          "appetite",
+          "psychomotor",
+          "emotional_reactivity",
+          "low_self_compassion",
+          "psychological_inflexibility",
+          "turning_toward_difficulty",
+          "activity_and_self_care"
+        ],
+        "1": [
+          "low_mindfulness",
+          "body_scan",
+          "mindful_movement",
+          "sitting_meditation",
+          "pleasant_unpleasant_events",
+          "relapse_action_plan",
+          "reduced_relapse_vulnerability"
+        ],
+        "2": [
+          "anhedonia",
+          "depressed_mood",
+          "worthlessness",
+          "cognitive_reactivity",
+          "rumination",
+          "low_meta_awareness",
+          "thoughts_not_facts"
+        ],
+        "3": [
+          "sleep",
+          "concentration",
+          "worry",
+          "breathing_space"
+        ]
+      },
+      "binarised": {
+        "0.25": {
+          "edges_kept": 46,
+          "Q_on_GF_mean": 0.3534918457552203,
+          "cost": 0.026745922877610073,
+          "NMI": 0.7166827910025063,
+          "ARI": 0.569585996430011,
+          "n_comm": 5,
+          "communities": {
+            "0": [
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "pleasant_unpleasant_events",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "depressed_mood",
+              "worthlessness",
+              "cognitive_reactivity",
+              "low_meta_awareness",
+              "thoughts_not_facts",
+              "relapse_action_plan"
+            ],
+            "2": [
+              "anhedonia",
+              "fatigue",
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ],
+            "3": [
+              "sleep",
+              "concentration",
+              "rumination",
+              "worry",
+              "breathing_space"
+            ],
+            "4": [
+              "appetite",
+              "psychomotor",
+              "emotional_reactivity"
+            ]
+          }
+        },
+        "0.5": {
+          "edges_kept": 30,
+          "Q_on_GF_mean": 0.27872885230909916,
+          "cost": 0.10150891632373121,
+          "NMI": 0.573537792416315,
+          "ARI": 0.3367548962870458,
+          "n_comm": 9,
+          "communities": {
+            "0": [
+              "anhedonia",
+              "depressed_mood",
+              "worthlessness",
+              "cognitive_reactivity",
+              "rumination",
+              "low_self_compassion",
+              "thoughts_not_facts"
+            ],
+            "1": [
+              "mindful_movement",
+              "pleasant_unpleasant_events",
+              "activity_and_self_care",
+              "relapse_action_plan",
+              "reduced_relapse_vulnerability"
+            ],
+            "2": [
+              "sleep",
+              "emotional_reactivity",
+              "worry",
+              "breathing_space",
+              "turning_toward_difficulty"
+            ],
+            "3": [
+              "concentration",
+              "low_mindfulness",
+              "body_scan",
+              "sitting_meditation"
+            ],
+            "4": [
+              "fatigue"
+            ],
+            "5": [
+              "appetite"
+            ],
+            "6": [
+              "psychomotor"
+            ],
+            "7": [
+              "low_meta_awareness"
+            ],
+            "8": [
+              "psychological_inflexibility"
+            ]
+          }
+        },
+        "0.75": {
+          "edges_kept": 5,
+          "Q_on_GF_mean": 0.04282883706752018,
+          "cost": 0.3374089315653102,
+          "NMI": 0.6120092691313229,
+          "ARI": 0.07844990548204159,
+          "n_comm": 23,
+          "communities": {
+            "0": [
+              "depressed_mood",
+              "worthlessness",
+              "rumination"
+            ],
+            "1": [
+              "cognitive_reactivity",
+              "thoughts_not_facts"
+            ],
+            "2": [
+              "anhedonia"
+            ],
+            "3": [
+              "sleep"
+            ],
+            "4": [
+              "fatigue"
+            ],
+            "5": [
+              "appetite"
+            ],
+            "6": [
+              "concentration"
+            ],
+            "7": [
+              "psychomotor"
+            ],
+            "8": [
+              "emotional_reactivity"
+            ],
+            "9": [
+              "low_mindfulness"
+            ],
+            "10": [
+              "worry"
+            ],
+            "11": [
+              "low_self_compassion"
+            ],
+            "12": [
+              "low_meta_awareness"
+            ],
+            "13": [
+              "psychological_inflexibility"
+            ],
+            "14": [
+              "body_scan"
+            ],
+            "15": [
+              "mindful_movement"
+            ],
+            "16": [
+              "sitting_meditation"
+            ],
+            "17": [
+              "breathing_space"
+            ],
+            "18": [
+              "turning_toward_difficulty"
+            ],
+            "19": [
+              "pleasant_unpleasant_events"
+            ],
+            "20": [
+              "activity_and_self_care"
+            ],
+            "21": [
+              "relapse_action_plan"
+            ],
+            "22": [
+              "reduced_relapse_vulnerability"
+            ]
+          }
+        },
+        "0+": {
+          "edges_kept": 46,
+          "Q_on_GF_mean": 0.3534918457552203,
+          "cost": 0.026745922877610073,
+          "NMI": 0.7166827910025063,
+          "ARI": 0.569585996430011,
+          "n_comm": 5,
+          "communities": {
+            "0": [
+              "low_mindfulness",
+              "body_scan",
+              "mindful_movement",
+              "sitting_meditation",
+              "pleasant_unpleasant_events",
+              "reduced_relapse_vulnerability"
+            ],
+            "1": [
+              "depressed_mood",
+              "worthlessness",
+              "cognitive_reactivity",
+              "low_meta_awareness",
+              "thoughts_not_facts",
+              "relapse_action_plan"
+            ],
+            "2": [
+              "anhedonia",
+              "fatigue",
+              "low_self_compassion",
+              "psychological_inflexibility",
+              "turning_toward_difficulty",
+              "activity_and_self_care"
+            ],
+            "3": [
+              "sleep",
+              "concentration",
+              "rumination",
+              "worry",
+              "breathing_space"
+            ],
+            "4": [
+              "appetite",
+              "psychomotor",
+              "emotional_reactivity"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

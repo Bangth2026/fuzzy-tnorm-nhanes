@@ -1,0 +1,13 @@
+{
+ "obs_edges": 468,
+ "obs_total_weight": 64.3905148794132,
+ "obs_max": 0.8530665246435595,
+ "null_edges_mean": 84.94,
+ "null_edges_range": [
+  58,
+  103
+ ],
+ "null_total_weight_mean": 1.8828473593137836,
+ "null_max_weight_mean": 0.0991786049020284,
+ "n": 50
+}

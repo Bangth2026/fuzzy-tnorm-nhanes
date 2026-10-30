@@ -1,0 +1,5 @@
+[05:27:26] indirect inference on development graph
+[05:27:36] metrics on held-out
+[05:27:36] T-transitivity of the held-out relation
+[05:27:36] bootstrap over held-out PSUs (B=200)
+[05:32:45] done rq3

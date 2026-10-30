@@ -1,0 +1,2400 @@
+{
+ "flow": {
+  "development_2013_2018": {
+   "H": {
+    "dpq_file_adults": 5924,
+    "complete_phq9_positive_weight": 5372
+   },
+   "I": {
+    "dpq_file_adults": 5735,
+    "complete_phq9_positive_weight": 5134
+   },
+   "J": {
+    "dpq_file_adults": 5533,
+    "complete_phq9_positive_weight": 5068
+   },
+   "total_analytic": 15574,
+   "weighted_prev_phq_ge10": 0.082,
+   "missing": {
+    "anhedonia": 0,
+    "depressed_mood": 0,
+    "sleep_problems": 0,
+    "fatigue": 0,
+    "appetite": 0,
+    "worthlessness": 0,
+    "concentration": 0,
+    "psychomotor": 0,
+    "self_harm_thoughts": 0,
+    "low_income": 1527,
+    "low_education": 815,
+    "no_partner": 815,
+    "uninsured": 31,
+    "smoking": 8,
+    "heavy_drinking": 2450,
+    "inactivity": 19,
+    "short_sleep": 67,
+    "obesity": 165,
+    "poor_self_rated_health": 2,
+    "hypertension": 18,
+    "diabetes": 10,
+    "cardiovascular": 809,
+    "cancer": 811,
+    "arthritis": 838
+   },
+   "weighted_mean_activation": {
+    "anhedonia": 0.1202,
+    "depressed_mood": 0.1069,
+    "sleep_problems": 0.2071,
+    "fatigue": 0.259,
+    "appetite": 0.1228,
+    "worthlessness": 0.0788,
+    "concentration": 0.0845,
+    "psychomotor": 0.0486,
+    "self_harm_thoughts": 0.016,
+    "low_income": 0.4115,
+    "low_education": 0.2469,
+    "no_partner": 0.2755,
+    "uninsured": 0.1496,
+    "smoking": 0.1621,
+    "heavy_drinking": 0.2576,
+    "inactivity": 0.4083,
+    "short_sleep": 0.1611,
+    "obesity": 0.5492,
+    "poor_self_rated_health": 0.4246,
+    "hypertension": 0.3258,
+    "diabetes": 0.1194,
+    "cardiovascular": 0.082,
+    "cancer": 0.0906,
+    "arthritis": 0.276
+   }
+  },
+  "heldout_2007_2012": {
+   "E": {
+    "dpq_file_adults": 5995,
+    "complete_phq9_positive_weight": 5415
+   },
+   "F": {
+    "dpq_file_adults": 6360,
+    "complete_phq9_positive_weight": 5546
+   },
+   "G": {
+    "dpq_file_adults": 5615,
+    "complete_phq9_positive_weight": 4925
+   },
+   "total_analytic": 15886,
+   "weighted_prev_phq_ge10": 0.0789,
+   "missing": {
+    "anhedonia": 0,
+    "depressed_mood": 0,
+    "sleep_problems": 0,
+    "fatigue": 0,
+    "appetite": 0,
+    "worthlessness": 0,
+    "concentration": 0,
+    "psychomotor": 0,
+    "self_harm_thoughts": 0,
+    "low_income": 1347,
+    "low_education": 825,
+    "no_partner": 819,
+    "uninsured": 19,
+    "smoking": 818,
+    "heavy_drinking": 2746,
+    "inactivity": 5,
+    "short_sleep": 23,
+    "obesity": 174,
+    "poor_self_rated_health": 1,
+    "hypertension": 22,
+    "diabetes": 10,
+    "cardiovascular": 811,
+    "cancer": 827,
+    "arthritis": 835
+   },
+   "weighted_mean_activation": {
+    "anhedonia": 0.1075,
+    "depressed_mood": 0.106,
+    "sleep_problems": 0.2124,
+    "fatigue": 0.2405,
+    "appetite": 0.1196,
+    "worthlessness": 0.0843,
+    "concentration": 0.0826,
+    "psychomotor": 0.0505,
+    "self_harm_thoughts": 0.0156,
+    "low_income": 0.4148,
+    "low_education": 0.2933,
+    "no_partner": 0.278,
+    "uninsured": 0.1979,
+    "smoking": 0.1923,
+    "heavy_drinking": 0.2767,
+    "inactivity": 0.4439,
+    "short_sleep": 0.25,
+    "obesity": 0.5081,
+    "poor_self_rated_health": 0.4067,
+    "hypertension": 0.3042,
+    "diabetes": 0.0951,
+    "cardiovascular": 0.0771,
+    "cancer": 0.078,
+    "arthritis": 0.2486
+   }
+  }
+ },
+ "thresholds": {
+  "q25": 0.037,
+  "q50": 0.082,
+  "q75": 0.166,
+  "abs0.25": 0.25,
+  "abs0.50": 0.5
+ },
+ "main": {
+  "edges": 468,
+  "Q": 0.215,
+  "ncomm": 3,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ },
+ "binarised": {
+  "q25": {
+   "edges": 351,
+   "ncomm": 2,
+   "Q": 0.159,
+   "cost": 0.056,
+   "ci": [
+    0.0,
+    0.096
+   ],
+   "NMI": 0.74,
+   "ARI": 0.56,
+   "null_mean": 0.042,
+   "null_range": [
+    0.0,
+    0.094
+   ],
+   "null_p": 0.284
+  },
+  "q50": {
+   "edges": 234,
+   "ncomm": 3,
+   "Q": 0.215,
+   "cost": 0.0,
+   "ci": [
+    0.0,
+    0.01
+   ],
+   "NMI": 1.0,
+   "ARI": 1.0,
+   "null_mean": 0.006,
+   "null_range": [
+    0.0,
+    0.02
+   ],
+   "null_p": 0.98
+  },
+  "q75": {
+   "edges": 117,
+   "ncomm": 4,
+   "Q": 0.193,
+   "cost": 0.022,
+   "ci": [
+    0.004,
+    0.042
+   ],
+   "NMI": 0.72,
+   "ARI": 0.69,
+   "null_mean": 0.007,
+   "null_range": [
+    -0.0,
+    0.022
+   ],
+   "null_p": 0.035
+  },
+  "abs0.25": {
+   "edges": 78,
+   "ncomm": 5,
+   "Q": 0.183,
+   "cost": 0.031,
+   "ci": [
+    0.019,
+    0.048
+   ],
+   "NMI": 0.69,
+   "ARI": 0.65,
+   "null_mean": 0.021,
+   "null_range": [
+    0.005,
+    0.053
+   ],
+   "null_p": 0.169
+  },
+  "abs0.50": {
+   "edges": 19,
+   "ncomm": 13,
+   "Q": 0.054,
+   "cost": 0.16,
+   "ci": [
+    0.145,
+    0.196
+   ],
+   "NMI": 0.58,
+   "ARI": 0.27,
+   "null_mean": 0.146,
+   "null_range": [
+    0.12,
+    0.17
+   ],
+   "null_p": 0.124
+  },
+  "0+": {
+   "edges": 468,
+   "ncomm": 2,
+   "Q": 0.121,
+   "cost": 0.093,
+   "ci": [
+    0.076,
+    0.126
+   ],
+   "NMI": 0.54,
+   "ARI": 0.42,
+   "null_mean": 0.121,
+   "null_range": [
+    0.095,
+    0.148
+   ],
+   "null_p": 0.985
+  }
+ },
+ "heldout": {
+  "Q": 0.215,
+  "ncomm": 3,
+  "NMI": 1.0,
+  "ARI": 1.0,
+  "edge_spearman": 0.954,
+  "edge_pearson": 0.98,
+  "max_abs_diff": 0.129,
+  "costs": {
+   "q25": 0.02,
+   "q50": 0.002,
+   "q75": 0.037,
+   "abs0.25": 0.058,
+   "abs0.50": 0.156,
+   "0+": 0.099
+  }
+ },
+ "sensitivity": {
+  "eps_0.0": {
+   "edges": 503,
+   "Q": 0.213,
+   "ncomm": 3,
+   "costs": {
+    "q25": 0.056,
+    "q50": 0.006,
+    "q75": 0.015,
+    "abs0.25": 0.031,
+    "abs0.50": 0.159,
+    "0+": 0.149
+   }
+  },
+  "eps_0.05": {
+   "edges": 314,
+   "Q": 0.247,
+   "ncomm": 3,
+   "costs": {
+    "q25": 0.0,
+    "q50": 0.001,
+    "q75": 0.037,
+    "abs0.25": 0.037,
+    "abs0.50": 0.182,
+    "0+": 0.001
+   }
+  },
+  "gamma_0.5": {
+   "edges": 468,
+   "Q": 0.5,
+   "ncomm": 1,
+   "costs": {
+    "q25": 0.0,
+    "q50": 0.0,
+    "q75": 0.024,
+    "abs0.25": 0.043,
+    "abs0.50": 0.203,
+    "0+": 0.0
+   }
+  },
+  "gamma_1.5": {
+   "edges": 468,
+   "Q": 0.057,
+   "ncomm": 6,
+   "costs": {
+    "q25": 0.021,
+    "q50": 0.019,
+    "q75": 0.026,
+    "abs0.25": 0.03,
+    "abs0.50": 0.102,
+    "0+": 0.09
+   }
+  },
+  "raw_subsethood": {
+   "edges": 552,
+   "Q": 0.071,
+   "ncomm": 2,
+   "costs": {
+    "q25": 0.019,
+    "q50": 0.016,
+    "q75": 0.013,
+    "abs0.25": 0.019,
+    "abs0.50": 0.005,
+    "0+": 0.071
+   }
+  },
+  "crisp_concepts": {
+   "edges": 456,
+   "Q": 0.203,
+   "ncomm": 3,
+   "costs": {
+    "q25": 0.037,
+    "q50": 0.006,
+    "q75": 0.015,
+    "abs0.25": 0.026,
+    "abs0.50": 0.187,
+    "0+": 0.078
+   }
+  }
+ },
+ "rq2": {
+  "N2": {
+   "Q_obs": 0.2146,
+   "null_mean": 0.1946,
+   "null_sd": 0.0044,
+   "dQ": 0.02,
+   "z": 4.5177,
+   "p": 0.001,
+   "n_null": 1000,
+   "restarts": 10,
+   "null_max": 0.2062
+  },
+  "N1": {
+   "Q_obs": 0.2146,
+   "null_mean": 0.1926,
+   "null_sd": 0.0041,
+   "dQ": 0.0221,
+   "z": 5.3506,
+   "p": 0.001,
+   "n_null": 1000,
+   "restarts": 10,
+   "null_max": 0.2077
+  },
+  "Nresp": {
+   "Q_obs": 0.2146,
+   "null_mean": 0.3177,
+   "null_sd": 0.0329,
+   "dQ": -0.1031,
+   "z": -3.1372,
+   "p": 1.0,
+   "n_null": 300,
+   "restarts": 10,
+   "null_max": 0.4286
+  },
+  "N2_heldout": {
+   "Q_obs": 0.2154,
+   "null_mean": 0.1988,
+   "null_sd": 0.0046,
+   "dQ": 0.0166,
+   "z": 3.6197,
+   "p": 0.001,
+   "n_null": 1000,
+   "restarts": 10,
+   "null_max": 0.2134
+  },
+  "N1_heldout": {
+   "Q_obs": 0.2154,
+   "null_mean": 0.1958,
+   "null_sd": 0.0045,
+   "dQ": 0.0196,
+   "z": 4.3776,
+   "p": 0.001,
+   "n_null": 1000,
+   "restarts": 10,
+   "null_max": 0.2111
+  }
+ },
+ "nresp_density": {
+  "obs_edges": 468,
+  "obs_total_weight": 64.3905148794132,
+  "obs_max": 0.8530665246435595,
+  "null_edges_mean": 84.94,
+  "null_edges_range": [
+   58,
+   103
+  ],
+  "null_total_weight_mean": 1.8828473593137836,
+  "null_max_weight_mean": 0.0991786049020284,
+  "n": 50
+ },
+ "power_N2": {
+  "delta_0.0": 0.06,
+  "reps_0.0": 50,
+  "nulls": 100,
+  "delta_0.1": 0.12,
+  "reps_0.1": 50,
+  "delta_0.25": 0.28,
+  "reps_0.25": 50,
+  "delta_0.5": 0.54,
+  "reps_0.5": 50
+ },
+ "power_N1": {
+  "delta_0.0": 0.05,
+  "reps_0.0": 20,
+  "nulls": 50
+ },
+ "rq3": {
+  "held_out": {
+   "direct_dev_edge": {
+    "spearman": 0.954,
+    "mae": 0.019
+   },
+   "product": {
+    "spearman": 0.878,
+    "mae": 0.07,
+    "bias": -0.067,
+    "share_zero": 0.0
+   },
+   "hamacher": {
+    "spearman": 0.854,
+    "mae": 0.055,
+    "bias": -0.015,
+    "share_zero": 0.0
+   },
+   "yager2": {
+    "spearman": 0.689,
+    "mae": 0.089,
+    "bias": -0.089,
+    "share_zero": 0.736
+   },
+   "lukasiewicz": {
+    "spearman": 0.321,
+    "mae": 0.116,
+    "bias": -0.116,
+    "share_zero": 0.958
+   },
+   "min": {
+    "spearman": 0.73,
+    "mae": 0.077,
+    "bias": 0.044,
+    "share_zero": 0.0
+   },
+   "binary_q50": {
+    "spearman": 0.591,
+    "coverage": 0.96,
+    "n_ties_levels": 3
+   },
+   "binary_abs0.25": {
+    "spearman": 0.556,
+    "coverage": 0.125,
+    "n_ties_levels": 2
+   }
+  },
+  "ci": {
+   "direct_dev_edge": [
+    0.919,
+    0.946
+   ],
+   "product": [
+    0.846,
+    0.884
+   ],
+   "hamacher": [
+    0.82,
+    0.861
+   ],
+   "yager2": [
+    0.644,
+    0.694
+   ],
+   "lukasiewicz": [
+    0.298,
+    0.346
+   ],
+   "min": [
+    0.683,
+    0.752
+   ],
+   "binary_q50": [
+    0.528,
+    0.613
+   ],
+   "binary_abs0.25": [
+    0.536,
+    0.579
+   ]
+  },
+  "diff_vs_product": {
+   "direct_dev_edge": [
+    0.05,
+    0.088
+   ],
+   "hamacher": [
+    -0.035,
+    -0.013
+   ],
+   "yager2": [
+    -0.22,
+    -0.172
+   ],
+   "lukasiewicz": [
+    -0.58,
+    -0.509
+   ],
+   "min": [
+    -0.178,
+    -0.112
+   ],
+   "binary_q50": [
+    -0.33,
+    -0.253
+   ],
+   "binary_abs0.25": [
+    -0.33,
+    -0.278
+   ]
+  },
+  "transitivity": {
+   "product": {
+    "violation_share": 0.051,
+    "mean_excess_when_violated": 0.021
+   },
+   "hamacher": {
+    "violation_share": 0.542,
+    "mean_excess_when_violated": 0.034
+   },
+   "yager2": {
+    "violation_share": 0.0,
+    "mean_excess_when_violated": 0.0
+   },
+   "lukasiewicz": {
+    "violation_share": 0.0,
+    "mean_excess_when_violated": 0.0
+   },
+   "min": {
+    "violation_share": 0.788,
+    "mean_excess_when_violated": 0.059
+   }
+  },
+  "bootstrap": "Rao-Wu, both periods resampled"
+ },
+ "describe": {
+  "n_edges": 468,
+  "mu_quartiles": [
+   0.037,
+   0.082,
+   0.166
+  ],
+  "median_mu": 0.082,
+  "top5": [
+   [
+    "self_harm_thoughts",
+    "depressed_mood",
+    0.853
+   ],
+   [
+    "self_harm_thoughts",
+    "worthlessness",
+    0.79
+   ],
+   [
+    "self_harm_thoughts",
+    "fatigue",
+    0.68
+   ],
+   [
+    "self_harm_thoughts",
+    "anhedonia",
+    0.634
+   ],
+   [
+    "worthlessness",
+    "depressed_mood",
+    0.627
+   ]
+  ],
+  "cvd_to_hypertension": 0.575,
+  "strongest_target_raw": {
+   "poor_self_rated_health": 11,
+   "obesity": 8,
+   "low_income": 3,
+   "depressed_mood": 1,
+   "hypertension": 1
+  },
+  "strongest_target_corrected": {
+   "fatigue": 6,
+   "hypertension": 5,
+   "low_income": 4,
+   "depressed_mood": 2,
+   "obesity": 2,
+   "sleep_problems": 1,
+   "low_education": 1,
+   "smoking": 1,
+   "poor_self_rated_health": 1,
+   "arthritis": 1
+  },
+  "q25_restart_solutions": [
+   [
+    2,
+    0.1106,
+    100
+   ]
+  ],
+  "n1_share_edges_moved_mean": 0.0074,
+  "sens_NMI": {
+   "eps_0.0": 1.0,
+   "eps_0.05": 1.0,
+   "gamma_0.5": 0.0,
+   "gamma_1.5": 0.81,
+   "raw_subsethood": 0.75,
+   "crisp_concepts": 1.0
+  },
+  "sens_communities": {
+   "eps_0.0": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   },
+   "eps_0.05": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   },
+   "gamma_0.5": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts",
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "inactivity",
+     "short_sleep",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ]
+   },
+   "gamma_1.5": {
+    "0": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "anhedonia",
+     "depressed_mood",
+     "worthlessness",
+     "self_harm_thoughts"
+    ],
+    "3": [
+     "sleep_problems",
+     "fatigue",
+     "appetite"
+    ],
+    "4": [
+     "concentration",
+     "psychomotor"
+    ],
+    "5": [
+     "poor_self_rated_health"
+    ]
+   },
+   "raw_subsethood": {
+    "0": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "inactivity",
+     "short_sleep",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "1": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ]
+   },
+   "crisp_concepts": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  }
+ },
+ "sens_expert": {
+  "main_Q": 0.215,
+  "low_education": {
+   "Q_mean": 0.212,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "cost_q50": 0.0,
+   "cost_0+": 0.091,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  },
+  "smoking": {
+   "Q_mean": 0.211,
+   "n_comm": 3,
+   "NMI_vs_main": 0.885,
+   "cost_q50": 0.006,
+   "cost_0+": 0.093,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep",
+     "poor_self_rated_health"
+    ],
+    "2": [
+     "inactivity",
+     "obesity",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ]
+   }
+  },
+  "poor_self_rated_health": {
+   "Q_mean": 0.214,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "cost_q50": 0.002,
+   "cost_0+": 0.095,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  },
+  "diabetes": {
+   "Q_mean": 0.215,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "cost_q50": 0.0,
+   "cost_0+": 0.094,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  },
+  "cancer": {
+   "Q_mean": 0.215,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "cost_q50": 0.0,
+   "cost_0+": 0.094,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  }
+ },
+ "revision": {
+  "m1_noise_floor": {
+   "p95": 0.022,
+   "p99": 0.046,
+   "mean_max": 0.0899
+  },
+  "m1_edges_above": {
+   "p95": 433,
+   "p99": 327,
+   "mean_max": 222
+  },
+  "m1_holm": {
+   "q75": 0.209,
+   "abs0.50": 0.622,
+   "abs0.25": 0.677,
+   "q25": 0.851,
+   "q50": 1.0,
+   "0+": 1.0
+  },
+  "m1_subgraph": {
+   "p95": {
+    "edges": 433,
+    "Q": 0.21887487195370808,
+    "n_comm": 3,
+    "NMI_vs_main": 1.0,
+    "communities": {
+     "0": [
+      "anhedonia",
+      "depressed_mood",
+      "sleep_problems",
+      "fatigue",
+      "appetite",
+      "worthlessness",
+      "concentration",
+      "psychomotor",
+      "self_harm_thoughts"
+     ],
+     "1": [
+      "inactivity",
+      "obesity",
+      "poor_self_rated_health",
+      "hypertension",
+      "diabetes",
+      "cardiovascular",
+      "cancer",
+      "arthritis"
+     ],
+     "2": [
+      "low_income",
+      "low_education",
+      "no_partner",
+      "uninsured",
+      "smoking",
+      "heavy_drinking",
+      "short_sleep"
+     ]
+    },
+    "binarised": {
+     "q25": {
+      "cost": 0.001008411337898918,
+      "n_comm": 3,
+      "NMI": 1.0,
+      "null_mean": 0.007193525027609967,
+      "p": 0.5671641791044776
+     },
+     "q50": {
+      "cost": 0.0,
+      "n_comm": 3,
+      "NMI": 1.0,
+      "null_mean": 0.004162625828520934,
+      "p": 0.9950248756218906
+     },
+     "q75": {
+      "cost": 0.011511133012202718,
+      "n_comm": 4,
+      "NMI": 0.8342466923034921,
+      "null_mean": 0.010399698018624632,
+      "p": 0.3781094527363184
+     },
+     "abs0.25": {
+      "cost": 0.03299881075831976,
+      "n_comm": 5,
+      "NMI": 0.6894542822876374,
+      "null_mean": 0.02407216287578871,
+      "p": 0.19402985074626866
+     },
+     "abs0.50": {
+      "cost": 0.16357864710824155,
+      "n_comm": 13,
+      "NMI": 0.5808635391889201,
+      "null_mean": 0.1545774165036036,
+      "p": 0.31343283582089554
+     },
+     "0+": {
+      "cost": 0.0813065785062698,
+      "n_comm": 2,
+      "NMI": 0.6048606857301136,
+      "null_mean": 0.09066234718745,
+      "p": 0.8159203980099502
+     }
+    }
+   },
+   "p99": {
+    "edges": 327,
+    "Q": 0.24398589271280102,
+    "n_comm": 3,
+    "NMI_vs_main": 1.0,
+    "communities": {
+     "0": [
+      "anhedonia",
+      "depressed_mood",
+      "sleep_problems",
+      "fatigue",
+      "appetite",
+      "worthlessness",
+      "concentration",
+      "psychomotor",
+      "self_harm_thoughts"
+     ],
+     "1": [
+      "inactivity",
+      "obesity",
+      "poor_self_rated_health",
+      "hypertension",
+      "diabetes",
+      "cardiovascular",
+      "cancer",
+      "arthritis"
+     ],
+     "2": [
+      "low_income",
+      "low_education",
+      "no_partner",
+      "uninsured",
+      "smoking",
+      "heavy_drinking",
+      "short_sleep"
+     ]
+    },
+    "binarised": {
+     "q25": {
+      "cost": 0.00031993949750855344,
+      "n_comm": 3,
+      "NMI": 1.0,
+      "null_mean": 0.009108413949091797,
+      "p": 0.7014925373134329
+     },
+     "q50": {
+      "cost": 0.001128295274909319,
+      "n_comm": 3,
+      "NMI": 0.8851370338588744,
+      "null_mean": 0.004027093725254751,
+      "p": 0.4577114427860697
+     },
+     "q75": {
+      "cost": 0.03765708287004685,
+      "n_comm": 5,
+      "NMI": 0.6894542822876374,
+      "null_mean": 0.031300086111224985,
+      "p": 0.2736318407960199
+     },
+     "abs0.25": {
+      "cost": 0.03765708287004685,
+      "n_comm": 5,
+      "NMI": 0.6894542822876374,
+      "null_mean": 0.032737448245087675,
+      "p": 0.31840796019900497
+     },
+     "abs0.50": {
+      "cost": 0.1804457165539099,
+      "n_comm": 13,
+      "NMI": 0.5808635391889201,
+      "null_mean": 0.18171097960748234,
+      "p": 0.527363184079602
+     },
+     "0+": {
+      "cost": 0.0007818631962910327,
+      "n_comm": 3,
+      "NMI": 1.0,
+      "null_mean": 0.000550098463085165,
+      "p": 0.2537313432835821
+     }
+    }
+   },
+   "mean_max": {
+    "edges": 222,
+    "Q": 0.27418281683196083,
+    "n_comm": 3,
+    "NMI_vs_main": 0.8851370338588744,
+    "communities": {
+     "0": [
+      "anhedonia",
+      "depressed_mood",
+      "sleep_problems",
+      "fatigue",
+      "appetite",
+      "worthlessness",
+      "concentration",
+      "psychomotor",
+      "self_harm_thoughts"
+     ],
+     "1": [
+      "low_income",
+      "low_education",
+      "no_partner",
+      "uninsured",
+      "smoking",
+      "heavy_drinking",
+      "short_sleep",
+      "poor_self_rated_health"
+     ],
+     "2": [
+      "inactivity",
+      "obesity",
+      "hypertension",
+      "diabetes",
+      "cardiovascular",
+      "cancer",
+      "arthritis"
+     ]
+    },
+    "binarised": {
+     "q25": {
+      "cost": 0.00012550856186444026,
+      "n_comm": 3,
+      "NMI": 1.0,
+      "null_mean": 0.0031501254489751896,
+      "p": 0.5223880597014925
+     },
+     "q50": {
+      "cost": 0.013097325351081213,
+      "n_comm": 4,
+      "NMI": 0.8342466923034924,
+      "null_mean": 0.010108257362922606,
+      "p": 0.26865671641791045
+     },
+     "q75": {
+      "cost": 0.04635829817298856,
+      "n_comm": 7,
+      "NMI": 0.7276283976109018,
+      "null_mean": 0.1066223634401924,
+      "p": 0.9950248756218906
+     },
+     "abs0.25": {
+      "cost": 0.03198881947182508,
+      "n_comm": 5,
+      "NMI": 0.7381207254417351,
+      "null_mean": 0.0288065147252189,
+      "p": 0.3333333333333333
+     },
+     "abs0.50": {
+      "cost": 0.19626556061976425,
+      "n_comm": 13,
+      "NMI": 0.5808635391889202,
+      "null_mean": 0.20061331532023785,
+      "p": 0.6019900497512438
+     },
+     "0+": {
+      "cost": 0.0019951673028134054,
+      "n_comm": 3,
+      "NMI": 0.8851370338588744,
+      "null_mean": 3.318744012577923e-05,
+      "p": 0.014925373134328358
+     }
+    }
+   }
+  },
+  "m2_rho": {
+   "strength_product": 0.6302235139176482,
+   "block_mean": 0.5600627551156094,
+   "product": 0.8779855812744116,
+   "hamacher": 0.8537898559838168,
+   "yager2": 0.6890516531157975,
+   "lukasiewicz": 0.3211221811118526,
+   "min": 0.7297861226426839
+  },
+  "m2_partial_product_given_strength": 0.7995487223249172,
+  "m2_partial_product_given_block": 0.8199705531725227,
+  "m2_within_dev": {
+   "product": 0.8907148404870716,
+   "hamacher": 0.8664051999756194,
+   "yager2": 0.6929632651888935,
+   "lukasiewicz": 0.3254723931590786,
+   "min": 0.7501148578973523,
+   "strength_product": 0.6500339620350968,
+   "block_mean": 0.5384669948668441
+  },
+  "m2_perm": {
+   "product": {
+    "mean": 0.49511371790633246,
+    "q025": 0.43925339637083627,
+    "q975": 0.5470721920146939,
+    "p": 0.004975124378109453
+   },
+   "hamacher": {
+    "mean": 0.5210990759029229,
+    "q025": 0.47231045705583474,
+    "q975": 0.5773717437002639,
+    "p": 0.004975124378109453
+   },
+   "yager2": {
+    "mean": 0.48294538394656533,
+    "q025": 0.4369031945487849,
+    "q975": 0.5378542488674795,
+    "p": 0.004975124378109453
+   },
+   "lukasiewicz": {
+    "mean": 0.36280802803230006,
+    "q025": 0.2958862611165512,
+    "q975": 0.430706270343931,
+    "p": 0.8756218905472637
+   },
+   "min": {
+    "mean": 0.5322215616902551,
+    "q025": 0.48460977010439776,
+    "q975": 0.5938966441669834,
+    "p": 0.004975124378109453
+   }
+  },
+  "m2_diff_ci": {
+   "strength_product": [
+    0.2228234394634587,
+    0.2648802954368899
+   ],
+   "block_mean": [
+    0.2846847460809745,
+    0.3348061897949071
+   ]
+  },
+  "minor4_path_length": {
+   "product": {
+    "rho_two_hop": 0.8779961795364984,
+    "share_best_is_three_hop": 0.0036231884057971015
+   },
+   "hamacher": {
+    "rho_two_hop": 0.8674856296660727,
+    "share_best_is_three_hop": 0.286231884057971
+   },
+   "yager2": {
+    "rho_two_hop": 0.6890516531157975,
+    "share_best_is_three_hop": 0.0
+   },
+   "lukasiewicz": {
+    "rho_two_hop": 0.3211221811118526,
+    "share_best_is_three_hop": 0.0
+   },
+   "min": {
+    "rho_two_hop": 0.8220629445138946,
+    "share_best_is_three_hop": 0.5760869565217391
+   }
+  },
+  "minor5_ties": {
+   "product": {
+    "kendall_tau_b": 0.7090444605968,
+    "spearman_nonzero": 0.8779855812744116,
+    "n_nonzero": 552
+   },
+   "hamacher": {
+    "kendall_tau_b": 0.6770335729893375,
+    "spearman_nonzero": 0.8537898559838168,
+    "n_nonzero": 552
+   },
+   "yager2": {
+    "kendall_tau_b": 0.5639946411839812,
+    "spearman_nonzero": 0.7664118457964197,
+    "n_nonzero": 146
+   },
+   "lukasiewicz": {
+    "kendall_tau_b": 0.26305662544207686,
+    "spearman_nonzero": 0.6719367588932806,
+    "n_nonzero": 23
+   },
+   "min": {
+    "kendall_tau_b": 0.5566296477007416,
+    "spearman_nonzero": 0.7297861226426839,
+    "n_nonzero": 552
+   }
+  },
+  "m3": {
+   "product": {
+    "tol0.005": 0.08695652173913043,
+    "tol0.01": 0.050724637681159424,
+    "tol0.02": 0.019927536231884056,
+    "mean_excess": 0.0014998585497363547,
+    "null_tol0.01_mean": 0.418731884057971,
+    "null_tol0.01_range": [
+     0.3912590579710145,
+     0.4438405797101449
+    ],
+    "p_lower_tol0.01": 0.004975124378109453,
+    "null_excess_mean": 0.029404576848108804,
+    "p_lower_excess": 0.004975124378109453
+   },
+   "hamacher": {
+    "tol0.005": 0.5815217391304348,
+    "tol0.01": 0.5416666666666666,
+    "tol0.02": 0.39492753623188404,
+    "mean_excess": 0.01881187211863351,
+    "null_tol0.01_mean": 0.6795471014492753,
+    "null_tol0.01_range": [
+     0.657608695652174,
+     0.697463768115942
+    ],
+    "p_lower_tol0.01": 0.004975124378109453,
+    "null_excess_mean": 0.06458616017087779,
+    "p_lower_excess": 0.004975124378109453
+   },
+   "yager2": {
+    "tol0.005": 0.0018115942028985507,
+    "tol0.01": 0.0,
+    "tol0.02": 0.0,
+    "mean_excess": 2.321888700930173e-05,
+    "null_tol0.01_mean": 0.2042391304347826,
+    "null_tol0.01_range": [
+     0.1793478260869565,
+     0.22644927536231885
+    ],
+    "p_lower_tol0.01": 0.004975124378109453,
+    "null_excess_mean": 0.025746205731039876,
+    "p_lower_excess": 0.004975124378109453
+   },
+   "lukasiewicz": {
+    "tol0.005": 0.0,
+    "tol0.01": 0.0,
+    "tol0.02": 0.0,
+    "mean_excess": 0.0,
+    "null_tol0.01_mean": 0.02307971014492754,
+    "null_tol0.01_range": [
+     0.012681159420289856,
+     0.03446557971014494
+    ],
+    "p_lower_tol0.01": 0.004975124378109453,
+    "null_excess_mean": 0.0023329097439366534,
+    "p_lower_excess": 0.004975124378109453
+   },
+   "min": {
+    "tol0.005": 0.802536231884058,
+    "tol0.01": 0.7880434782608695,
+    "tol0.02": 0.7391304347826086,
+    "mean_excess": 0.046909780782080836,
+    "null_tol0.01_mean": 0.7992753623188407,
+    "null_tol0.01_range": [
+     0.7789855072463768,
+     0.8170289855072463
+    ],
+    "p_lower_tol0.01": 0.14427860696517414,
+    "null_excess_mean": 0.10636218182268956,
+    "p_lower_excess": 0.004975124378109453
+   }
+  },
+  "m4": {
+   "Q_type4": 0.1573609586935291,
+   "NMI_main_type4": 0.7834793209880313,
+   "Q_type3_best": 0.21462736668863686,
+   "Q_type3_range": [
+    0.11078123099311744,
+    0.21462736668863686
+   ],
+   "type3_best_equals_main": true,
+   "Q_type3_symptom_only_rule": null,
+   "Q_main": 0.21462736668863686,
+   "coassign_stability": {
+    "poor_self_rated_health": 0.6849999999999999,
+    "inactivity": 0.9550000000000001,
+    "obesity": 0.9550000000000001,
+    "hypertension": 0.9550000000000001,
+    "diabetes": 0.9550000000000001,
+    "cardiovascular": 0.9550000000000001,
+    "cancer": 0.9550000000000001,
+    "arthritis": 0.9550000000000001,
+    "anhedonia": 1.0,
+    "depressed_mood": 1.0,
+    "sleep_problems": 1.0,
+    "fatigue": 1.0,
+    "appetite": 1.0,
+    "worthlessness": 1.0,
+    "concentration": 1.0,
+    "psychomotor": 1.0,
+    "self_harm_thoughts": 1.0,
+    "low_income": 1.0,
+    "low_education": 1.0,
+    "no_partner": 1.0,
+    "uninsured": 1.0,
+    "smoking": 1.0,
+    "heavy_drinking": 1.0,
+    "short_sleep": 1.0
+   }
+  },
+  "m5_negative": {
+   "n_negative": 49,
+   "n_below_minus0.01": 35,
+   "most_negative": [
+    [
+     "uninsured",
+     "arthritis",
+     -0.204
+    ],
+    [
+     "uninsured",
+     "hypertension",
+     -0.167
+    ],
+    [
+     "cancer",
+     "heavy_drinking",
+     -0.166
+    ],
+    [
+     "diabetes",
+     "heavy_drinking",
+     -0.159
+    ],
+    [
+     "cardiovascular",
+     "heavy_drinking",
+     -0.157
+    ],
+    [
+     "heavy_drinking",
+     "inactivity",
+     -0.137
+    ]
+   ]
+  },
+  "m5_asymmetry": {
+   "n_pairs": 221,
+   "pearson_r": 0.9965756939288437,
+   "r2": 0.9931631137297564,
+   "spearman": 0.9968637086284143
+  },
+  "m6": {
+   "lambda": 0.011275630849268201,
+   "n_edges": 191,
+   "n_min_pairwise": 11925,
+   "walktrap": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "inactivity",
+     "short_sleep",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ]
+   },
+   "NMI_walktrap_main": 0.7539381770869428,
+   "louvain": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts",
+     "short_sleep"
+    ],
+    "1": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ]
+   },
+   "NMI_louvain_main": 0.6313676998718852,
+   "n_negative_partial": 41
+  },
+  "m9_exclusions": {
+   "dev": {
+    "by_reason": {
+     "included": 15574,
+     "item_missing": 1543,
+     "refused_or_dont_know": 75
+    },
+    "included": {
+     "n": 15574,
+     "age_mean": 48.387697444458716,
+     "female_share": 0.5138692692949788,
+     "pir_mean": 2.4776528796184243,
+     "pir_missing_share": 0.09804802876589187
+    },
+    "excluded": {
+     "n": 1618,
+     "age_mean": 48.502472187886276,
+     "female_share": 0.5778739184177998,
+     "pir_mean": 2.2488683431952663,
+     "pir_missing_share": 0.16440049443757726
+    }
+   },
+   "hold": {
+    "by_reason": {
+     "included": 15886,
+     "item_missing": 1999,
+     "refused_or_dont_know": 85
+    },
+    "included": {
+     "n": 15886,
+     "age_mean": 48.10776784590205,
+     "female_share": 0.500881279113685,
+     "pir_mean": 2.459338331384552,
+     "pir_missing_share": 0.08479164043812161
+    },
+    "excluded": {
+     "n": 2084,
+     "age_mean": 48.01727447216891,
+     "female_share": 0.5734165067178503,
+     "pir_mean": 2.126541737649063,
+     "pir_missing_share": 0.15499040307101727
+    }
+   }
+  },
+  "minor7_deltaQ": {
+   "0.1": 0.002030276382058118,
+   "0.25": 0.004474954432978014,
+   "0.5": 0.008502061675387867
+  },
+  "minor8_neff": {
+   "self_harm_thoughts": 263.78412715215524,
+   "cancer": 669.2806995725695,
+   "psychomotor": 712.9844379748016,
+   "cardiovascular": 775.4574530129405,
+   "diabetes": 1152.1434621207236,
+   "concentration": 1171.710629296438,
+   "worthlessness": 1213.3993716485443,
+   "smoking": 1579.961221578581,
+   "uninsured": 1669.690381904107,
+   "anhedonia": 1710.7500444327204,
+   "depressed_mood": 1735.5103209169558,
+   "appetite": 1891.1939048902748,
+   "short_sleep": 2021.7300925308602,
+   "arthritis": 2053.421691472289,
+   "heavy_drinking": 2513.6974500622487,
+   "sleep_problems": 2598.551897145425,
+   "hypertension": 2750.801870280315,
+   "no_partner": 2980.3438763634927,
+   "fatigue": 3479.894172253956,
+   "low_education": 3609.4943887988907,
+   "inactivity": 4560.686670717982,
+   "obesity": 4831.559149681775,
+   "low_income": 5541.504158931708,
+   "poor_self_rated_health": 7009.324936775311
+  },
+  "minor8_neff_edge": {
+   "min": 35.17537847472292,
+   "median": 739.1138019842615,
+   "q10": 206.6341431686257,
+   "self_harm_source_median": 166.96295542202162,
+   "self_harm_source_min": 35.17537847472292,
+   "n_edges_below_100": 11
+  },
+  "drop_node": {
+   "short_sleep": {
+    "Q_mean": 0.21660096845985113,
+    "n_comm": 3,
+    "NMI_vs_main": 1.0,
+    "rho_product": 0.8949104668297693,
+    "rho_hamacher": 0.876725941258239,
+    "rho_min": 0.7802843874338468
+   },
+   "poor_self_rated_health": {
+    "Q_mean": 0.23537692354786213,
+    "n_comm": 3,
+    "NMI_vs_main": 1.0,
+    "rho_product": 0.8821364193228965,
+    "rho_hamacher": 0.8591853759232942,
+    "rho_min": 0.7425782768989904
+   },
+   "self_harm_thoughts": {
+    "Q_mean": 0.22667347603167168,
+    "n_comm": 3,
+    "NMI_vs_main": 1.0,
+    "rho_product": 0.8649382643701657,
+    "rho_hamacher": 0.8389248671518867,
+    "rho_min": 0.7098671387425723
+   }
+  }
+ },
+ "sanity": {
+  "leiden_quality_minus_qf": 5.551115123125783e-17,
+  "S0_crisp_max_abs_error": 1.1102230246251565e-16,
+  "n1_preserves_within_type_degrees": true
+ },
+ "pre_review": {
+  "flow": {
+   "development_2013_2018": {
+    "H": {
+     "dpq_file_adults": 5924,
+     "complete_phq9_positive_weight": 5372
+    },
+    "I": {
+     "dpq_file_adults": 5735,
+     "complete_phq9_positive_weight": 5134
+    },
+    "J": {
+     "dpq_file_adults": 5533,
+     "complete_phq9_positive_weight": 5068
+    },
+    "total_analytic": 15574,
+    "weighted_prev_phq_ge10": 0.082,
+    "missing": {
+     "anhedonia": 0,
+     "depressed_mood": 0,
+     "sleep_problems": 0,
+     "fatigue": 0,
+     "appetite": 0,
+     "worthlessness": 0,
+     "concentration": 0,
+     "psychomotor": 0,
+     "self_harm_thoughts": 0,
+     "low_income": 1527,
+     "low_education": 815,
+     "no_partner": 815,
+     "uninsured": 31,
+     "smoking": 8,
+     "heavy_drinking": 2450,
+     "inactivity": 19,
+     "short_sleep": 67,
+     "obesity": 165,
+     "poor_self_rated_health": 2,
+     "hypertension": 18,
+     "diabetes": 10,
+     "cardiovascular": 809,
+     "cancer": 811,
+     "arthritis": 838
+    },
+    "weighted_mean_activation": {
+     "anhedonia": 0.1202,
+     "depressed_mood": 0.1069,
+     "sleep_problems": 0.2071,
+     "fatigue": 0.259,
+     "appetite": 0.1228,
+     "worthlessness": 0.0788,
+     "concentration": 0.0845,
+     "psychomotor": 0.0486,
+     "self_harm_thoughts": 0.016,
+     "low_income": 0.3443,
+     "low_education": 0.2469,
+     "no_partner": 0.3671,
+     "uninsured": 0.1496,
+     "smoking": 0.1621,
+     "heavy_drinking": 0.1877,
+     "inactivity": 0.4083,
+     "short_sleep": 0.1611,
+     "obesity": 0.4149,
+     "poor_self_rated_health": 0.4246,
+     "hypertension": 0.3258,
+     "diabetes": 0.1194,
+     "cardiovascular": 0.082,
+     "cancer": 0.1133,
+     "arthritis": 0.276
+    }
+   },
+   "heldout_2007_2012": {
+    "E": {
+     "dpq_file_adults": 5995,
+     "complete_phq9_positive_weight": 5415
+    },
+    "F": {
+     "dpq_file_adults": 6360,
+     "complete_phq9_positive_weight": 5546
+    },
+    "G": {
+     "dpq_file_adults": 5615,
+     "complete_phq9_positive_weight": 4925
+    },
+    "total_analytic": 15886,
+    "weighted_prev_phq_ge10": 0.0789,
+    "missing": {
+     "anhedonia": 0,
+     "depressed_mood": 0,
+     "sleep_problems": 0,
+     "fatigue": 0,
+     "appetite": 0,
+     "worthlessness": 0,
+     "concentration": 0,
+     "psychomotor": 0,
+     "self_harm_thoughts": 0,
+     "low_income": 1347,
+     "low_education": 825,
+     "no_partner": 819,
+     "uninsured": 19,
+     "smoking": 818,
+     "heavy_drinking": 2746,
+     "inactivity": 5,
+     "short_sleep": 23,
+     "obesity": 174,
+     "poor_self_rated_health": 1,
+     "hypertension": 22,
+     "diabetes": 10,
+     "cardiovascular": 811,
+     "cancer": 827,
+     "arthritis": 835
+    },
+    "weighted_mean_activation": {
+     "anhedonia": 0.1075,
+     "depressed_mood": 0.106,
+     "sleep_problems": 0.2124,
+     "fatigue": 0.2405,
+     "appetite": 0.1196,
+     "worthlessness": 0.0843,
+     "concentration": 0.0826,
+     "psychomotor": 0.0505,
+     "self_harm_thoughts": 0.0156,
+     "low_income": 0.3499,
+     "low_education": 0.2933,
+     "no_partner": 0.3702,
+     "uninsured": 0.1979,
+     "smoking": 0.1923,
+     "heavy_drinking": 0.2152,
+     "inactivity": 0.4439,
+     "short_sleep": 0.25,
+     "obesity": 0.3718,
+     "poor_self_rated_health": 0.4067,
+     "hypertension": 0.3042,
+     "diabetes": 0.0951,
+     "cardiovascular": 0.0771,
+     "cancer": 0.0977,
+     "arthritis": 0.2486
+    }
+   }
+  },
+  "thresholds": {
+   "q25": 0.037,
+   "q50": 0.081,
+   "q75": 0.167,
+   "abs0.25": 0.25,
+   "abs0.50": 0.5
+  },
+  "main": {
+   "edges": 464,
+   "Q": 0.221,
+   "ncomm": 3,
+   "communities": {
+    "0": [
+     "anhedonia",
+     "depressed_mood",
+     "sleep_problems",
+     "fatigue",
+     "appetite",
+     "worthlessness",
+     "concentration",
+     "psychomotor",
+     "self_harm_thoughts"
+    ],
+    "1": [
+     "inactivity",
+     "obesity",
+     "poor_self_rated_health",
+     "hypertension",
+     "diabetes",
+     "cardiovascular",
+     "cancer",
+     "arthritis"
+    ],
+    "2": [
+     "low_income",
+     "low_education",
+     "no_partner",
+     "uninsured",
+     "smoking",
+     "heavy_drinking",
+     "short_sleep"
+    ]
+   }
+  },
+  "binarised": {
+   "q25": {
+    "edges": 348,
+    "ncomm": 2,
+    "Q": 0.114,
+    "cost": 0.107,
+    "ci": [
+     0.007,
+     0.105
+    ],
+    "NMI": 0.6,
+    "ARI": 0.48,
+    "null_mean": 0.044,
+    "null_range": [
+     0.002,
+     0.1
+    ],
+    "null_p": 0.015
+   },
+   "q50": {
+    "edges": 232,
+    "ncomm": 3,
+    "Q": 0.221,
+    "cost": 0.0,
+    "ci": [
+     0.0,
+     0.008
+    ],
+    "NMI": 1.0,
+    "ARI": 1.0,
+    "null_mean": 0.004,
+    "null_range": [
+     -0.0,
+     0.018
+    ],
+    "null_p": 0.97
+   },
+   "q75": {
+    "edges": 116,
+    "ncomm": 4,
+    "Q": 0.208,
+    "cost": 0.013,
+    "ci": [
+     0.004,
+     0.043
+    ],
+    "NMI": 0.83,
+    "ARI": 0.81,
+    "null_mean": 0.007,
+    "null_range": [
+     0.0,
+     0.023
+    ],
+    "null_p": 0.194
+   },
+   "abs0.25": {
+    "edges": 74,
+    "ncomm": 5,
+    "Q": 0.184,
+    "cost": 0.037,
+    "ci": [
+     0.033,
+     0.066
+    ],
+    "NMI": 0.69,
+    "ARI": 0.65,
+    "null_mean": 0.03,
+    "null_range": [
+     0.009,
+     0.061
+    ],
+    "null_p": 0.284
+   },
+   "abs0.50": {
+    "edges": 18,
+    "ncomm": 14,
+    "Q": 0.047,
+    "cost": 0.174,
+    "ci": [
+     0.169,
+     0.205
+    ],
+    "NMI": 0.57,
+    "ARI": 0.25,
+    "null_mean": 0.161,
+    "null_range": [
+     0.132,
+     0.187
+    ],
+    "null_p": 0.199
+   },
+   "0+": {
+    "edges": 464,
+    "ncomm": 2,
+    "Q": 0.126,
+    "cost": 0.095,
+    "ci": [
+     0.083,
+     0.147
+    ],
+    "NMI": 0.54,
+    "ARI": 0.42,
+    "null_mean": 0.121,
+    "null_range": [
+     0.092,
+     0.15
+    ],
+    "null_p": 0.97
+   }
+  },
+  "heldout": {
+   "Q": 0.221,
+   "ncomm": 3,
+   "NMI": 1.0,
+   "ARI": 1.0,
+   "edge_spearman": 0.957,
+   "edge_pearson": 0.98,
+   "max_abs_diff": 0.129,
+   "costs": {
+    "q25": 0.078,
+    "q50": 0.002,
+    "q75": 0.014,
+    "abs0.25": 0.083,
+    "abs0.50": 0.183,
+    "0+": 0.08
+   }
+  },
+  "sensitivity": {
+   "eps_0.0": {
+    "edges": 500,
+    "Q": 0.219,
+    "ncomm": 3,
+    "costs": {
+     "q25": 0.084,
+     "q50": 0.0,
+     "q75": 0.007,
+     "abs0.25": 0.037,
+     "abs0.50": 0.173,
+     "0+": 0.145
+    }
+   },
+   "eps_0.05": {
+    "edges": 301,
+    "Q": 0.254,
+    "ncomm": 3,
+    "costs": {
+     "q25": 0.0,
+     "q50": 0.004,
+     "q75": 0.043,
+     "abs0.25": 0.043,
+     "abs0.50": 0.197,
+     "0+": 0.001
+    }
+   },
+   "gamma_0.5": {
+    "edges": 464,
+    "Q": 0.5,
+    "ncomm": 1,
+    "costs": {
+     "q25": 0.0,
+     "q50": 0.0,
+     "q75": 0.021,
+     "abs0.25": 0.083,
+     "abs0.50": 0.207,
+     "0+": 0.0
+    }
+   },
+   "gamma_1.5": {
+    "edges": 464,
+    "Q": 0.062,
+    "ncomm": 6,
+    "costs": {
+     "q25": 0.027,
+     "q50": 0.02,
+     "q75": 0.015,
+     "abs0.25": 0.041,
+     "abs0.50": 0.114,
+     "0+": 0.087
+    }
+   },
+   "raw_subsethood": {
+    "edges": 552,
+    "Q": 0.072,
+    "ncomm": 2,
+    "costs": {
+     "q25": 0.012,
+     "q50": 0.031,
+     "q75": 0.002,
+     "abs0.25": 0.023,
+     "abs0.50": 0.021,
+     "0+": 0.072
+    }
+   },
+   "crisp_concepts": {
+    "edges": 458,
+    "Q": 0.205,
+    "ncomm": 3,
+    "costs": {
+     "q25": 0.063,
+     "q50": 0.008,
+     "q75": 0.015,
+     "abs0.25": 0.028,
+     "abs0.50": 0.195,
+     "0+": 0.116
+    }
+   }
+  },
+  "rq2": {
+   "N2": {
+    "Q_obs": 0.2211,
+    "null_mean": 0.1993,
+    "null_sd": 0.0044,
+    "dQ": 0.0218,
+    "z": 4.9853,
+    "p": 0.001,
+    "n_null": 1000,
+    "restarts": 10,
+    "null_max": 0.2149
+   },
+   "N1": {
+    "Q_obs": 0.2211,
+    "null_mean": 0.1974,
+    "null_sd": 0.004,
+    "dQ": 0.0236,
+    "z": 5.8911,
+    "p": 0.001,
+    "n_null": 1000,
+    "restarts": 10,
+    "null_max": 0.2125
+   },
+   "Nresp": {
+    "Q_obs": 0.2211,
+    "null_mean": 0.3239,
+    "null_sd": 0.0355,
+    "dQ": -0.1028,
+    "z": -2.8962,
+    "p": 1.0,
+    "n_null": 300,
+    "restarts": 10,
+    "null_max": 0.4252
+   },
+   "N2_heldout": {
+    "Q_obs": 0.2214,
+    "null_mean": 0.2044,
+    "null_sd": 0.0045,
+    "dQ": 0.017,
+    "z": 3.813,
+    "p": 0.001,
+    "n_null": 1000,
+    "restarts": 10,
+    "null_max": 0.2173
+   },
+   "N1_heldout": {
+    "Q_obs": 0.2214,
+    "null_mean": 0.201,
+    "null_sd": 0.0042,
+    "dQ": 0.0205,
+    "z": 4.8425,
+    "p": 0.001,
+    "n_null": 1000,
+    "restarts": 10,
+    "null_max": 0.2168
+   }
+  },
+  "nresp_density": {
+   "obs_edges": 464,
+   "obs_total_weight": 63.10152162485769,
+   "obs_max": 0.8530665246435595,
+   "null_edges_mean": 84.42,
+   "null_edges_range": [
+    62,
+    103
+   ],
+   "null_total_weight_mean": 1.801243258469625,
+   "null_max_weight_mean": 0.09171384649127574,
+   "n": 50
+  },
+  "power_N2": {
+   "delta_0.0": 0.04,
+   "reps_0.0": 50,
+   "nulls": 100,
+   "delta_0.1": 0.14,
+   "reps_0.1": 50,
+   "delta_0.25": 0.3,
+   "reps_0.25": 50,
+   "delta_0.5": 0.72,
+   "reps_0.5": 50
+  },
+  "power_N1": {
+   "delta_0.0": 0.05,
+   "reps_0.0": 20,
+   "nulls": 50
+  },
+  "rq3": {
+   "held_out": {
+    "direct_dev_edge": {
+     "spearman": 0.957,
+     "mae": 0.019
+    },
+    "product": {
+     "spearman": 0.874,
+     "mae": 0.069,
+     "bias": -0.066,
+     "share_zero": 0.0
+    },
+    "hamacher": {
+     "spearman": 0.842,
+     "mae": 0.056,
+     "bias": -0.013,
+     "share_zero": 0.0
+    },
+    "yager2": {
+     "spearman": 0.681,
+     "mae": 0.087,
+     "bias": -0.087,
+     "share_zero": 0.75
+    },
+    "lukasiewicz": {
+     "spearman": 0.323,
+     "mae": 0.114,
+     "bias": -0.114,
+     "share_zero": 0.958
+    },
+    "min": {
+     "spearman": 0.726,
+     "mae": 0.078,
+     "bias": 0.047,
+     "share_zero": 0.0
+    },
+    "binary_q50": {
+     "spearman": 0.576,
+     "coverage": 0.966,
+     "n_ties_levels": 3
+    },
+    "binary_abs0.25": {
+     "spearman": 0.551,
+     "coverage": 0.12,
+     "n_ties_levels": 2
+    }
+   },
+   "ci": {
+    "direct_dev_edge": [
+     0.948,
+     0.958
+    ],
+    "product": [
+     0.862,
+     0.88
+    ],
+    "hamacher": [
+     0.83,
+     0.847
+    ],
+    "yager2": [
+     0.669,
+     0.688
+    ],
+    "lukasiewicz": [
+     0.317,
+     0.326
+    ],
+    "min": [
+     0.715,
+     0.732
+    ],
+    "binary_q50": [
+     0.562,
+     0.583
+    ],
+    "binary_abs0.25": [
+     0.549,
+     0.552
+    ]
+   },
+   "diff_vs_product": {
+    "direct_dev_edge": [
+     0.074,
+     0.09
+    ],
+    "hamacher": [
+     -0.034,
+     -0.029
+    ],
+    "yager2": [
+     -0.199,
+     -0.183
+    ],
+    "lukasiewicz": [
+     -0.557,
+     -0.538
+    ],
+    "min": [
+     -0.154,
+     -0.142
+    ],
+    "binary_q50": [
+     -0.307,
+     -0.285
+    ],
+    "binary_abs0.25": [
+     -0.329,
+     -0.311
+    ]
+   },
+   "transitivity": {
+    "product": {
+     "violation_share": 0.062,
+     "mean_excess_when_violated": 0.019
+    },
+    "hamacher": {
+     "violation_share": 0.551,
+     "mean_excess_when_violated": 0.035
+    },
+    "yager2": {
+     "violation_share": 0.0,
+     "mean_excess_when_violated": 0.0
+    },
+    "lukasiewicz": {
+     "violation_share": 0.0,
+     "mean_excess_when_violated": 0.0
+    },
+    "min": {
+     "violation_share": 0.797,
+     "mean_excess_when_violated": 0.06
+    }
+   }
+  }
+ }
+}

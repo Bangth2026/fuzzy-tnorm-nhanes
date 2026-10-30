@@ -1,0 +1,5 @@
+[12:20:01] minor 7: planted delta expressed as Delta Q
+[12:21:26] minor 8: effective sample size per source concept
+[12:21:26] minor 8: effective sample size per edge (Kish, weights w*min(a_i,a_j) over pairs observed on both)
+[12:21:27] minor 9 / clinical review: drop one node
+[12:21:41] done minor

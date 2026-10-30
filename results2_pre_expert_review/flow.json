@@ -1,0 +1,138 @@
+{
+  "development_2013_2018": {
+    "H": {
+      "dpq_file_adults": 5924,
+      "complete_phq9_positive_weight": 5372
+    },
+    "I": {
+      "dpq_file_adults": 5735,
+      "complete_phq9_positive_weight": 5134
+    },
+    "J": {
+      "dpq_file_adults": 5533,
+      "complete_phq9_positive_weight": 5068
+    },
+    "total_analytic": 15574,
+    "weighted_prev_phq_ge10": 0.082,
+    "missing": {
+      "anhedonia": 0,
+      "depressed_mood": 0,
+      "sleep_problems": 0,
+      "fatigue": 0,
+      "appetite": 0,
+      "worthlessness": 0,
+      "concentration": 0,
+      "psychomotor": 0,
+      "self_harm_thoughts": 0,
+      "low_income": 1527,
+      "low_education": 815,
+      "no_partner": 815,
+      "uninsured": 31,
+      "smoking": 8,
+      "heavy_drinking": 2450,
+      "inactivity": 19,
+      "short_sleep": 67,
+      "obesity": 165,
+      "poor_self_rated_health": 2,
+      "hypertension": 18,
+      "diabetes": 10,
+      "cardiovascular": 809,
+      "cancer": 811,
+      "arthritis": 838
+    },
+    "weighted_mean_activation": {
+      "anhedonia": 0.1202,
+      "depressed_mood": 0.1069,
+      "sleep_problems": 0.2071,
+      "fatigue": 0.259,
+      "appetite": 0.1228,
+      "worthlessness": 0.0788,
+      "concentration": 0.0845,
+      "psychomotor": 0.0486,
+      "self_harm_thoughts": 0.016,
+      "low_income": 0.3443,
+      "low_education": 0.2469,
+      "no_partner": 0.3671,
+      "uninsured": 0.1496,
+      "smoking": 0.1621,
+      "heavy_drinking": 0.1877,
+      "inactivity": 0.4083,
+      "short_sleep": 0.1611,
+      "obesity": 0.4149,
+      "poor_self_rated_health": 0.4246,
+      "hypertension": 0.3258,
+      "diabetes": 0.1194,
+      "cardiovascular": 0.082,
+      "cancer": 0.1133,
+      "arthritis": 0.276
+    }
+  },
+  "heldout_2007_2012": {
+    "E": {
+      "dpq_file_adults": 5995,
+      "complete_phq9_positive_weight": 5415
+    },
+    "F": {
+      "dpq_file_adults": 6360,
+      "complete_phq9_positive_weight": 5546
+    },
+    "G": {
+      "dpq_file_adults": 5615,
+      "complete_phq9_positive_weight": 4925
+    },
+    "total_analytic": 15886,
+    "weighted_prev_phq_ge10": 0.0789,
+    "missing": {
+      "anhedonia": 0,
+      "depressed_mood": 0,
+      "sleep_problems": 0,
+      "fatigue": 0,
+      "appetite": 0,
+      "worthlessness": 0,
+      "concentration": 0,
+      "psychomotor": 0,
+      "self_harm_thoughts": 0,
+      "low_income": 1347,
+      "low_education": 825,
+      "no_partner": 819,
+      "uninsured": 19,
+      "smoking": 818,
+      "heavy_drinking": 2746,
+      "inactivity": 5,
+      "short_sleep": 23,
+      "obesity": 174,
+      "poor_self_rated_health": 1,
+      "hypertension": 22,
+      "diabetes": 10,
+      "cardiovascular": 811,
+      "cancer": 827,
+      "arthritis": 835
+    },
+    "weighted_mean_activation": {
+      "anhedonia": 0.1075,
+      "depressed_mood": 0.106,
+      "sleep_problems": 0.2124,
+      "fatigue": 0.2405,
+      "appetite": 0.1196,
+      "worthlessness": 0.0843,
+      "concentration": 0.0826,
+      "psychomotor": 0.0505,
+      "self_harm_thoughts": 0.0156,
+      "low_income": 0.3499,
+      "low_education": 0.2933,
+      "no_partner": 0.3702,
+      "uninsured": 0.1979,
+      "smoking": 0.1923,
+      "heavy_drinking": 0.2152,
+      "inactivity": 0.4439,
+      "short_sleep": 0.25,
+      "obesity": 0.3718,
+      "poor_self_rated_health": 0.4067,
+      "hypertension": 0.3042,
+      "diabetes": 0.0951,
+      "cardiovascular": 0.0771,
+      "cancer": 0.0977,
+      "arthritis": 0.2486
+    }
+  }
+}

@@ -1,0 +1,5 @@
+[03:57:30] RQ1 main
+[03:57:31] bootstrap CI (B=200, 10 restarts)
+[04:00:09] held-out replication
+[04:00:12] sensitivity
+[04:00:26] done main

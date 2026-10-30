@@ -1,0 +1,5 @@
+[12:20:02] M1: noise floor from respondent-permutation graphs
+[12:21:47] M1: RQ1 on edges above the p95 noise floor
+[12:22:35] M1: RQ1 on edges above the p99 noise floor
+[12:23:19] M1: RQ1 on edges above the mean_max noise floor
+[12:24:00] done m1

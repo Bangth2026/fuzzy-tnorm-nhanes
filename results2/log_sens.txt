@@ -1,0 +1,6 @@
+[08:35:02] low_education
+[08:35:04] smoking
+[08:35:07] poor_self_rated_health
+[08:35:10] diabetes
+[08:35:12] cancer
+[08:35:15] done

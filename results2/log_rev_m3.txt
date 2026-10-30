@@ -1,0 +1,2 @@
+[09:36:30] M3: transitivity against within-type permutation of the held-out relation
+[09:36:34] done m3

@@ -1,0 +1,266 @@
+{
+ "n_edges": 468,
+ "mu_quartiles": [
+  0.037,
+  0.082,
+  0.166
+ ],
+ "median_mu": 0.082,
+ "top5": [
+  [
+   "self_harm_thoughts",
+   "depressed_mood",
+   0.853
+  ],
+  [
+   "self_harm_thoughts",
+   "worthlessness",
+   0.79
+  ],
+  [
+   "self_harm_thoughts",
+   "fatigue",
+   0.68
+  ],
+  [
+   "self_harm_thoughts",
+   "anhedonia",
+   0.634
+  ],
+  [
+   "worthlessness",
+   "depressed_mood",
+   0.627
+  ]
+ ],
+ "cvd_to_hypertension": 0.575,
+ "strongest_target_raw": {
+  "poor_self_rated_health": 11,
+  "obesity": 8,
+  "low_income": 3,
+  "depressed_mood": 1,
+  "hypertension": 1
+ },
+ "strongest_target_corrected": {
+  "fatigue": 6,
+  "hypertension": 5,
+  "low_income": 4,
+  "depressed_mood": 2,
+  "obesity": 2,
+  "sleep_problems": 1,
+  "low_education": 1,
+  "smoking": 1,
+  "poor_self_rated_health": 1,
+  "arthritis": 1
+ },
+ "q25_restart_solutions": [
+  [
+   2,
+   0.1106,
+   100
+  ]
+ ],
+ "n1_share_edges_moved_mean": 0.0074,
+ "sens_NMI": {
+  "eps_0.0": 1.0,
+  "eps_0.05": 1.0,
+  "gamma_0.5": 0.0,
+  "gamma_1.5": 0.81,
+  "raw_subsethood": 0.75,
+  "crisp_concepts": 1.0
+ },
+ "sens_communities": {
+  "eps_0.0": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  },
+  "eps_0.05": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  },
+  "gamma_0.5": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts",
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "inactivity",
+    "short_sleep",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ]
+  },
+  "gamma_1.5": {
+   "0": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "anhedonia",
+    "depressed_mood",
+    "worthlessness",
+    "self_harm_thoughts"
+   ],
+   "3": [
+    "sleep_problems",
+    "fatigue",
+    "appetite"
+   ],
+   "4": [
+    "concentration",
+    "psychomotor"
+   ],
+   "5": [
+    "poor_self_rated_health"
+   ]
+  },
+  "raw_subsethood": {
+   "0": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "inactivity",
+    "short_sleep",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "1": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ]
+  },
+  "crisp_concepts": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ }
+}

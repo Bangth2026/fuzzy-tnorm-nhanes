@@ -1,0 +1,198 @@
+{
+ "main_Q": 0.2146273666886368,
+ "low_education": {
+  "Q_mean": 0.2117472104163116,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "cost_q50": 0.0,
+  "cost_0+": 0.0913291919773358,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ },
+ "smoking": {
+  "Q_mean": 0.21088341541221292,
+  "n_comm": 3,
+  "NMI_vs_main": 0.8851370338588744,
+  "cost_q50": 0.006450253558146435,
+  "cost_0+": 0.09251784353829104,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep",
+    "poor_self_rated_health"
+   ],
+   "2": [
+    "inactivity",
+    "obesity",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ]
+  }
+ },
+ "poor_self_rated_health": {
+  "Q_mean": 0.21410593925409946,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "cost_q50": 0.0018501285854245486,
+  "cost_0+": 0.09464851767465947,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ },
+ "diabetes": {
+  "Q_mean": 0.21469929783744823,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "cost_q50": 0.0,
+  "cost_0+": 0.09354312974854131,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ },
+ "cancer": {
+  "Q_mean": 0.21468989864872412,
+  "n_comm": 3,
+  "NMI_vs_main": 1.0,
+  "cost_q50": 0.0,
+  "cost_0+": 0.09361187799775385,
+  "communities": {
+   "0": [
+    "anhedonia",
+    "depressed_mood",
+    "sleep_problems",
+    "fatigue",
+    "appetite",
+    "worthlessness",
+    "concentration",
+    "psychomotor",
+    "self_harm_thoughts"
+   ],
+   "1": [
+    "inactivity",
+    "obesity",
+    "poor_self_rated_health",
+    "hypertension",
+    "diabetes",
+    "cardiovascular",
+    "cancer",
+    "arthritis"
+   ],
+   "2": [
+    "low_income",
+    "low_education",
+    "no_partner",
+    "uninsured",
+    "smoking",
+    "heavy_drinking",
+    "short_sleep"
+   ]
+  }
+ }
+}

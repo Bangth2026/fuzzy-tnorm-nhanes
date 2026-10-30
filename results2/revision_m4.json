@@ -1,0 +1,40 @@
+{
+ "m4": {
+  "Q_type4": 0.1573609586935291,
+  "NMI_main_type4": 0.7834793209880313,
+  "Q_type3_best": 0.21462736668863686,
+  "Q_type3_range": [
+   0.11078123099311744,
+   0.21462736668863686
+  ],
+  "type3_best_equals_main": true,
+  "Q_type3_symptom_only_rule": null,
+  "Q_main": 0.21462736668863686,
+  "coassign_stability": {
+   "poor_self_rated_health": 0.6849999999999999,
+   "inactivity": 0.9550000000000001,
+   "obesity": 0.9550000000000001,
+   "hypertension": 0.9550000000000001,
+   "diabetes": 0.9550000000000001,
+   "cardiovascular": 0.9550000000000001,
+   "cancer": 0.9550000000000001,
+   "arthritis": 0.9550000000000001,
+   "anhedonia": 1.0,
+   "depressed_mood": 1.0,
+   "sleep_problems": 1.0,
+   "fatigue": 1.0,
+   "appetite": 1.0,
+   "worthlessness": 1.0,
+   "concentration": 1.0,
+   "psychomotor": 1.0,
+   "self_harm_thoughts": 1.0,
+   "low_income": 1.0,
+   "low_education": 1.0,
+   "no_partner": 1.0,
+   "uninsured": 1.0,
+   "smoking": 1.0,
+   "heavy_drinking": 1.0,
+   "short_sleep": 1.0
+  }
+ }
+}
