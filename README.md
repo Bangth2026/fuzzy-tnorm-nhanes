@@ -1,5 +1,7 @@
 # Testing t-norms on a population fuzzy graph of depressive symptoms (NHANES)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23790457.svg)](https://doi.org/10.5281/zenodo.23790457)
+
 Code and derived results for the manuscript
 
 > Truong Hai Bang, Van An Phan Thi. *Which t-norm should a clinical fuzzy graph reason with? An audited population graph of depressive symptoms and their correlates.* Submitted to the Journal of Biomedical Informatics.
@@ -75,4 +77,4 @@ Code: MIT (see `LICENSE`). Derived results and review forms: CC BY 4.0.
 
 ## Citation
 
-See `CITATION.cff`. Please cite the archived release DOI once it is available.
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23790457. See also `CITATION.cff`.
