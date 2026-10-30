@@ -1,0 +1,44 @@
+{
+ "m5_negative": {
+  "n_negative": 49,
+  "n_below_minus0.01": 35,
+  "most_negative": [
+   [
+    "uninsured",
+    "arthritis",
+    -0.204
+   ],
+   [
+    "uninsured",
+    "hypertension",
+    -0.167
+   ],
+   [
+    "cancer",
+    "heavy_drinking",
+    -0.166
+   ],
+   [
+    "diabetes",
+    "heavy_drinking",
+    -0.159
+   ],
+   [
+    "cardiovascular",
+    "heavy_drinking",
+    -0.157
+   ],
+   [
+    "heavy_drinking",
+    "inactivity",
+    -0.137
+   ]
+  ]
+ },
+ "m5_asymmetry": {
+  "n_pairs": 221,
+  "pearson_r": 0.9965756939288437,
+  "r2": 0.9931631137297564,
+  "spearman": 0.9968637086284143
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "minor7_deltaQ": {
+  "0.1": 0.002030276382058118,
+  "0.25": 0.004474954432978014,
+  "0.5": 0.008502061675387867
+ },
+ "minor8_neff": {
+  "self_harm_thoughts": 263.78412715215524,
+  "cancer": 669.2806995725695,
+  "psychomotor": 712.9844379748016,
+  "cardiovascular": 775.4574530129405,
+  "diabetes": 1152.1434621207236,
+  "concentration": 1171.710629296438,
+  "worthlessness": 1213.3993716485443,
+  "smoking": 1579.961221578581,
+  "uninsured": 1669.690381904107,
+  "anhedonia": 1710.7500444327204,
+  "depressed_mood": 1735.5103209169558,
+  "appetite": 1891.1939048902748,
+  "short_sleep": 2021.7300925308602,
+  "arthritis": 2053.421691472289,
+  "heavy_drinking": 2513.6974500622487,
+  "sleep_problems": 2598.551897145425,
+  "hypertension": 2750.801870280315,
+  "no_partner": 2980.3438763634927,
+  "fatigue": 3479.894172253956,
+  "low_education": 3609.4943887988907,
+  "inactivity": 4560.686670717982,
+  "obesity": 4831.559149681775,
+  "low_income": 5541.504158931708,
+  "poor_self_rated_health": 7009.324936775311
+ },
+ "minor8_neff_edge": {
+  "min": 35.17537847472292,
+  "median": 739.1138019842615,
+  "q10": 206.6341431686257,
+  "self_harm_source_median": 166.96295542202162,
+  "self_harm_source_min": 35.17537847472292,
+  "n_edges_below_100": 11
+ },
+ "drop_node": {
+  "short_sleep": {
+   "Q_mean": 0.21660096845985113,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "rho_product": 0.8949104668297693,
+   "rho_hamacher": 0.876725941258239,
+   "rho_min": 0.7802843874338468
+  },
+  "poor_self_rated_health": {
+   "Q_mean": 0.23537692354786213,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "rho_product": 0.8821364193228965,
+   "rho_hamacher": 0.8591853759232942,
+   "rho_min": 0.7425782768989904
+  },
+  "self_harm_thoughts": {
+   "Q_mean": 0.22667347603167168,
+   "n_comm": 3,
+   "NMI_vs_main": 1.0,
+   "rho_product": 0.8649382643701657,
+   "rho_hamacher": 0.8389248671518867,
+   "rho_min": 0.7098671387425723
+  }
+ }
+}

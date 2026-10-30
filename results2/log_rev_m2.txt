@@ -1,0 +1,5 @@
+[09:38:05] M2: baselines and permutation of the development relation
+[09:38:05] M2: t-norm composition on 200 within-type permutations of the development relation
+[10:07:01] M2: two-period Rao-Wu bootstrap of product minus baselines
+[10:11:26] minor 4-5: path length and tie-robust metrics
+[10:11:32] done m2

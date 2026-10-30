@@ -1,0 +1,1006 @@
+{
+  "flow": {
+    "heldout_total": 15886,
+    "safety_blocked": 699,
+    "blocked_item9": 638,
+    "blocked_total_ge20_only": 61,
+    "eligible_phq5_19": 3335
+  },
+  "k": 12,
+  "comparison_vs_product": {
+    "hamacher": {
+      "kendall_tau_median": 0.9444444444444445,
+      "kendall_tau_min": 0.8333333333333334,
+      "kendall_tau_max": 1.0,
+      "top1_same_share": 0.9166666666666666,
+      "top3_overlap_mean": 0.9722222222222222
+    },
+    "lukasiewicz": {
+      "kendall_tau_median": 0.0,
+      "kendall_tau_min": -0.1111111111111111,
+      "kendall_tau_max": 0.3333333333333333,
+      "top1_same_share": 0.0,
+      "top3_overlap_mean": 0.3611111111111111
+    },
+    "yager2": {
+      "kendall_tau_median": 0.4444444444444444,
+      "kendall_tau_min": 0.16666666666666666,
+      "kendall_tau_max": 0.9444444444444445,
+      "top1_same_share": 0.8333333333333334,
+      "top3_overlap_mean": 0.638888888888889
+    },
+    "maxmin": {
+      "kendall_tau_median": 0.5555555555555556,
+      "kendall_tau_min": 0.2777777777777778,
+      "kendall_tau_max": 0.7222222222222222,
+      "top1_same_share": 0.3333333333333333,
+      "top3_overlap_mean": 0.6666666666666666
+    },
+    "binary_G0.50": {
+      "kendall_tau_median": 0.16666666666666666,
+      "kendall_tau_min": -0.1111111111111111,
+      "kendall_tau_max": 0.7222222222222222,
+      "top1_same_share": 0.3333333333333333,
+      "top3_overlap_mean": 0.47222222222222227
+    },
+    "curriculum": {
+      "kendall_tau_median": 0.0,
+      "kendall_tau_min": -0.1111111111111111,
+      "kendall_tau_max": 0.3333333333333333,
+      "top1_same_share": 0.0,
+      "top3_overlap_mean": 0.3611111111111111
+    }
+  },
+  "distinct_top3_product": 4,
+  "distinct_top3_binary": 5,
+  "ranks": {
+    "V01": {
+      "product": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V02": {
+      "product": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "pleasant_unpleasant_events",
+        "mindful_movement"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V03": {
+      "product": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "hamacher": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "breathing_space",
+        "body_scan",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "breathing_space",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V04": {
+      "product": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "breathing_space",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "breathing_space",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "maxmin": [
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "sitting_meditation",
+        "breathing_space",
+        "thoughts_not_facts",
+        "turning_toward_difficulty",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V05": {
+      "product": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "hamacher": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "breathing_space",
+        "body_scan",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "breathing_space",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V06": {
+      "product": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "activity_and_self_care",
+        "body_scan",
+        "pleasant_unpleasant_events",
+        "mindful_movement"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V07": {
+      "product": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "hamacher": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "breathing_space",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "breathing_space",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "breathing_space",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V08": {
+      "product": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V09": {
+      "product": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "hamacher": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "breathing_space",
+        "thoughts_not_facts",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "maxmin": [
+        "breathing_space",
+        "body_scan",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "breathing_space",
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V10": {
+      "product": [
+        "thoughts_not_facts",
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V11": {
+      "product": [
+        "thoughts_not_facts",
+        "breathing_space",
+        "sitting_meditation",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "body_scan",
+        "turning_toward_difficulty",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "maxmin": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "body_scan",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    },
+    "V12": {
+      "product": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "activity_and_self_care",
+        "body_scan",
+        "pleasant_unpleasant_events",
+        "mindful_movement"
+      ],
+      "hamacher": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "activity_and_self_care",
+        "mindful_movement",
+        "pleasant_unpleasant_events"
+      ],
+      "lukasiewicz": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ],
+      "yager2": [
+        "thoughts_not_facts",
+        "sitting_meditation",
+        "breathing_space",
+        "relapse_action_plan",
+        "turning_toward_difficulty",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "maxmin": [
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "binary_G0.50": [
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "relapse_action_plan",
+        "body_scan",
+        "mindful_movement",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care"
+      ],
+      "curriculum": [
+        "body_scan",
+        "mindful_movement",
+        "sitting_meditation",
+        "breathing_space",
+        "turning_toward_difficulty",
+        "thoughts_not_facts",
+        "pleasant_unpleasant_events",
+        "activity_and_self_care",
+        "relapse_action_plan"
+      ]
+    }
+  }
+}

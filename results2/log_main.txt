@@ -1,0 +1,6 @@
+[09:33:47] RQ1 main
+[09:33:49] bootstrap
+[09:36:07] cost under N2 nulls
+[09:36:52] held-out
+[09:36:55] sensitivity
+[09:37:10] done main

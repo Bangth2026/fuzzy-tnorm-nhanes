@@ -1,0 +1,9 @@
+[04:28:46] power N2 delta=0.0
+[04:30:22] power N2 delta=0.25
+[04:31:52] power N2 delta=0.5
+[04:33:18] power N2 delta=1.0
+[04:34:43] power N1 delta=0.0
+[04:43:50] power N1 delta=0.25
+[04:52:59] power N1 delta=0.5
+[05:02:09] power N1 delta=1.0
+[05:11:13] done power

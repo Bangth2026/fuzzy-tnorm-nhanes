@@ -1,0 +1,21 @@
+{
+  "title": "Code and derived results for: Which t-norm should a clinical fuzzy graph reason with? An audited population graph of depressive symptoms and their correlates",
+  "upload_type": "software",
+  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5.",
+  "creators": [
+    {
+      "name": "Truong, Hai Bang",
+      "orcid": "0000-0001-5094-3128",
+      "affiliation": "Saigon International University"
+    },
+    {
+      "name": "Phan Thi, Van An",
+      "orcid": "0009-0005-4135-5689",
+      "affiliation": "Nguyen Tat Thanh University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["fuzzy graph", "t-norm", "fuzzy relation composition", "certainty factor", "modularity", "null model", "depression", "NHANES"],
+  "version": "1.0.0",
+  "access_right": "open"
+}

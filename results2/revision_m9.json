@@ -1,0 +1,46 @@
+{
+ "m9_exclusions": {
+  "dev": {
+   "by_reason": {
+    "included": 15574,
+    "item_missing": 1543,
+    "refused_or_dont_know": 75
+   },
+   "included": {
+    "n": 15574,
+    "age_mean": 48.387697444458716,
+    "female_share": 0.5138692692949788,
+    "pir_mean": 2.4776528796184243,
+    "pir_missing_share": 0.09804802876589187
+   },
+   "excluded": {
+    "n": 1618,
+    "age_mean": 48.502472187886276,
+    "female_share": 0.5778739184177998,
+    "pir_mean": 2.2488683431952663,
+    "pir_missing_share": 0.16440049443757726
+   }
+  },
+  "hold": {
+   "by_reason": {
+    "included": 15886,
+    "item_missing": 1999,
+    "refused_or_dont_know": 85
+   },
+   "included": {
+    "n": 15886,
+    "age_mean": 48.10776784590205,
+    "female_share": 0.500881279113685,
+    "pir_mean": 2.459338331384552,
+    "pir_missing_share": 0.08479164043812161
+   },
+   "excluded": {
+    "n": 2084,
+    "age_mean": 48.01727447216891,
+    "female_share": 0.5734165067178503,
+    "pir_mean": 2.126541737649063,
+    "pir_missing_share": 0.15499040307101727
+   }
+  }
+ }
+}
