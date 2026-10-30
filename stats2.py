@@ -37,4 +37,5 @@ print(json.dumps(S["binarised"], indent=0)[:3000])
 S["revision2"] = {p: L(f"revision2_{p}.json") for p in ["r3", "sim", "misc", "boot", "null", "extra"] if os.path.exists(f"results2/revision2_{p}.json")}
 json.dump(S, open("results2/paper_stats.json", "w"), indent=1)
 S["revision3"] = {p: L(f"revision3_{p}.json") for p in ["blocks", "sim2", "reverse"] if os.path.exists(f"results2/revision3_{p}.json")}
+S["revision4"] = {p: L(f"revision4_{p}.json") for p in ["sens", "swap", "split", "simdesign"] if os.path.exists(f"results2/revision4_{p}.json")}
 json.dump(S, open("results2/paper_stats.json", "w"), indent=1)

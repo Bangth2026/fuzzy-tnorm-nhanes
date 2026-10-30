@@ -15,4 +15,5 @@ python3 sanity2.py
 for p in r3 boot sim null misc; do python3 revision2.py "$p"; done
 python3 revision2_extra.py
 for p in blocks sim2 reverse; do python3 revision3.py "$p"; done
+for p in sens swap split simdesign; do python3 revision4.py "$p"; done
 python3 stats2.py

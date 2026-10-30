@@ -1,0 +1,27 @@
+{
+ "simdesign": {
+  "realised": {
+   "min_closure": {
+    "density_true": 0.8479891304347826,
+    "density_noisy": 0.847753623188406
+   },
+   "product_closure": {
+    "density_true": 0.6261684782608696,
+    "density_noisy": 0.6237952898550724
+   },
+   "hamacher_closure": {
+    "density_true": 0.8709239130434782,
+    "density_noisy": 0.870625
+   },
+   "rank1_factor": {
+    "density_true": 0.9642391304347826,
+    "density_noisy": 0.9627807971014493
+   },
+   "rank3_blocks": {
+    "density_true": 0.8429710144927536,
+    "density_noisy": 0.839085144927536
+   }
+  },
+  "observed_density": 0.8478260869565217
+ }
+}
