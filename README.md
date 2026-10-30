@@ -1,6 +1,6 @@
 # Testing t-norms on a population fuzzy graph of depressive symptoms (NHANES)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23790457.svg)](https://doi.org/10.5281/zenodo.23790457)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23794509.svg)](https://doi.org/10.5281/zenodo.23794509)
 
 Code and derived results for the manuscript
 
@@ -81,4 +81,4 @@ Code: MIT (see `LICENSE`). Derived results and review forms: CC BY 4.0.
 
 ## Citation
 
-Archived on Zenodo: https://doi.org/10.5281/zenodo.23790457. See also `CITATION.cff`.
+Archived on Zenodo: version 1.1.0, https://doi.org/10.5281/zenodo.23794509 (version 1.0.0: https://doi.org/10.5281/zenodo.23790457). See also `CITATION.cff`.
