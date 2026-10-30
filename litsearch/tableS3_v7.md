@@ -7,9 +7,9 @@
 | Semantic Scholar (bulk API) | operator terms AND graph or reasoning terms AND clinical terms | 152 |
 | PubMed (E-utilities) | fuzzy graph or fuzzy relation terms AND clinical terms | 46 |
 | arXiv (API) | operator terms AND clinical terms | 5 |
-| Total identified; unique after removing duplicates | | 471; 418 |
-| Retained at title and abstract screening | | 41 |
-| Compared two or more t-norms for composition against an independently measured relation | | 0 |
+| Total identified; unique after removing duplicates | All sources | 471; 418 |
+| Retained at title and abstract screening | All sources | 41 |
+| Compared two or more t-norms for composition against an independently measured relation | All sources | 0 |
 
 Operator terms: "t-norm(s)", "triangular norm(s)", "fuzzy relation composition", "max-product composition", "max-min composition", "sup-min composition", "fuzzy operators", "fuzzy conjunction", Hamacher, Lukasiewicz, "fuzzy logic operators". Graph or reasoning terms: graph(s), network(s), multi-hop, transitivity or transitive, "knowledge base", "cognitive map(s)", reasoning, inference. Clinical terms: clinical, medical, medicine, health, disease(s), patient(s), depression or depressive, psychiatric, biomedical, diagnosis, survey, epidemiology. Fuzzy graph or relation terms: "fuzzy (knowledge) graph(s)", "fuzzy relation(s)", "fuzzy relational", "compositional rule of inference", "fuzzy transitive" or "fuzzy transitivity". One reviewer (H.B.T.) screened all records on title and abstract; full texts were not assessed, and six records without abstracts were judged on titles. Scopus and Web of Science were not searched. Abstract-level searching misses studies that use a t-norm without naming it in the abstract; for example, the query-answering studies cited in Section 1 [11,12] were not retrieved. The exact queries, retrieved records and screening decisions are in the code repository (folder litsearch/).
 
