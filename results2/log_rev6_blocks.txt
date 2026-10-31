@@ -1,0 +1,11 @@
+[15:44:10] block Symptom–symptom
+[15:44:13] block Symptom–socioeconomic
+[15:44:17] block Symptom–lifestyle
+[15:44:20] block Symptom–health
+[15:44:24] block Socioeconomic–socioeconomic
+[15:44:26] block Socioeconomic–lifestyle
+[15:44:28] block Socioeconomic–health
+[15:44:31] block Lifestyle–lifestyle
+[15:44:33] block Lifestyle–health
+[15:44:36] block Health–health
+[15:44:38] done blocks

@@ -1,0 +1,8 @@
+[15:44:11] Table 9: RQ3 and edges for variants
+[15:44:38] grid error of S0
+[15:44:52] bootstrap edge filter (200 Rao-Wu replicates of development)
+[15:47:05] sleep: development restricted to 2015-2018
+[15:47:09] split-half reliability of each period's relation (20 splits by sampling unit)
+[15:48:00] Q interval (Rao-Wu, best of 10 restarts)
+[15:50:17] age and sex by period
+[15:50:18] done misc

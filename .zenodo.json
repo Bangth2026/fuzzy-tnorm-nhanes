@@ -1,7 +1,7 @@
 {
-  "title": "Code and derived results for: Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates",
+  "title": "Code and derived results for: Testing composition rules on a graded association graph: a temporally held-out case study of depressive symptoms in NHANES",
   "upload_type": "software",
-  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5. Versions 1.1.0 and 1.2.0 add the analyses of the review rounds: predictors without paths, parametric t-norms, scale transformations, withheld relation blocks with cross-validated completion rank, simulations matched to the data's noise and scale, a strength-preserving null and the literature-search records; and, in 1.2.0, RQ3 with the periods swapped, on PSU-split halves of 2013–2018, with binary PHQ-9 items and under every sensitivity setting.",
+  "description": "Analysis pipeline and derived results (relation matrices, edge lists, null-model, bootstrap and t-norm inference results, clinical review form) for a fuzzy relation graph of nine PHQ-9 symptoms and 15 correlates built from NHANES 2007–2018. NHANES source files are public and are downloaded by download_nhanes.py; checksums of the files used are in raw/MANIFEST.md5. Versions 1.1.0 and 1.2.0 add the analyses of the review rounds: predictors without paths, parametric t-norms, scale transformations, withheld relation blocks with cross-validated completion rank, simulations matched to the data's noise and scale, a strength-preserving null and the literature-search records; and, in 1.2.0, RQ3 with the periods swapped, on PSU-split halves of 2013–2018, with binary PHQ-9 items and under every sensitivity setting. Version 1.3.0 adds the analyses of the sixth review: regularised and logit soft-impute, NMF, prevalence-and-block regression, Katz, common-neighbour, Adamic–Adar, resource-allocation and personalised-PageRank indices, a learned path model, within-block and per-source evaluation (NDCG@5), concept-jackknife intervals, calibration fitted on measured pairs in the withheld design, random masking and cold start, age–sex standardised and signed relations, and a respondent-level simulation of chained versus latent-factor generation.",
   "creators": [
     {
       "name": "Truong, Hai Bang",
@@ -16,15 +16,15 @@
   ],
   "license": "MIT",
   "keywords": [
-    "fuzzy graph",
-    "t-norm",
     "fuzzy relation composition",
-    "certainty factor",
-    "modularity",
-    "null model",
+    "t-norm",
+    "graded knowledge graph",
+    "link prediction",
+    "matrix completion",
+    "calibration",
     "depression",
     "NHANES"
   ],
-  "version": "1.2.0",
+  "version": "1.3.0",
   "access_right": "open"
 }

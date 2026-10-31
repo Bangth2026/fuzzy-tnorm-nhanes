@@ -1,0 +1,368 @@
+{
+ "random25": {
+  "product": {
+   "rho_mean": 0.83752846219924,
+   "rho_sd": 0.0477958242364075,
+   "mae_mean": 0.07630727015953356,
+   "share_rho_above_product": 0.0
+  },
+  "hamacher": {
+   "rho_mean": 0.8169639470770105,
+   "rho_sd": 0.04947945112256041,
+   "mae_mean": 0.0584773194044187,
+   "share_rho_above_product": 0.16
+  },
+  "strength": {
+   "rho_mean": 0.6126925038912997,
+   "rho_sd": 0.05549871253463159,
+   "mae_mean": 3.5192381657235257,
+   "share_rho_above_product": 0.0
+  },
+  "rank3_svd": {
+   "rho_mean": 0.8639018475078291,
+   "rho_sd": 0.0626677163546973,
+   "mae_mean": 0.03848071358000897,
+   "share_rho_above_product": 0.745
+  },
+  "softimpute_cv": {
+   "rho_mean": 0.857698867122673,
+   "rho_sd": 0.03705837077202455,
+   "mae_mean": 0.04048521540372372,
+   "share_rho_above_product": 0.66
+  },
+  "prev_type_reg": {
+   "rho_mean": 0.6309589213495145,
+   "rho_sd": 0.06003093653970376,
+   "mae_mean": 0.0717804286785847,
+   "share_rho_above_product": 0.0
+  },
+  "learned_paths": {
+   "rho_mean": 0.8242440073175383,
+   "rho_sd": 0.050032788642147163,
+   "mae_mean": 0.04298190786727543,
+   "share_rho_above_product": 0.3
+  },
+  "product_recal_linear": {
+   "rho_mean": 0.8375283994227688,
+   "rho_sd": 0.04779583194194923,
+   "mae_mean": 0.047986979308142705,
+   "share_rho_above_product": 0.0
+  }
+ },
+ "cold_start": {
+  "product": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.12231438563833759,
+   "share_rho_above_product": 0.0
+  },
+  "hamacher": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.12231438563833759,
+   "share_rho_above_product": 0.0
+  },
+  "strength": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.12231438563833759,
+   "share_rho_above_product": 0.0
+  },
+  "rank3_svd": {
+   "rho_mean": 0.3945508906566668,
+   "rho_sd": 0.11519930427778947,
+   "mae_mean": 0.09577228428061045,
+   "share_rho_above_product": 0.0
+  },
+  "softimpute_cv": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.10698574038594506,
+   "share_rho_above_product": 0.0
+  },
+  "prev_type_reg": {
+   "rho_mean": 0.5996897860249631,
+   "rho_sd": 0.22212550491315586,
+   "mae_mean": 0.07455773527164179,
+   "share_rho_above_product": 0.0
+  },
+  "learned_paths": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.12231438563833759,
+   "share_rho_above_product": 0.0
+  },
+  "product_recal_linear": {
+   "rho_mean": NaN,
+   "rho_sd": NaN,
+   "mae_mean": 0.11024287836532191,
+   "share_rho_above_product": 0.0
+  }
+ },
+ "cold_start_per_concept": [
+  {
+   "concept": "anhedonia",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.45679925994449583,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.8267036694418749,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "depressed_mood",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.44224483502929385,
+   "softimpute_cv": 0.3056889343536588,
+   "prev_type_reg": 0.7975948196114709,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "sleep_problems",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.41720629047178537,
+   "softimpute_cv": -0.3706848268496494,
+   "prev_type_reg": 0.7578785075547333,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "fatigue",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5012025901942645,
+   "softimpute_cv": 0.2922223419062634,
+   "prev_type_reg": 0.797718162195498,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "appetite",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.44594511255010794,
+   "softimpute_cv": 0.034795798745166084,
+   "prev_type_reg": 0.8312673450508788,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "worthlessness",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.3575195043175042,
+   "softimpute_cv": 0.12075955218752797,
+   "prev_type_reg": 0.7670911841816659,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "concentration",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.3705827937095282,
+   "softimpute_cv": 0.176043631134459,
+   "prev_type_reg": 0.8154794942954053,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "psychomotor",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.39697810669133515,
+   "softimpute_cv": 0.07835325474251943,
+   "prev_type_reg": 0.8122725871107,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "self_harm_thoughts",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.2999074930619796,
+   "softimpute_cv": 0.06175780754487806,
+   "prev_type_reg": 0.9020659882824545,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "low_income",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.45891023488469007,
+   "softimpute_cv": 0.3693127356455956,
+   "prev_type_reg": 0.5773844401277339,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "low_education",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5458077649145958,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.32390761370976917,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "no_partner",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5635079715282103,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.6477535542257628,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "uninsured",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.2103731375867258,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.22132029758603505,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "smoking",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.1757345154908758,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.3334926607904451,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "heavy_drinking",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.13949809599119792,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.2216330735860153,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "inactivity",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5235657250917142,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.7098704841086786,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "short_sleep",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5041783591160249,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.7053563172122297,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "obesity",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.3096529331018011,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.538059070257962,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "poor_self_rated_health",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.5301880974406413,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.828800493370336,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "hypertension",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.32869289133127927,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.33357019005689376,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "diabetes",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.41821293123179676,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.31288797394194656,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "cardiovascular",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.44429366703317147,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.4906847858347467,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "cancer",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.243715059184622,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.32153372797971175,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  },
+  {
+   "concept": "arthritis",
+   "product": NaN,
+   "hamacher": NaN,
+   "strength": NaN,
+   "rank3_svd": 0.38450400586236055,
+   "softimpute_cv": NaN,
+   "prev_type_reg": 0.518228424086168,
+   "learned_paths": NaN,
+   "product_recal_linear": NaN
+  }
+ ]
+}
