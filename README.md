@@ -4,9 +4,9 @@
 
 Code and derived results for the manuscript
 
-> Truong Hai Bang, Van An Phan Thi. *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates* (earlier title: *Which t-norm should a clinical fuzzy graph reason with?*). Submitted to the Journal of Biomedical Informatics.
+> Truong Hai Bang, Van An Phan Thi. *Testing composition rules on a graded association graph: a temporally held-out case study of depressive symptoms in NHANES* (earlier titles: *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates*; *Which t-norm should a clinical fuzzy graph reason with?*). Under review at the Journal of Healthcare Informatics Research.
 
-Version 1.2.0 contains every analysis reported in the revised manuscript. The literature search behind Supplementary Table S3 is in `litsearch/` (`tableS3_v7.md` gives the search strings, eligibility criteria and record flow).
+Version 1.3.0 contains every analysis reported in the second revision, including stronger baselines, link-prediction indices, a learned path model, per-source ranking, calibration in the withheld design, random masking, cold start, age–sex standardisation, signed relations and a respondent-level simulation of chained versus latent-factor generation (`revision6.py`, `rq6lib.py`). The literature search behind Supplementary Table S3 is in `litsearch/` (`tableS3_v7.md` gives the search strings, eligibility criteria and record flow).
 
 The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine PHQ-9 symptoms and 15 correlates) from NHANES 2013–2018 (development) and 2007–2012 (held-out), using a survey-weighted fuzzy certainty factor. It then audits:
 
@@ -14,7 +14,7 @@ The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine 
 - the structure against null models and the concept-type schema (RQ2)
 - multi-hop inference with five t-norms against held-out relations (RQ3)
 
-Every number in the manuscript is read from `results2/paper_stats.json`.
+Every number in the manuscript is read from result files in `results2/`: `paper_stats.json` for the original analyses and `revision*_*.json` for the analyses added in review.
 
 ## Requirements
 
@@ -54,6 +54,11 @@ Run all steps with `bash run_all.sh`, or run them one at a time:
 | 12 | `python3 revision3.py blocks`, `sim2`, `reverse` | third-review analyses: withheld blocks with cross-validated completion rank, bootstrap intervals and sign tests; simulation matched to the data's noise and scale; zero reverse edges (`results2/revision3_*.json`) |
 | 13 | `python3 revision4.py sens`, `swap`, `split`, `simdesign` | fourth-review analyses: RQ3 under every sensitivity setting and with binary PHQ-9 items, periods swapped (200 replicates), 20 within-period splits by sampling unit, realised simulation design (`results2/revision4_*.json`) |
 | 14 | `python3 stats2.py` | `results2/paper_stats.json` |
+| 15 | `python3 revision5.py` | calibration, edge-cut sensitivity, initial vs revised membership functions (`results2/revision5.json`) |
+| 16 | `python3 revision6.py main`, `blocks`, `mask`, `strat`, `signed`, `sim`, `misc` | sixth-review analyses (`results2/revision6_<part>.json`): stronger baselines and link-prediction indices with concept jackknife, withheld blocks with recalibration on measured pairs, random masking and cold start, age–sex standardised relation, signed relation, respondent-level simulation, Table S17 completion, grid error, bootstrap edge filter, sleep 2015–2018, split-half reliability, modularity interval, age–sex description |
+| 17 | `python3 figures6.py calib`, `forest`, `heatmap` | Fig. 2, Fig. 3 and Fig. S1 (`figures/`) |
+
+`rq6lib.py` can be reused on any square relation matrix with concept types and prevalences to run the procedure of Section 7.3 of the paper: leave-dyad-out composition under several t-norms, link-prediction indices and a learned path model, predictors without paths, within-block and per-source evaluation, recalibration, and withheld-block, random and cold-start designs.
 
 Master seed: 20261029. The full run takes several hours on one CPU, mostly in the null models and bootstraps.
 
@@ -82,4 +87,4 @@ Code: MIT (see `LICENSE`). Derived results and review forms: CC BY 4.0.
 
 ## Citation
 
-Archived on Zenodo. All versions: https://doi.org/10.5281/zenodo.23790456. Version 1.1.0 (the revised manuscript): https://doi.org/10.5281/zenodo.23794509. Version 1.0.0: https://doi.org/10.5281/zenodo.23790457. See also `CITATION.cff`.
+Archived on Zenodo. All versions (concept DOI, cited in the paper): https://doi.org/10.5281/zenodo.23790456. Version 1.1.0 (the revised manuscript): https://doi.org/10.5281/zenodo.23794509. Version 1.0.0: https://doi.org/10.5281/zenodo.23790457. See also `CITATION.cff`.

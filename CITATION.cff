@@ -1,10 +1,10 @@
-cff-version: 1.2.0
+cff-version: 1.3.0
 message: "If you use this code or the derived results, please cite them as below."
-title: "Code and derived results for: Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates"
-version: 1.2.0
-doi: 10.5281/zenodo.23790457
+title: "Code and derived results for: Testing composition rules on a graded association graph: a temporally held-out case study of depressive symptoms in NHANES"
+version: 1.3.0
+doi: 10.5281/zenodo.23790456
 repository-code: "https://github.com/Bangth2026/fuzzy-tnorm-nhanes"
-date-released: 2026-10-30
+date-released: 2026-10-31
 license: MIT
 authors:
   - family-names: Truong

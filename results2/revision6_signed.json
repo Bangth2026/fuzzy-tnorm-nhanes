@@ -1,0 +1,10 @@
+{
+ "signed": {
+  "n_negative_dev": 49,
+  "n_negative_hold": 48,
+  "signed_input_signed_target": 0.8707469097848525,
+  "clipped_input_signed_target": 0.8776893793514399,
+  "signed_input_clipped_target": 0.8700120840624784,
+  "sign_agreement_on_negative_targets": 0.868421052631579
+ }
+}

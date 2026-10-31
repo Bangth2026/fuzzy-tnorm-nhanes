@@ -1,0 +1,3 @@
+[15:44:11] stratified relations
+[15:44:54] stratified withheld blocks
+[15:45:14] done strat

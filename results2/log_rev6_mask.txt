@@ -1,0 +1,51 @@
+[15:44:13] random masking 25%, 200 repetitions
+[15:45:05] cold start
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/tmp/claude-0/-home-claude/9da0207c-f737-51ff-a597-e48e880d9466/scratchpad/repo_src/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[15:45:09] done mask

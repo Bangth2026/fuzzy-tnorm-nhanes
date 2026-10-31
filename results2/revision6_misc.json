@@ -1,0 +1,90 @@
+{
+ "misc": {
+  "table9": {
+   "low_education": {
+    "edges": 468,
+    "product": 0.8843069985542773
+   },
+   "smoking": {
+    "edges": 470,
+    "product": 0.8705960737040283
+   },
+   "poor_self_rated_health": {
+    "edges": 470,
+    "product": 0.8771553127088584
+   },
+   "diabetes": {
+    "edges": 468,
+    "product": 0.8778518718870766
+   },
+   "cancer": {
+    "edges": 468,
+    "product": 0.879275857235785
+   },
+   "drop_short_sleep": {
+    "edges": 428
+   },
+   "drop_poor_self_rated_health": {
+    "edges": 424
+   },
+   "drop_self_harm_thoughts": {
+    "edges": 434
+   },
+   "complete_cases": {
+    "edges": 472,
+    "n": [
+     11294,
+     11726
+    ]
+   }
+  },
+  "grid_error_max_abs_mu": 0.0004951939408070205,
+  "grid_error_mean_abs_mu": 3.102227238051361e-05,
+  "edge_filter": {
+   "n_edges_lower_bound_positive": 471,
+   "product": 0.8779855812744116,
+   "hamacher": 0.8537898559838168,
+   "min": 0.7297861226426839
+  },
+  "dev_2015_2018": {
+   "n": 10202,
+   "product": 0.8632699122093356,
+   "hamacher": 0.8259059354870794,
+   "min": 0.7078938734628377,
+   "rank3": 0.8833903504712945
+  },
+  "reliability": {
+   "development": {
+    "split_half_rho": 0.9510579952773133,
+    "spearman_brown": 0.9749151461201283
+   },
+   "heldout": {
+    "split_half_rho": 0.9613445521344477,
+    "spearman_brown": 0.9802913527745621
+   }
+  },
+  "Q_dev_boot": {
+   "point": 0.215,
+   "interval": [
+    0.20286351284456586,
+    0.22548828646595184
+   ]
+  },
+  "age_sex": {
+   "development": {
+    "mean_age": 47.09868975572981,
+    "female": 0.5136088383391219,
+    "age_18_39": 0.3770723648937506,
+    "age_40_59": 0.3483567635181679,
+    "age_60_plus": 0.27457087158808163
+   },
+   "heldout": {
+    "mean_age": 46.18745169633876,
+    "female": 0.5086638947709918,
+    "age_18_39": 0.38592138785656827,
+    "age_40_59": 0.37061408461269146,
+    "age_60_plus": 0.2434645275307403
+   }
+  }
+ }
+}

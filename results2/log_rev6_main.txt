@@ -1,0 +1,27 @@
+[15:44:11] predictors
+[15:44:50] concept jackknife
+[15:45:17]   jackknife 0
+[15:45:34]   jackknife 1
+[15:45:57]   jackknife 2
+[15:46:25]   jackknife 3
+[15:46:50]   jackknife 4
+[15:47:08]   jackknife 5
+[15:47:25]   jackknife 6
+[15:47:43]   jackknife 7
+[15:48:05]   jackknife 8
+[15:48:21]   jackknife 9
+[15:48:41]   jackknife 10
+[15:49:07]   jackknife 11
+[15:49:25]   jackknife 12
+[15:49:45]   jackknife 13
+[15:50:11]   jackknife 14
+[15:50:26]   jackknife 15
+[15:50:40]   jackknife 16
+[15:50:54]   jackknife 17
+[15:51:07]   jackknife 18
+[15:51:22]   jackknife 19
+[15:51:42]   jackknife 20
+[15:51:56]   jackknife 21
+[15:52:10]   jackknife 22
+[15:52:23]   jackknife 23
+[15:52:23] done main

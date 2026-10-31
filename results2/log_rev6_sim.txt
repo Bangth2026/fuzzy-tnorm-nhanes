@@ -1,0 +1,4 @@
+[15:44:11] sim chain
+[15:50:34] sim factor1
+[15:57:18] sim factor3
+[15:59:38] done sim
