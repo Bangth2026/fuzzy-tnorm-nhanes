@@ -1,4 +1,4 @@
-"""Analyses requested in the fourth review.
+"""Additional analyses, set 4.
 Parts:
   sens  - RQ3 under the Table 6 settings that lacked it (edge threshold, crisp concepts, raw subsethood,
           membership variants) and with PHQ-9 items scored as binary (item >= 2, "more than half the days").

@@ -1,0 +1,37 @@
+{
+ "phqmap": {
+  "concave_0_.5_.8_1": {
+   "product": 0.8618863929522305,
+   "hamacher": 0.835895885877432,
+   "min": 0.7033204777801773,
+   "yager2": 0.6693741060449908,
+   "lukasiewicz": 0.3345613842937051,
+   "rank3": 0.9005010175000107,
+   "reverse_odds": 0.9495772136718651,
+   "product_best_tnorm": true,
+   "rho_dev_vs_main_relation": 0.9941166046884676
+  },
+  "convex_0_.2_.5_1": {
+   "product": 0.8908882338349936,
+   "hamacher": 0.8681103204946529,
+   "min": 0.7696242201361188,
+   "yager2": 0.6935509486466402,
+   "lukasiewicz": 0.2946354704511669,
+   "rank3": 0.9145298165467176,
+   "reverse_odds": 0.9558428703185167,
+   "product_best_tnorm": true,
+   "rho_dev_vs_main_relation": 0.995133986713919
+  },
+  "linear_main": {
+   "product": 0.8779855812744116,
+   "hamacher": 0.8537898559838168,
+   "min": 0.7297861226426839,
+   "yager2": 0.6890516531157975,
+   "lukasiewicz": 0.3211221811118526,
+   "rank3": 0.9076700619474513,
+   "reverse_odds": 0.9532911155742693,
+   "product_best_tnorm": true,
+   "rho_dev_vs_main_relation": 1.0
+  }
+ }
+}

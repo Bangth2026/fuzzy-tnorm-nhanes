@@ -1,4 +1,4 @@
-"""Analyses requested in the second review (M1-M10 and minor points).
+"""Additional analyses, set 2.
 Parts: r3 (RQ3 extensions), boot (two-period Rao-Wu bootstrap with bias-corrected intervals),
 sim (simulation with known generating rules), null (strength-preserving null, RQ1 power, Holm families),
 misc (symmetric relation for RQ2, marginal-correlation network, complete cases).

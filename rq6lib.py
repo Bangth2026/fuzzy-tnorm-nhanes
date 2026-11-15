@@ -1,4 +1,4 @@
-"""Predictors and evaluation used by revision6.py (sixth review): stronger non-path baselines,
+"""Predictors and evaluation used by revision6.py: stronger non-path baselines,
 link-prediction indices, a learned path aggregator, within-block and per-source evaluation."""
 import itertools
 import numpy as np

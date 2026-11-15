@@ -1,4 +1,4 @@
-"""Analyses requested in the second-round review (R1, R3, R5).
+"""Additional analyses, set 3.
 Parts: blocks (withheld blocks: k chosen by cross-validation within development, bootstrap intervals, sign test),
 sim2 (simulation matched to the data's noise and scale; confusion matrices), reverse (zero reverse edges).
 Writes results2/revision3_<part>.json."""

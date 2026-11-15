@@ -1,0 +1,137 @@
+{
+ "blocksum": {
+  "per_block": {
+   "Symptom\u2013symptom": {
+    "product": 0.8822110746671812,
+    "hamacher": 0.9141745449868159,
+    "softimpute_cv": 0.8981284970094541,
+    "katz": 0.9197376037044184,
+    "prev_type_reg": 0.8875168821146056,
+    "rank3_svd": 0.9028233326902053,
+    "learned_paths": 0.8851373078654577,
+    "n_pairs": 72
+   },
+   "Symptom\u2013socioeconomic": {
+    "product": 0.8067399832786676,
+    "hamacher": 0.8104701266962507,
+    "softimpute_cv": 0.6210688790275903,
+    "katz": 0.8924046562479904,
+    "prev_type_reg": 0.8835616438356166,
+    "rank3_svd": 0.40277589507471734,
+    "learned_paths": 0.8254912788043548,
+    "n_pairs": 72
+   },
+   "Symptom\u2013lifestyle": {
+    "product": 0.7797258920854426,
+    "hamacher": 0.675334403424291,
+    "softimpute_cv": 0.5685063999670741,
+    "katz": 0.7711816273614025,
+    "prev_type_reg": 0.7125900316911553,
+    "rank3_svd": 0.44433652030059134,
+    "learned_paths": 0.7169280114261696,
+    "n_pairs": 90
+   },
+   "Symptom\u2013health": {
+    "product": 0.8728716474527397,
+    "hamacher": 0.7686672208125795,
+    "softimpute_cv": 0.5640071737018428,
+    "katz": 0.889062488838272,
+    "prev_type_reg": 0.7813569535136853,
+    "rank3_svd": 0.5683732489449418,
+    "learned_paths": 0.856106646547705,
+    "n_pairs": 108
+   },
+   "Socioeconomic\u2013socioeconomic": {
+    "product": 0.8461538461538463,
+    "hamacher": 0.7202797202797203,
+    "softimpute_cv": 0.8671328671328673,
+    "katz": 0.3636363636363637,
+    "prev_type_reg": 0.4545454545454546,
+    "rank3_svd": 0.8181818181818183,
+    "learned_paths": 0.7202797202797203,
+    "n_pairs": 12
+   },
+   "Socioeconomic\u2013lifestyle": {
+    "product": 0.1643413074517542,
+    "hamacher": 0.00479211359636333,
+    "softimpute_cv": 0.589054120305916,
+    "katz": 0.36016022382079693,
+    "prev_type_reg": 0.08776145292163431,
+    "rank3_svd": 0.6472447072051828,
+    "learned_paths": -0.00873896999250248,
+    "n_pairs": 40
+   },
+   "Socioeconomic\u2013health": {
+    "product": 0.722832853341294,
+    "hamacher": 0.5344852112792035,
+    "softimpute_cv": 0.3156348142289425,
+    "katz": 0.7592712795704059,
+    "prev_type_reg": 0.5071701315870941,
+    "rank3_svd": 0.08880848471606542,
+    "learned_paths": 0.558571864643238,
+    "n_pairs": 48
+   },
+   "Lifestyle\u2013lifestyle": {
+    "product": 0.4754708373815756,
+    "hamacher": 0.4754708373815756,
+    "softimpute_cv": 0.5105215721885508,
+    "katz": 0.47394689238996807,
+    "prev_type_reg": -0.022859174874114215,
+    "rank3_svd": 0.683489328736015,
+    "learned_paths": 0.5708144408028986,
+    "n_pairs": 20
+   },
+   "Lifestyle\u2013health": {
+    "product": 0.3544577177965991,
+    "hamacher": 0.2750947508676218,
+    "softimpute_cv": 0.328635732124381,
+    "katz": 0.20668913970086858,
+    "prev_type_reg": 0.4945533155006947,
+    "rank3_svd": -0.6507169602372673,
+    "learned_paths": 0.32609473977325704,
+    "n_pairs": 60
+   },
+   "Health\u2013health": {
+    "product": 0.8060066740823137,
+    "hamacher": 0.7517241379310345,
+    "softimpute_cv": 0.7317018909899888,
+    "katz": 0.6556173526140155,
+    "prev_type_reg": 0.7027808676307008,
+    "rank3_svd": 0.7259176863181313,
+    "learned_paths": 0.7437152391546161,
+    "n_pairs": 30
+   }
+  },
+  "product_vs_softimpute_cv": {
+   "product_better": 6,
+   "n_blocks": 10,
+   "sign_test_p": 0.75390625,
+   "median_rho_other": 0.5787802601364951
+  },
+  "product_vs_katz": {
+   "product_better": 5,
+   "n_blocks": 10,
+   "sign_test_p": 1.0,
+   "median_rho_other": 0.7074443160922107
+  },
+  "product_vs_prev_type_reg": {
+   "product_better": 7,
+   "n_blocks": 10,
+   "sign_test_p": 0.34375,
+   "median_rho_other": 0.6049754996088974
+  },
+  "product_vs_rank3_svd": {
+   "product_better": 7,
+   "n_blocks": 10,
+   "sign_test_p": 0.34375,
+   "median_rho_other": 0.6078089780750623
+  },
+  "product_vs_learned_paths": {
+   "product_better": 7,
+   "n_blocks": 10,
+   "sign_test_p": 0.34375,
+   "median_rho_other": 0.718603865852945
+  },
+  "median_rho_product": 0.7928662830838782
+ }
+}

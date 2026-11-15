@@ -1,4 +1,4 @@
-"""Fifth-review analyses (JHIR reviewer): calibration of composed values, edge-cut sensitivity incl. 0.005,
+"""Additional analyses, set 5: calibration of composed values, edge-cut sensitivity incl. 0.005,
 initial vs revised membership functions on RQ3. Uses only saved relation matrices in results2/ and
 results2_pre_expert_review/. Writes results2/revision5.json and fig3_calibration.{png,tiff}."""
 import json, sys, itertools

@@ -1,0 +1,39 @@
+{
+ "ident": {
+  "crisp_concepts": [
+   "uninsured",
+   "hypertension",
+   "cardiovascular",
+   "cancer",
+   "arthritis"
+  ],
+  "all": {
+   "n_pairs": 221,
+   "r": 0.9965756939288437,
+   "slope": 1.0510502193523787,
+   "resid_sd": 0.10331335595639671,
+   "max_abs_dev_from_identity": 0.4895104653870286
+  },
+  "crisp-crisp": {
+   "n_pairs": 6,
+   "r": 0.9998716950310561,
+   "slope": 1.023395846830778,
+   "resid_sd": 0.022310985484223122,
+   "max_abs_dev_from_identity": 0.07747913587477462
+  },
+  "involves PHQ-9 item": {
+   "n_pairs": 143,
+   "r": 0.9975245462179025,
+   "slope": 1.0622440601449377,
+   "resid_sd": 0.08794807387748514,
+   "max_abs_dev_from_identity": 0.4895104653870286
+  },
+  "other graded": {
+   "n_pairs": 72,
+   "r": 0.9926272628893922,
+   "slope": 1.041080060475672,
+   "resid_sd": 0.12688052754008874,
+   "max_abs_dev_from_identity": 0.4589866634297374
+  }
+ }
+}

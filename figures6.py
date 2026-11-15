@@ -1,4 +1,4 @@
-"""Figures for the sixth review: calibration with bootstrap bands (Fig. 2), withheld-block forest plot (Fig. 3),
+"""Figures (v1.3.0): calibration with bootstrap bands (Fig. 2), withheld-block forest plot (Fig. 3),
 relation heatmap ordered by community (Online Resource Fig. S1)."""
 import json, sys
 import numpy as np

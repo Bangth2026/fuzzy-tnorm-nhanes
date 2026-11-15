@@ -1,4 +1,4 @@
-"""Reviewer-requested sensitivity variants: swap one membership function at a time."""
+"""Sensitivity variants suggested in the clinical review: swap one membership function at a time."""
 import json
 from sklearn.metrics import normalized_mutual_info_score as NMI
 from analysis2 import graph, rq1, dev, tic

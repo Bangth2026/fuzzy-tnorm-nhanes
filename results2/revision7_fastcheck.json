@@ -1,0 +1,11 @@
+{
+ "fastcheck": {
+  "max_abs_diff_vs_enumeration": {
+   "product": 0.0,
+   "hamacher": 0.0,
+   "minimum": 0.0,
+   "yager": 0.0,
+   "lukasiewicz": 0.0
+  }
+ }
+}

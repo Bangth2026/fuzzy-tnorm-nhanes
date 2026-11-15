@@ -1,4 +1,4 @@
-"""Analyses requested in the pre-submission review (M1-M9, minor 4, 5, 7, 8, 9).
+"""Additional analyses, set 1 (parts m1-m9 and minor).
 Writes results2/revision.json. Run after analysis2.py main (needs results2/rq1.json, best_partition.json)."""
 import itertools, json, sys, time
 import numpy as np

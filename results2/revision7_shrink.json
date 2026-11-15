@@ -1,0 +1,43 @@
+{
+ "shrink": {
+  "neff_median": 656.8077007018408,
+  "n_pairs_neff_below_100": 24,
+  "eb_kappa50": {
+   "product": 0.8710764421879247,
+   "hamacher": 0.8492243601938374,
+   "min": 0.7218463141672187,
+   "yager2": 0.6729337069762149,
+   "lukasiewicz": 0.2853895937147914,
+   "rank3": 0.8942943335862293,
+   "reverse_odds": 0.9252109732353847,
+   "product_best_tnorm": true
+  },
+  "eb_kappa100": {
+   "product": 0.8583488572158846,
+   "hamacher": 0.8420178274500107,
+   "min": 0.708372404306309,
+   "yager2": 0.6662187016729835,
+   "lukasiewicz": 0.285414151046611,
+   "rank3": 0.8808678377345279,
+   "reverse_odds": 0.9026393317350868,
+   "product_best_tnorm": true
+  },
+  "eb_kappa300": {
+   "product": 0.8246671164076214,
+   "hamacher": 0.8077847629069385,
+   "min": 0.7120430812481123,
+   "yager2": 0.6327238041687063,
+   "lukasiewicz": 0.20287670728568874,
+   "rank3": 0.8445796807554734,
+   "reverse_odds": 0.8395819999207684,
+   "product_best_tnorm": true
+  },
+  "exclude_neff_below_100": {
+   "product": 0.8754779220617314,
+   "hamacher": 0.8532223690638298,
+   "min": 0.7328262172245594,
+   "rank3": 0.8908882076780599,
+   "n_pairs_evaluated": 528
+  }
+ }
+}

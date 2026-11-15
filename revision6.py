@@ -1,4 +1,4 @@
-"""Analyses requested in the sixth review (JHIR R1).
+"""Additional analyses, set 6 (v1.3.0).
 Parts:
   main    - RQ3 with stronger baselines (regularised soft-impute, logit soft-impute, NMF, prevalence-and-block
             regression, Katz, weighted common neighbours, Adamic-Adar, resource allocation, personalised PageRank,

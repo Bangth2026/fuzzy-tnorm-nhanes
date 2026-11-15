@@ -1,12 +1,12 @@
-# Testing t-norms on a population fuzzy graph of depressive symptoms (NHANES)
+# Paths or completion? Testing t-norm composition in a graded clinical knowledge graph (NHANES)
 
 [![DOI](https://zenodo.org/badge/1439206241.svg)](https://doi.org/10.5281/zenodo.23790456)
 
 Code and derived results for the manuscript
 
-> Truong Hai Bang, Van An Phan Thi. *Testing composition rules on a graded association graph: a temporally held-out case study of depressive symptoms in NHANES* (earlier titles: *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates*; *Which t-norm should a clinical fuzzy graph reason with?*). Under review at the Journal of Healthcare Informatics Research.
+> Hai Bang Truong. *Paths or Completion? Testing t-Norm Composition in a Graded Clinical Knowledge Graph of Depressive Symptoms* (earlier title: *Testing t-norm choice on a population fuzzy graph of depressive symptoms and their correlates*).
 
-Version 1.3.0 contains every analysis reported in the second revision, including stronger baselines, link-prediction indices, a learned path model, per-source ranking, calibration in the withheld design, random masking, cold start, age–sex standardisation, signed relations and a respondent-level simulation of chained versus latent-factor generation (`revision6.py`, `rq6lib.py`). The literature search behind Supplementary Table S3 is in `litsearch/` (`tableS3_v7.md` gives the search strings, eligibility criteria and record flow).
+Version 1.4.0 adds `revision7.py` and `fast_compose.py`: the prevalence-odds identity of edge direction by pair type, block-wise rank-1 completion, non-linear PHQ-9 item mappings, empirical-Bayes shrinkage and exclusion of low-information pairs, jackknife repeated replication (JRR) intervals, a clustered simulation of interval coverage, a withheld-block summary with sign tests, an exact O(n^3) leave-dyad-out composition algorithm (`fast_compose.py`) checked against enumeration, and a network drawing of the graph (`figures7.py`). Version 1.3.0 added stronger baselines, link-prediction indices, a learned path model, per-source ranking, calibration in the withheld design, random masking, cold start, age–sex standardisation, signed relations and a respondent-level simulation of chained versus latent-factor generation (`revision6.py`, `rq6lib.py`). The literature search behind Supplementary Table S3 is in `litsearch/` (`tableS3_v7.md` gives the search strings, eligibility criteria and record flow).
 
 The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine PHQ-9 symptoms and 15 correlates) from NHANES 2013–2018 (development) and 2007–2012 (held-out), using a survey-weighted fuzzy certainty factor. It then audits:
 
@@ -14,7 +14,7 @@ The pipeline builds a typed, directed fuzzy relation graph of 24 concepts (nine 
 - the structure against null models and the concept-type schema (RQ2)
 - multi-hop inference with five t-norms against held-out relations (RQ3)
 
-Every number in the manuscript is read from result files in `results2/`: `paper_stats.json` for the original analyses and `revision*_*.json` for the analyses added in review.
+Every number in the manuscript is read from result files in `results2/`: `paper_stats.json` for the original analyses and `revision*_*.json` for the analyses added later.
 
 ## Requirements
 
@@ -48,15 +48,18 @@ Run all steps with `bash run_all.sh`, or run them one at a time:
 | 6 | `python3 nresp_check.py` | density of respondent-permutation null graphs |
 | 7 | `python3 describe2.py` | descriptive results (`results2/describe.json`) |
 | 8 | `python3 sens_expert.py` | membership-function variants (`results2/sens_expert.json`) |
-| 9 | `python3 revision.py m1` … `minor` | analyses requested in review (`results2/revision_*.json`) |
+| 9 | `python3 revision.py m1` … `minor` | additional analyses (`results2/revision_*.json`) |
 | 10 | `python3 sanity2.py` | implementation checks (`results2/sanity2.json`) |
-| 11 | `python3 revision2.py r3`, `boot`, `sim`, `null`, `misc`; `python3 revision2_extra.py` | second-review analyses: non-path predictors, parametric t-norms, scale, withheld blocks, simulation, strength-preserving null, detectable cost (`results2/revision2_*.json`) |
-| 12 | `python3 revision3.py blocks`, `sim2`, `reverse` | third-review analyses: withheld blocks with cross-validated completion rank, bootstrap intervals and sign tests; simulation matched to the data's noise and scale; zero reverse edges (`results2/revision3_*.json`) |
-| 13 | `python3 revision4.py sens`, `swap`, `split`, `simdesign` | fourth-review analyses: RQ3 under every sensitivity setting and with binary PHQ-9 items, periods swapped (200 replicates), 20 within-period splits by sampling unit, realised simulation design (`results2/revision4_*.json`) |
+| 11 | `python3 revision2.py r3`, `boot`, `sim`, `null`, `misc`; `python3 revision2_extra.py` | additional analyses: non-path predictors, parametric t-norms, scale, withheld blocks, simulation, strength-preserving null, detectable cost (`results2/revision2_*.json`) |
+| 12 | `python3 revision3.py blocks`, `sim2`, `reverse` | additional analyses: withheld blocks with cross-validated completion rank, bootstrap intervals and sign tests; simulation matched to the data's noise and scale; zero reverse edges (`results2/revision3_*.json`) |
+| 13 | `python3 revision4.py sens`, `swap`, `split`, `simdesign` | additional analyses: RQ3 under every sensitivity setting and with binary PHQ-9 items, periods swapped (200 replicates), 20 within-period splits by sampling unit, realised simulation design (`results2/revision4_*.json`) |
 | 14 | `python3 stats2.py` | `results2/paper_stats.json` |
 | 15 | `python3 revision5.py` | calibration, edge-cut sensitivity, initial vs revised membership functions (`results2/revision5.json`) |
-| 16 | `python3 revision6.py main`, `blocks`, `mask`, `strat`, `signed`, `sim`, `misc` | sixth-review analyses (`results2/revision6_<part>.json`): stronger baselines and link-prediction indices with concept jackknife, withheld blocks with recalibration on measured pairs, random masking and cold start, age–sex standardised relation, signed relation, respondent-level simulation, Table S17 completion, grid error, bootstrap edge filter, sleep 2015–2018, split-half reliability, modularity interval, age–sex description |
+| 16 | `python3 revision6.py main`, `blocks`, `mask`, `strat`, `signed`, `sim`, `misc` | additional analyses (`results2/revision6_<part>.json`): stronger baselines and link-prediction indices with concept jackknife, withheld blocks with recalibration on measured pairs, random masking and cold start, age–sex standardised relation, signed relation, respondent-level simulation, Table S17 completion, grid error, bootstrap edge filter, sleep 2015–2018, split-half reliability, modularity interval, age–sex description |
 | 17 | `python3 figures6.py calib`, `forest`, `heatmap` | Fig. 2, Fig. 3 and Fig. S1 (`figures/`) |
+| 18 | `python3 revision7.py ident`, `rank1gap`, `phqmap`, `shrink`, `jrr`, `blocksum`, `fastcheck`; `python3 revision7.py coverage 12 0` and `coverage 12 12` then `python3 revision7.py covsum` | v1.4.0 analyses (`results2/revision7_<part>.json`, `revision7_coverage_<start>.json`, `revision7_coverage_summary.json`) |
+| 19 | `python3 figures7.py` | network figure (`figures/Fig2_network.pdf`) |
+| 20 | `python3 fast_compose.py` | exactness and timing of the O(n^3) composition algorithm against enumeration on random relations |
 
 `rq6lib.py` can be reused on any square relation matrix with concept types and prevalences to run the procedure of Section 7.3 of the paper: leave-dyad-out composition under several t-norms, link-prediction indices and a learned path model, predictors without paths, within-block and per-source evaluation, recalibration, and withheld-block, random and cold-start designs.
 
@@ -68,7 +71,7 @@ All intervals use the Rao–Wu rescaling bootstrap: in each stratum, n_h − 1 p
 
 ## Clinical review of membership functions
 
-The clinical co-author reviewed the correlate membership functions on the form in `review/`:
+Thi Van An Phan (VNU University of Education, Vietnam National University, Hanoi), a clinical psychologist, reviewed the correlate membership functions on the form in `review/`; she is credited as a contributor in the Zenodo record:
 
 - `Phieu_duyet_ham_thanh_vien_VanAn.xlsx` is the blank form.
 - `Phieu_duyet_ham_thanh_vien_VanAn_reviewed.xlsx` is the completed form.

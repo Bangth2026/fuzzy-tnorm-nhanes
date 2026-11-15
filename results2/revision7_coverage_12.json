@@ -1,0 +1,348 @@
+{
+ "coverage": {
+  "product": {
+   "jrr_coverage": 1.0,
+   "raowu_shifted_coverage": 0.6666666666666666,
+   "mean_bias": -0.008876216072214208,
+   "mean_jrr_se": 0.008399018440544364,
+   "mean_raowu_width": 0.02534481268148699
+  },
+  "product_minus_hamacher": {
+   "jrr_coverage": 1.0,
+   "raowu_shifted_coverage": 0.8333333333333334,
+   "mean_bias": 0.00029288464698088806,
+   "mean_jrr_se": 0.006187071088440691,
+   "mean_raowu_width": 0.01488376618030173
+  },
+  "rank3_minus_product": {
+   "jrr_coverage": 1.0,
+   "raowu_shifted_coverage": 0.9166666666666666,
+   "mean_bias": -0.001865573242653203,
+   "mean_jrr_se": 0.008683371030355689,
+   "mean_raowu_width": 0.026423787354238986
+  },
+  "n_rep": 12,
+  "rows": [
+   {
+    "product": {
+     "truth": 0.9400714366334488,
+     "est": 0.9320151954098138,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.006698675836948927,
+     "rw_width": 0.018468458744696048
+    },
+    "product_minus_hamacher": {
+     "truth": -0.0034006029249579184,
+     "est": 0.009616777220983086,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.006750669785029251,
+     "rw_width": 0.01727889360479303
+    },
+    "rank3_minus_product": {
+     "truth": 0.05009168585974433,
+     "est": 0.04302165087628451,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.007685720321658444,
+     "rw_width": 0.02286358661935993
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9334653602103489,
+     "est": 0.9226462718008084,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.005523673170288503,
+     "rw_width": 0.016770965232490997
+    },
+    "product_minus_hamacher": {
+     "truth": -0.0030307488304006647,
+     "est": -0.0013529924863400211,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.004939369543376633,
+     "rw_width": 0.011361346827303208
+    },
+    "rank3_minus_product": {
+     "truth": 0.058231829169644644,
+     "est": 0.06324326653652323,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.006254522864150003,
+     "rw_width": 0.01662338615556383
+    }
+   },
+   {
+    "product": {
+     "truth": 0.901189954180614,
+     "est": 0.8872687002839115,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.012607229972944101,
+     "rw_width": 0.034155173398586536
+    },
+    "product_minus_hamacher": {
+     "truth": 0.0015716658659343796,
+     "est": 0.0053951324518570765,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.007316749237244303,
+     "rw_width": 0.0198893506310547
+    },
+    "rank3_minus_product": {
+     "truth": 0.08178099015591678,
+     "est": 0.07979188287268757,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.01319424336020459,
+     "rw_width": 0.03216299519113314
+    }
+   },
+   {
+    "product": {
+     "truth": 0.941598368989104,
+     "est": 0.926916859453589,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.008592611227281688,
+     "rw_width": 0.02225728177681141
+    },
+    "product_minus_hamacher": {
+     "truth": 0.0050346959384112155,
+     "est": -0.00018178785357481075,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.005637681554754351,
+     "rw_width": 0.009652379658914165
+    },
+    "rank3_minus_product": {
+     "truth": 0.045896938273035426,
+     "est": 0.05053131566890012,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.00793508857811534,
+     "rw_width": 0.020943495921393572
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9165016568521677,
+     "est": 0.9031467938192345,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.007135996966310751,
+     "rw_width": 0.021290253520991564
+    },
+    "product_minus_hamacher": {
+     "truth": -0.013496463912328727,
+     "est": -0.01399477548976713,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.0035913321640487447,
+     "rw_width": 0.01350597431271019
+    },
+    "rank3_minus_product": {
+     "truth": 0.07187183984861112,
+     "est": 0.07640314210375543,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.007026531415584722,
+     "rw_width": 0.021766741847335944
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9181819623317796,
+     "est": 0.9088015714232919,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.008327459375706723,
+     "rw_width": 0.02101888972456123
+    },
+    "product_minus_hamacher": {
+     "truth": 0.0017265372414315694,
+     "est": -0.002400627039673253,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.006121266157666199,
+     "rw_width": 0.013604980816767554
+    },
+    "rank3_minus_product": {
+     "truth": 0.06940031486501741,
+     "est": 0.06560058697214632,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.008776852027319886,
+     "rw_width": 0.02343742865440397
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9196929326333311,
+     "est": 0.9144666949503459,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.008741897914539025,
+     "rw_width": 0.030921992059120162
+    },
+    "product_minus_hamacher": {
+     "truth": 0.005265569366263656,
+     "est": 0.005019500282367084,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.005891278386924008,
+     "rw_width": 0.010843994378056145
+    },
+    "rank3_minus_product": {
+     "truth": 0.06772382344090166,
+     "est": 0.06260009971936065,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.008341371614517543,
+     "rw_width": 0.029228431061542465
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9055010659702983,
+     "est": 0.8998321102130956,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.008601571614227338,
+     "rw_width": 0.032678393687451845
+    },
+    "product_minus_hamacher": {
+     "truth": 0.028076805796207194,
+     "est": 0.030447325114448587,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.008409269605948896,
+     "rw_width": 0.021337306836878216
+    },
+    "rank3_minus_product": {
+     "truth": 0.08563442177264846,
+     "est": 0.08110642023615577,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.009560777380589077,
+     "rw_width": 0.03936777954269695
+    }
+   },
+   {
+    "product": {
+     "truth": 0.9453484212495445,
+     "est": 0.943514024259191,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.005845290043673696,
+     "rw_width": 0.01930872510840531
+    },
+    "product_minus_hamacher": {
+     "truth": -0.0013007677183585198,
+     "est": 0.0021539507021716142,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.006158000393971962,
+     "rw_width": 0.013461202216916535
+    },
+    "rank3_minus_product": {
+     "truth": 0.03940223188110914,
+     "est": 0.028789903211163592,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.006326505886249579,
+     "rw_width": 0.02031293960376456
+    }
+   },
+   {
+    "product": {
+     "truth": 0.8778685987738024,
+     "est": 0.8749865135063546,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.011565760695824184,
+     "rw_width": 0.02876071796392532
+    },
+    "product_minus_hamacher": {
+     "truth": -0.012018902512196727,
+     "est": -0.026031336181235987,
+     "jrr_cover": true,
+     "rw_shift_cover": false,
+     "jrr_se": 0.009499329938544417,
+     "rw_width": 0.02260222678756363
+    },
+    "rank3_minus_product": {
+     "truth": 0.11094987863449068,
+     "est": 0.10341941852821002,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.012105561728583226,
+     "rw_width": 0.029153635540616632
+    }
+   },
+   {
+    "product": {
+     "truth": 0.924352209542892,
+     "est": 0.9112426837610045,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.009551878013903408,
+     "rw_width": 0.0346597890431416
+    },
+    "product_minus_hamacher": {
+     "truth": -0.002074864347592076,
+     "est": 0.0015765530760085689,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.00545405273111828,
+     "rw_width": 0.013975152025611448
+    },
+    "rank3_minus_product": {
+     "truth": 0.05974163865055193,
+     "est": 0.06223993964186436,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.009991141027643707,
+     "rw_width": 0.03660909293742139
+    }
+   },
+   {
+    "product": {
+     "truth": 0.928166791075058,
+     "est": 0.9205867466951781,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.007596176454884024,
+     "rw_width": 0.023847111917661867
+    },
+    "product_minus_hamacher": {
+     "truth": 0.0013406306538021884,
+     "est": 0.0009604505827414123,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.004475853562661258,
+     "rw_width": 0.011092386067051936
+    },
+    "rank3_minus_product": {
+     "truth": 0.0601555686654528,
+     "est": 0.06174665593823436,
+     "jrr_cover": true,
+     "rw_shift_cover": true,
+     "jrr_se": 0.007002136159652144,
+     "rw_width": 0.024615935175635498
+    }
+   }
+  ],
+  "design": {
+   "strata": 45,
+   "psu_per_stratum": 2,
+   "respondents_per_psu": 170,
+   "icc_latent": 0.05,
+   "generator": "three-factor latent model, PHQ-like ordinal and binary measurement",
+   "rao_wu_reps": 20
+  }
+ }
+}

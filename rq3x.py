@@ -1,4 +1,4 @@
-"""Vectorised multi-hop inference and non-path baselines for the second review (revision2.py)."""
+"""Vectorised multi-hop inference and non-path baselines used by revision2.py."""
 import itertools
 import numpy as np
 from scipy.stats import spearmanr

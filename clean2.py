@@ -5,7 +5,7 @@ Held-out cycles:    2007-2008 (E), 2009-2010 (F), 2011-2012 (G)
 Membership functions are anchored to conventional clinical cut-points. The five
 functions marked [expert] were revised by the clinical reviewer (V.A. Phan Thi,
 review form review/Phieu_duyet_ham_thanh_vien_VanAn_reviewed.xlsx); the other
-eleven were kept as proposed. Columns ending in _alt hold the reviewer-requested
+eleven were kept as proposed. Columns ending in _alt hold the clinical-review
 sensitivity variants (sens_expert.py).
 """
 import json

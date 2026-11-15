@@ -17,3 +17,12 @@ python3 revision2_extra.py
 for p in blocks sim2 reverse; do python3 revision3.py "$p"; done
 for p in sens swap split simdesign; do python3 revision4.py "$p"; done
 python3 stats2.py
+python3 revision5.py
+for p in main blocks mask strat signed sim misc; do python3 revision6.py "$p"; done
+for p in calib forest heatmap; do python3 figures6.py "$p"; done
+for p in ident rank1gap phqmap shrink jrr blocksum fastcheck; do python3 revision7.py "$p"; done
+python3 revision7.py coverage 12 0
+python3 revision7.py coverage 12 12
+python3 revision7.py covsum
+python3 figures7.py
+python3 fast_compose.py
