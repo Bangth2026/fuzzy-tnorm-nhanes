@@ -1,0 +1,16 @@
+{
+ "counts": {
+  "development": {
+   "ordered_pairs_negative_excess": 49,
+   "ordered_pairs_positive": 503,
+   "ordered_pairs_ge_0.01": 468,
+   "dyads_with_a_negative_direction": 25
+  },
+  "held_out": {
+   "ordered_pairs_negative_excess": 48,
+   "ordered_pairs_positive": 504,
+   "ordered_pairs_ge_0.01": 474,
+   "dyads_with_a_negative_direction": 24
+  }
+ }
+}

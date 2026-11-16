@@ -1,0 +1,18 @@
+{
+ "runtime": {
+  "build_relation_one_period": 0.46032094955444336,
+  "paths_product_all_552": 0.0020360946655273438,
+  "paths_hamacher_all_552": 0.0054318904876708984,
+  "paths_min_all_552": 0.001325845718383789,
+  "rank_cv_5fold": 0.3807399272918701,
+  "rank3_leave_dyad_out_all": 0.9663040637969971,
+  "softimpute_lambda_cv": 0.6109969615936279,
+  "softimpute_leave_dyad_out_all": 3.2326815128326416,
+  "katz_leave_dyad_out_all": 0.030362844467163086,
+  "complex_leave_dyad_out_all": 49.94023189544678,
+  "block_design_product_rank3_softimpute_katz": 5.273672103881836,
+  "one_jrr_replicate_without_embeddings": 5.690200090408325,
+  "jrr_90_replicates_without_embeddings_estimated": 512.1180081367493,
+  "jrr_90_replicates_with_complex_estimated": 5006.738878726959
+ }
+}

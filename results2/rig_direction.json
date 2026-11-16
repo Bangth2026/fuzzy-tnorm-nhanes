@@ -1,0 +1,30 @@
+{
+ "direction": {
+  "n_pairs_both_positive": 502,
+  "n_pairs_one_direction_zero": 1,
+  "n_pairs_both_zero": 48,
+  "cancellation_abs_log_error": {
+   "n_triples": 9396,
+   "median": 0.06572592508678965,
+   "p90": 0.26434529671307105,
+   "max": 0.6853658147166991
+  },
+  "odds_approx_abs_log_error": {
+   "median": 0.042609224283961133,
+   "p90": 0.18897611426541336,
+   "max": 0.5303222842616635
+  },
+  "odds_approx_relative_error_mu": {
+   "median": 0.021441956642254328,
+   "p90": 0.09641248229049426
+  },
+  "directed_vs_redirected_product": {
+   "spearman": 0.9984311879465235,
+   "median_abs_diff": 0.0007965161034126471,
+   "max_abs_diff": 0.08154999744198327,
+   "rho_directed": 0.8779855812744116,
+   "rho_redirected": 0.8786241533284184
+  },
+  "same_best_two_edge_intermediate_share": 0.9438405797101449
+ }
+}

@@ -45,13 +45,27 @@ D = {"product": [s50["product"], s25["product"], r50["product"], r25["product"]]
      "katz": [s50["katz"], s25["katz"], r50["katz"], r25["katz"]],
      "si": [nan, nan, r50["softimpute_absent_missing"], r25["softimpute_absent_missing"]]}
 
+# uncertainty: JRR 95% CI (single dyad, type blocks) and +/-1 SD over repetitions (random dyads)
+EA = {k: [nan] * 5 for k in COL}; EAlo = {k: [nan] * 5 for k in COL}
+for k in ["product", "hamacher", "min", "rank3", "katz"]:
+    lo, hi = holm[k]["ci95"]; EA[k][0] = (hi - lo) / 2
+    for q, f in enumerate(["0.1", "0.25", "0.5", "0.75"]):
+        EA[k][q + 1] = miss[f][k]["sd"]
+lo, hi = J("ext_designs", "designs")["temporal"]["jrr_ci"]; EA["si"][0] = (hi - lo) / 2
+EC = {k: [nan] * 3 for k in COL}
+for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("rank3", "rank3"), ("katz", "katz")]:
+    lo, hi = blk[f"weighted_mean_{kk}"]["ci95"]; EC[k][0] = (hi - lo) / 2
+ERR = {"a": EA, "c": EC}
 plt.rcParams.update({"font.size": 7.3, "font.family": "serif", "axes.spines.top": False, "axes.spines.right": False})
 fig, axs = plt.subplots(1, 4, figsize=(7.16, 2.45), gridspec_kw={"width_ratios": [5, 3, 3, 4]}, sharey=True)
-panels = [(axs[0], xa, A, "(a) Dyads withheld", [(0, 1), (1, 5)]), (axs[1], xb, B, "(b) Cold start, median", [(0, 3)]),
-          (axs[2], xc, C, "(c) Types, sources", None), (axs[3], xd, D, "(d) Thinned graph", [(0, 2), (2, 4)])]
-for ax, xs, V, title, segs in panels:
+panels = [(axs[0], xa, A, "(a) Dyads withheld", [(0, 1), (1, 5)], "a"), (axs[1], xb, B, "(b) Cold start, median", [(0, 3)], None),
+          (axs[2], xc, C, "(c) Types, sources", None, "c"), (axs[3], xd, D, "(d) Thinned graph", [(0, 2), (2, 4)], None)]
+for ax, xs, V, title, segs, ek in panels:
     x = np.arange(len(xs))
-    for k in COL:
+    for q, k in enumerate(COL):
+        if ek:
+            off = (q - 2.5) * 0.06
+            ax.errorbar(x + off, V[k], yerr=ERR[ek][k], fmt="none", ecolor=COL[k], elinewidth=0.7, capsize=0, alpha=0.8)
         if segs is None:
             ax.plot(x, V[k], color=COL[k], marker=MK[k], ms=4.4, lw=0, mec="white", mew=0.6)
         else:
