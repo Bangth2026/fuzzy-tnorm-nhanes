@@ -35,5 +35,6 @@ python3 scale_simulation.py
 python3 confirmatory/run_2005.py main
 python3 confirmatory/run_2005.py no_inactivity
 for p in direction nested querytab runtime equivalence counts; do python3 rigor_checks.py "$p"; done
+for p in power blocks blocks05 recalib grid coldstart randthin crisp; do python3 review3_checks.py "$p"; done
 python3 figures8.py
 python3 fast_compose.py

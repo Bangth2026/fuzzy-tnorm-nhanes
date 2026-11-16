@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 J = lambda p, k: json.load(open(f"results2/{p}.json"))[k]
 miss, cold, blk = J("gen_missing", "missing"), J("gen_coldstart", "coldstart"), J("gen_blockjrr", "blockjrr")["jrr"]
 holm, sc, bx, rt = J("gen_holm", "holm")["jrr"], J("mech_scale", "scale"), J("mech_blockextra", "blockextra"), J("mech_randthin", "randthin")
+r3t, r3b = J("rev3_randthin", "randthin"), J("rev3_blocks", "blocks")["jrr"]   # v1.9.0: soft-impute on the logit scale everywhere
 
 COL = {"product": "#2a78d6", "hamacher": "#eb6834", "min": "#1baf7a", "rank3": "#eda100", "katz": "#e87ba4", "si": "#008300"}
 LAB = {"product": "Product", "hamacher": "Hamacher", "min": "Minimum", "rank3": "Rank-3 completion", "katz": "Katz",
@@ -35,7 +36,7 @@ C = {"product": [blk["weighted_mean_product"]["point"], sa["product"], sb["produ
      "min": [bx["min"]["weighted_mean"], sa["min"], sb["min"]],
      "rank3": [blk["weighted_mean_rank3"]["point"], sa["rank3_absent_missing"], sb["rank3_absent_missing"]],
      "katz": [blk["weighted_mean_katz"]["point"], sa["katz"], sb["katz"]],
-     "si": [sc["blocks_weighted"]["logit"], sa["softimpute_absent_missing"], sb["softimpute_absent_missing"]]}
+     "si": [r3b["weighted_si_logit"]["point"], r3t["sources_A"]["si_logit"], r3t["sources_B"]["si_logit"]]}
 xd = ["Strength\n50%", "Strength\n25%", "Random\n50%", "Random\n25%"]
 s50, s25, r50, r25 = rt["strength_top50"], rt["strength_top25"], rt["random_keep_0.5"], rt["random_keep_0.25"]
 D = {"product": [s50["product"], s25["product"], r50["product"], r25["product"]],
@@ -43,7 +44,7 @@ D = {"product": [s50["product"], s25["product"], r50["product"], r25["product"]]
      "min": [s50["min"], s25["min"], r50["min"], r25["min"]],
      "rank3": [s50["rank3_absent_zero"], s25["rank3_absent_zero"], r50["rank3_absent_missing"], r25["rank3_absent_missing"]],
      "katz": [s50["katz"], s25["katz"], r50["katz"], r25["katz"]],
-     "si": [nan, nan, r50["softimpute_absent_missing"], r25["softimpute_absent_missing"]]}
+     "si": [nan, nan, r3t["random_keep_0.5"]["si_logit"]["mean"], r3t["random_keep_0.25"]["si_logit"]["mean"]]}
 
 # uncertainty: JRR 95% CI (single dyad, type blocks) and +/-1 SD over repetitions (random dyads)
 EA = {k: [nan] * 5 for k in COL}; EAlo = {k: [nan] * 5 for k in COL}
@@ -55,11 +56,16 @@ lo, hi = J("ext_designs", "designs")["temporal"]["jrr_ci"]; EA["si"][0] = (hi - 
 EC = {k: [nan] * 3 for k in COL}
 for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("rank3", "rank3"), ("katz", "katz")]:
     lo, hi = blk[f"weighted_mean_{kk}"]["ci95"]; EC[k][0] = (hi - lo) / 2
-ERR = {"a": EA, "c": EC}
+lo, hi = r3b["weighted_si_logit"]["ci95"]; EC["si"][0] = (hi - lo) / 2
+ED = {k: [nan] * 4 for k in COL}
+for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("min", "min"), ("rank3", "rank3"), ("katz", "katz"), ("si", "si_logit")]:
+    for q, f in enumerate(["0.5", "0.25"]):
+        ED[k][q + 2] = r3t[f"random_keep_{f}"][kk]["sd"]
+ERR = {"a": EA, "c": EC, "d": ED}
 plt.rcParams.update({"font.size": 7.3, "font.family": "serif", "axes.spines.top": False, "axes.spines.right": False})
 fig, axs = plt.subplots(1, 4, figsize=(7.16, 2.45), gridspec_kw={"width_ratios": [5, 3, 3, 4]}, sharey=True)
 panels = [(axs[0], xa, A, "(a) Dyads withheld", [(0, 1), (1, 5)], "a"), (axs[1], xb, B, "(b) Cold start, median", [(0, 3)], None),
-          (axs[2], xc, C, "(c) Types, sources", None, "c"), (axs[3], xd, D, "(d) Thinned graph", [(0, 2), (2, 4)], None)]
+          (axs[2], xc, C, "(c) Types, sources", None, "c"), (axs[3], xd, D, "(d) Thinned graph", [(0, 2), (2, 4)], "d")]
 for ax, xs, V, title, segs, ek in panels:
     x = np.arange(len(xs))
     for q, k in enumerate(COL):
