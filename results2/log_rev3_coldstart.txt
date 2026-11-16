@@ -1,0 +1,7 @@
+/home/claude/repo/fuzzy-tnorm-nhanes/review3_checks.py:56: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[12:25:17] rep 0
+[12:25:59] rep 1
+[12:26:40] rep 2
+[12:27:21] rep 3
+[12:28:02] rep 4

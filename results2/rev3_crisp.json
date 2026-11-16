@@ -1,0 +1,103 @@
+{
+ "crisp": {
+  "concepts": [
+   "uninsured",
+   "hypertension",
+   "cardiovascular",
+   "cancer",
+   "arthritis"
+  ],
+  "pairs": [
+   {
+    "pair": [
+     "uninsured",
+     "hypertension"
+    ],
+    "mu_ij": 0.0,
+    "mu_ji": 0.0,
+    "both_ge_0.01": false
+   },
+   {
+    "pair": [
+     "uninsured",
+     "cardiovascular"
+    ],
+    "mu_ij": 0.0,
+    "mu_ji": 0.0,
+    "both_ge_0.01": false
+   },
+   {
+    "pair": [
+     "uninsured",
+     "cancer"
+    ],
+    "mu_ij": 0.0,
+    "mu_ji": 0.0,
+    "both_ge_0.01": false
+   },
+   {
+    "pair": [
+     "uninsured",
+     "arthritis"
+    ],
+    "mu_ij": 0.0,
+    "mu_ji": 0.0,
+    "both_ge_0.01": false
+   },
+   {
+    "pair": [
+     "hypertension",
+     "cardiovascular"
+    ],
+    "mu_ij": 0.10060229731005123,
+    "mu_ji": 0.5753414132734183,
+    "both_ge_0.01": true
+   },
+   {
+    "pair": [
+     "hypertension",
+     "cancer"
+    ],
+    "mu_ij": 0.05666888990838204,
+    "mu_ji": 0.2969739203648922,
+    "both_ge_0.01": true
+   },
+   {
+    "pair": [
+     "hypertension",
+     "arthritis"
+    ],
+    "mu_ij": 0.24981663119345413,
+    "mu_ji": 0.3406057376455436,
+    "both_ge_0.01": true
+   },
+   {
+    "pair": [
+     "cardiovascular",
+     "cancer"
+    ],
+    "mu_ij": 0.11533492115698497,
+    "mu_ji": 0.10321686216130599,
+    "both_ge_0.01": true
+   },
+   {
+    "pair": [
+     "cardiovascular",
+     "arthritis"
+    ],
+    "mu_ij": 0.428209711409615,
+    "mu_ji": 0.09996219018266043,
+    "both_ge_0.01": true
+   },
+   {
+    "pair": [
+     "cancer",
+     "arthritis"
+    ],
+    "mu_ij": 0.3466926770900507,
+    "mu_ji": 0.09070091825392906,
+    "both_ge_0.01": true
+   }
+  ]
+ }
+}

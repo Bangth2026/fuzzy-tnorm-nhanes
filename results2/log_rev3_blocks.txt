@@ -1,0 +1,4 @@
+[12:15:13] full done
+[12:23:50] JRR done
+/home/claude/repo/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
