@@ -1,0 +1,6 @@
+[04:59:39] missing 0.1
+[05:00:19] missing 0.25
+[05:01:06] missing 0.5
+[05:02:00] missing 0.75
+/home/claude/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)

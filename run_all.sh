@@ -28,5 +28,7 @@ python3 sensitivity_and_inference.py coverage 50 100 0
 python3 sensitivity_and_inference.py coverage 50 150 0
 python3 sensitivity_and_inference.py covsum 100,150 cov100
 for p in misc mask rankcv embed strong measures signedcomp query obesity initial uninsured designs; do python3 audit_extensions.py "$p"; done
+for p in sym holm measci sparse missing coldstart blockjrr query subgroup partner; do python3 generalization_checks.py "$p"; done
 python3 figures7.py
+python3 figures8.py
 python3 fast_compose.py

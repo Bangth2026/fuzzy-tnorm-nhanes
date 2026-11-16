@@ -1,0 +1,3 @@
+[05:01:01] never married = 0.0
+[05:01:03] never married = 1.0
+[05:01:04] split halves within 2015-2018

@@ -1,0 +1,6 @@
+[04:58:57] full
+/home/claude/fuzzy-tnorm-nhanes/generalization_checks.py:54: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[04:59:06] top50
+[04:59:19] top25
+[04:59:26] mu_ge_0.25

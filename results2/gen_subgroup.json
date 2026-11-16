@@ -1,0 +1,68 @@
+{
+ "subgroup": {
+  "age_18_44": {
+   "n_dev": 6833,
+   "n_hold": 7072,
+   "between_period_rho": 0.9174502703874267,
+   "corr_with_full_dev": 0.8451236521806015,
+   "product": 0.8278850111110931,
+   "hamacher": 0.8050545718751565,
+   "min": 0.7303974348848841,
+   "yager2": 0.6295737683927074,
+   "lukasiewicz": 0.3248771782716293,
+   "rank3": 0.8136351650754273,
+   "softimpute_logit": 0.8765287864996183,
+   "product_first_tnorm": true,
+   "sym_product": 0.7002961547755853,
+   "sym_hamacher": 0.725906814642083
+  },
+  "age_45_plus": {
+   "n_dev": 8741,
+   "n_hold": 8814,
+   "between_period_rho": 0.9387624559269621,
+   "corr_with_full_dev": 0.95517180494113,
+   "product": 0.843026461116002,
+   "hamacher": 0.8334076800133307,
+   "min": 0.7327612571064764,
+   "yager2": 0.6618681141353978,
+   "lukasiewicz": 0.3373102592631171,
+   "rank3": 0.8894444335549677,
+   "softimpute_logit": 0.8875304351113412,
+   "product_first_tnorm": true,
+   "sym_product": 0.78742993075693,
+   "sym_hamacher": 0.8010974786256464
+  },
+  "men": {
+   "n_dev": 7571,
+   "n_hold": 7929,
+   "between_period_rho": 0.9418118759271452,
+   "corr_with_full_dev": 0.9320981173624858,
+   "product": 0.8788996252267283,
+   "hamacher": 0.8505458750265459,
+   "min": 0.7430294959189033,
+   "yager2": 0.6529916165532691,
+   "lukasiewicz": 0.2853580300157385,
+   "rank3": 0.903146090510915,
+   "softimpute_logit": 0.9093556783173001,
+   "product_first_tnorm": true,
+   "sym_product": 0.8783681652864689,
+   "sym_hamacher": 0.8771447157461713
+  },
+  "women": {
+   "n_dev": 8003,
+   "n_hold": 7957,
+   "between_period_rho": 0.9499826547612162,
+   "corr_with_full_dev": 0.9512052295358102,
+   "product": 0.8650395349808051,
+   "hamacher": 0.8439151475205842,
+   "min": 0.7319815706465966,
+   "yager2": 0.6788655445681744,
+   "lukasiewicz": 0.335344289323463,
+   "rank3": 0.8963886903040789,
+   "softimpute_logit": 0.9191098115777822,
+   "product_first_tnorm": true,
+   "sym_product": 0.7934750695856682,
+   "sym_hamacher": 0.8018056438678887
+  }
+ }
+}

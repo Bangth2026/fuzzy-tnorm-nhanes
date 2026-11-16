@@ -1,0 +1,230 @@
+{
+ "query": {
+  "full": {
+   "product_tieshared": 8.0,
+   "product_stable": 8.0,
+   "product_n_symptoms_tied_top": 0,
+   "hamacher_tieshared": 6.0,
+   "hamacher_stable": 6.0,
+   "hamacher_n_symptoms_tied_top": 0,
+   "min_tieshared": 1.0,
+   "min_stable": 1.0,
+   "min_n_symptoms_tied_top": 0,
+   "rank3_tieshared": 7.0,
+   "rank3_stable": 7.0,
+   "rank3_n_symptoms_tied_top": 0,
+   "direct_edge_tieshared": 8.0,
+   "direct_edge_stable": 8.0,
+   "direct_edge_n_symptoms_tied_top": 0,
+   "product_minus_min_tieshared": 7.0
+  },
+  "jrr": {
+   "product_tieshared": {
+    "point": 8.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -0.7653864717991752,
+     16.765386471799175
+    ]
+   },
+   "product_stable": {
+    "point": 8.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -0.7653864717991752,
+     16.765386471799175
+    ]
+   },
+   "product_n_symptoms_tied_top": {
+    "point": 0.0,
+    "se": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "hamacher_tieshared": {
+    "point": 6.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -2.765386471799175,
+     14.765386471799175
+    ]
+   },
+   "hamacher_stable": {
+    "point": 6.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -2.765386471799175,
+     14.765386471799175
+    ]
+   },
+   "hamacher_n_symptoms_tied_top": {
+    "point": 0.0,
+    "se": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "min_tieshared": {
+    "point": 1.0,
+    "se": 16.03901493234544,
+    "ci95": [
+     -30.436469267397065,
+     32.436469267397065
+    ]
+   },
+   "min_stable": {
+    "point": 1.0,
+    "se": 27.49545416973504,
+    "ci95": [
+     -52.89109017268068,
+     54.89109017268068
+    ]
+   },
+   "min_n_symptoms_tied_top": {
+    "point": 0.0,
+    "se": 27.54995462791182,
+    "ci95": [
+     -53.99791107070717,
+     53.99791107070717
+    ]
+   },
+   "rank3_tieshared": {
+    "point": 7.0,
+    "se": 0.0,
+    "ci95": [
+     7.0,
+     7.0
+    ]
+   },
+   "rank3_stable": {
+    "point": 7.0,
+    "se": 0.0,
+    "ci95": [
+     7.0,
+     7.0
+    ]
+   },
+   "rank3_n_symptoms_tied_top": {
+    "point": 0.0,
+    "se": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "direct_edge_tieshared": {
+    "point": 8.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -0.7653864717991752,
+     16.765386471799175
+    ]
+   },
+   "direct_edge_stable": {
+    "point": 8.0,
+    "se": 4.47213595499958,
+    "ci95": [
+     -0.7653864717991752,
+     16.765386471799175
+    ]
+   },
+   "direct_edge_n_symptoms_tied_top": {
+    "point": 0.0,
+    "se": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "product_minus_min_tieshared": {
+    "point": 7.0,
+    "se": 20.426698215815495,
+    "ci95": [
+     -33.03632850299837,
+     47.03632850299837
+    ]
+   }
+  },
+  "replicate_means": {
+   "product_tieshared": 7.777777777777778,
+   "product_stable": 7.777777777777778,
+   "product_n_symptoms_tied_top": 0.0,
+   "hamacher_tieshared": 6.222222222222222,
+   "hamacher_stable": 6.222222222222222,
+   "hamacher_n_symptoms_tied_top": 0.0,
+   "min_tieshared": 1.8166666666666667,
+   "min_stable": 2.4,
+   "min_n_symptoms_tied_top": 1.4333333333333333,
+   "rank3_tieshared": 7.0,
+   "rank3_stable": 7.0,
+   "rank3_n_symptoms_tied_top": 0.0,
+   "direct_edge_tieshared": 7.777777777777778,
+   "direct_edge_stable": 7.777777777777778,
+   "direct_edge_n_symptoms_tied_top": 0.0,
+   "product_minus_min_tieshared": 5.961111111111111
+  },
+  "share_replicates_product_above_min": 1.0,
+  "neff": {
+   "smoking->anhedonia": 480.2807480584678,
+   "heavy_drinking->anhedonia": 652.880556597961,
+   "inactivity->anhedonia": 1200.1786096923897,
+   "short_sleep->anhedonia": 594.4014259159569,
+   "obesity->anhedonia": 1170.5427273853913,
+   "smoking->depressed_mood": 535.678524195317,
+   "heavy_drinking->depressed_mood": 748.6977475715113,
+   "inactivity->depressed_mood": 1121.9397197159228,
+   "short_sleep->depressed_mood": 585.4892013944,
+   "obesity->depressed_mood": 1227.7689818627214,
+   "smoking->sleep_problems": 666.3597902662425,
+   "heavy_drinking->sleep_problems": 1062.6947575318993,
+   "inactivity->sleep_problems": 1635.842702659121,
+   "short_sleep->sleep_problems": 912.7968107702569,
+   "obesity->sleep_problems": 1785.0592789387113,
+   "smoking->fatigue": 779.0456522299327,
+   "heavy_drinking->fatigue": 1451.9480962125854,
+   "inactivity->fatigue": 2216.5420664633507,
+   "short_sleep->fatigue": 1088.084180913338,
+   "obesity->fatigue": 2426.146526877438,
+   "smoking->appetite": 497.1458219827785,
+   "heavy_drinking->appetite": 781.9627897988851,
+   "inactivity->appetite": 1292.2271234880986,
+   "short_sleep->appetite": 643.3940394346669,
+   "obesity->appetite": 1438.709497684246,
+   "smoking->worthlessness": 364.81309671859856,
+   "heavy_drinking->worthlessness": 534.3870906489151,
+   "inactivity->worthlessness": 812.3661787611796,
+   "short_sleep->worthlessness": 432.6478352724014,
+   "obesity->worthlessness": 840.0531291230949,
+   "smoking->concentration": 331.94241239530203,
+   "heavy_drinking->concentration": 526.442607590813,
+   "inactivity->concentration": 756.6421414608185,
+   "short_sleep->concentration": 386.5139851085329,
+   "obesity->concentration": 784.3045168233248,
+   "smoking->psychomotor": 259.06301803251324,
+   "heavy_drinking->psychomotor": 320.46255220129643,
+   "inactivity->psychomotor": 455.9953893717528,
+   "short_sleep->psychomotor": 271.71134234904616,
+   "obesity->psychomotor": 479.74251786758066,
+   "smoking->self_harm_thoughts": 90.5150665435955,
+   "heavy_drinking->self_harm_thoughts": 109.37989679931492,
+   "inactivity->self_harm_thoughts": 202.72511650741254,
+   "short_sleep->self_harm_thoughts": 96.73540708274437,
+   "obesity->self_harm_thoughts": 186.1891427972233
+  },
+  "neff_self_harm": {
+   "smoking->self_harm_thoughts": 90.5150665435955,
+   "heavy_drinking->self_harm_thoughts": 109.37989679931492,
+   "inactivity->self_harm_thoughts": 202.72511650741254,
+   "short_sleep->self_harm_thoughts": 96.73540708274437,
+   "obesity->self_harm_thoughts": 186.1891427972233
+  },
+  "neff_range_all": [
+   90.5150665435955,
+   652.880556597961,
+   2426.146526877438
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+[05:03:01] anchors 1
+/home/claude/fuzzy-tnorm-nhanes/generalization_checks.py:54: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[05:04:45] anchors 3
+[05:06:31] anchors 6

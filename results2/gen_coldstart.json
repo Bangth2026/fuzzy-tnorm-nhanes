@@ -1,0 +1,61 @@
+{
+ "coldstart": {
+  "1": {
+   "product": 0.3665839230764585,
+   "hamacher": 0.36073649292762655,
+   "min": 0.32148310516473483,
+   "katz": 0.3994188774986373,
+   "rank3": 0.5212347437777667,
+   "softimpute_cv": 0.3175339068453384,
+   "median_per_concept_product": 0.5600527476718241,
+   "median_per_concept_hamacher": 0.5620146223487026,
+   "median_per_concept_min": 0.43566718008691635,
+   "median_per_concept_katz": 0.6207904113025089,
+   "median_per_concept_rank3": 0.5869328371593401,
+   "median_per_concept_softimpute_cv": 0.41337641073273357,
+   "product_better_concepts_vs_rank3": 11.1,
+   "product_better_concepts_vs_softimpute_cv": 14.1,
+   "product_better_concepts_vs_katz": 4.4,
+   "product_better_concepts_vs_hamacher": 10.0,
+   "product_better_concepts_vs_min": 14.1
+  },
+  "3": {
+   "product": 0.629727355464775,
+   "hamacher": 0.5975113942793713,
+   "min": 0.5178478864921059,
+   "katz": 0.6152974959784447,
+   "rank3": 0.696459704320877,
+   "softimpute_cv": 0.6047094803723158,
+   "median_per_concept_product": 0.7182862700692263,
+   "median_per_concept_hamacher": 0.7131480911686456,
+   "median_per_concept_min": 0.5988783647226312,
+   "median_per_concept_katz": 0.7299533517051118,
+   "median_per_concept_rank3": 0.770064851991176,
+   "median_per_concept_softimpute_cv": 0.6710137194475342,
+   "product_better_concepts_vs_rank3": 11.9,
+   "product_better_concepts_vs_softimpute_cv": 15.8,
+   "product_better_concepts_vs_katz": 11.3,
+   "product_better_concepts_vs_hamacher": 13.7,
+   "product_better_concepts_vs_min": 19.3
+  },
+  "6": {
+   "product": 0.7585083908518063,
+   "hamacher": 0.728813173998893,
+   "min": 0.6323145445132976,
+   "katz": 0.7043105827867462,
+   "rank3": 0.8113419682212004,
+   "softimpute_cv": 0.7612910464936141,
+   "median_per_concept_product": 0.8081478377085304,
+   "median_per_concept_hamacher": 0.7871432988201365,
+   "median_per_concept_min": 0.6667750318616457,
+   "median_per_concept_katz": 0.7637866778938904,
+   "median_per_concept_rank3": 0.8352295452659572,
+   "median_per_concept_softimpute_cv": 0.7987266577057264,
+   "product_better_concepts_vs_rank3": 11.7,
+   "product_better_concepts_vs_softimpute_cv": 14.8,
+   "product_better_concepts_vs_katz": 15.2,
+   "product_better_concepts_vs_hamacher": 15.0,
+   "product_better_concepts_vs_min": 20.2
+  }
+ }
+}

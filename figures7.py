@@ -21,6 +21,7 @@ LABEL = {"anhedonia": "Anhedonia", "depressed_mood": "Depressed mood", "sleep_pr
          "smoking": "Smoking", "heavy_drinking": "Heavy drinking", "inactivity": "Inactivity", "short_sleep": "Short sleep",
          "obesity": "Obesity", "poor_self_rated_health": "Poor self-rated health", "hypertension": "Hypertension",
          "diabetes": "Diabetes", "cardiovascular": "Cardiovascular disease", "cancer": "Cancer", "arthritis": "Arthritis"}
+TMK = {"Symptom": "o", "Socioeconomic": "s", "Lifestyle": "^", "Health": "D"}
 TCOL = {"Symptom": "#3b6fb6", "Socioeconomic": "#d08a2e", "Lifestyle": "#5aa469", "Health": "#b5485d"}
 # community sectors: 0 symptoms (left), 1 somatic (lower right), 2 social (upper right)
 centre = {0: (-1.35, 0.0), 1: (1.15, -0.95), 2: (1.15, 0.95)}
@@ -40,7 +41,7 @@ memb = dict(zip(C, M))
 for r in Es.itertuples():
     same = memb[r.src] == memb[r.dst]
     ar = FancyArrowPatch(pos[r.src], pos[r.dst], arrowstyle="-|>", mutation_scale=5, lw=0.3 + 3.2 * r.mu,
-                         color="#555555" if same else "#c0392b", alpha=0.35 + 0.5 * r.mu,
+                         color="#555555" if same else "#c0392b", alpha=0.35 + 0.5 * r.mu, linestyle="-" if same else (0, (3, 1.5)),
                          connectionstyle="arc3,rad=0.12", shrinkA=7, shrinkB=7, zorder=1)
     ax.add_patch(ar)
 for c, (x, y) in pos.items():
@@ -50,18 +51,18 @@ for c, (x, y) in pos.items():
     if c == "poor_self_rated_health":
         from matplotlib.patches import Circle
         ax.add_patch(Circle((x, y), 0.11, fill=False, ls="--", lw=1.2, ec="black", zorder=4))
-    ax.scatter([x], [y], s=150, color=TCOL[TYPE[c]], edgecolors=ec, linewidths=lw, linestyle=ls, zorder=3)
+    ax.scatter([x], [y], s=150, marker=TMK[TYPE[c]], color=TCOL[TYPE[c]], edgecolors=ec, linewidths=lw, linestyle=ls, zorder=3)
     dx = 0.09 if x >= centre[memb[c]][0] else -0.09
     ax.text(x + dx, y, LABEL[c], fontsize=7.2, ha="left" if dx > 0 else "right", va="center", zorder=4)
 for k, (x, y) in centre.items():
     name = {0: "Depressive symptoms", 1: "Somatic health", 2: "Social disadvantage and risk behavior"}[k]
     ax.text(x, y + (1.08 if k != 1 else -1.12) * (0.55 + 0.04 * sum(1 for m in M if m == k)) / 0.9 * (1 if k != 1 else 1),
             name, fontsize=7.5, ha="center", weight="bold")
-h = [Line2D([0], [0], marker="o", color="w", markerfacecolor=v, markersize=7, label=k) for k, v in TCOL.items()]
+h = [Line2D([0], [0], marker=TMK[k], color="w", markerfacecolor=v, markersize=7, label=k) for k, v in TCOL.items()]
 h += [Line2D([0], [0], color="#555555", lw=1.5, label="within community"),
-      Line2D([0], [0], color="#c0392b", lw=1.5, label="between communities"),
+      Line2D([0], [0], color="#c0392b", lw=1.5, ls=(0, (3, 1.5)), label="between communities"),
       Line2D([0], [0], marker="o", color="w", markerfacecolor="lightgrey", markeredgecolor="black", markeredgewidth=1.6,
-             markersize=7, label="moves when grades are discarded"),
+             markersize=7, label="joins somatic community in unweighted copy"),
       Line2D([0], [0], color="black", lw=1.0, ls="--", label="least stable placement (dashed ring)")]
 ax.legend(handles=h, fontsize=7.5, loc="lower left", frameon=False, ncol=2, bbox_to_anchor=(-0.02, -0.08))
 ax.set_xlim(-2.9, 2.9); ax.set_ylim(-2.25, 2.15); ax.axis("off")
