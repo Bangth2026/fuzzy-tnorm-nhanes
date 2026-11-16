@@ -20,9 +20,13 @@ python3 stats2.py
 python3 revision5.py
 for p in main blocks mask strat signed sim misc; do python3 revision6.py "$p"; done
 for p in calib forest heatmap; do python3 figures6.py "$p"; done
-for p in ident rank1gap phqmap shrink jrr blocksum fastcheck; do python3 revision7.py "$p"; done
-python3 revision7.py coverage 12 0
-python3 revision7.py coverage 12 12
-python3 revision7.py covsum
+for p in ident rank1gap phqmap shrink jrr blocksum fastcheck; do python3 sensitivity_and_inference.py "$p"; done
+python3 sensitivity_and_inference.py coverage 12 0
+python3 sensitivity_and_inference.py coverage 12 12
+python3 sensitivity_and_inference.py covsum 0,12 summary
+python3 sensitivity_and_inference.py coverage 50 100 0
+python3 sensitivity_and_inference.py coverage 50 150 0
+python3 sensitivity_and_inference.py covsum 100,150 cov100
+for p in misc mask rankcv embed strong measures signedcomp query obesity initial uninsured designs; do python3 audit_extensions.py "$p"; done
 python3 figures7.py
 python3 fast_compose.py

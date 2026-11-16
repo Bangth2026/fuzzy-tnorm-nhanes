@@ -1,0 +1,22 @@
+{
+ "mask": {
+  "rank3_both_masked": 0.9076700619474513,
+  "rank3_forward_only_masked": 0.9082153724064302,
+  "softimpute_logit_forward_only_masked": 0.9202752683743878,
+  "softimpute_logit_lambda": 0.6,
+  "learned_paths_strict_ldo": {
+   "rho": 0.8722041290149537,
+   "mae": 0.036853508489977704
+  },
+  "learned_paths_features": [
+   "prod_max",
+   "ham_max",
+   "min_max",
+   "cn_sum",
+   "adamic_adar",
+   "resource_alloc",
+   "prod_top3_mean",
+   "n_paths_gt_0.01"
+  ]
+ }
+}

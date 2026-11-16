@@ -1,0 +1,106 @@
+{
+ "obesity": {
+  "per_block": {
+   "Symptom-Symptom": {
+    "n": 72,
+    "product": 0.8822110746671812,
+    "hamacher": 0.9141745449868159,
+    "rank3": 0.9028233326902053,
+    "softimpute_cv": 0.8981284970094541,
+    "katz": 0.9197376037044184
+   },
+   "Symptom-Socioeconomic": {
+    "n": 72,
+    "product": 0.8067399832786676,
+    "hamacher": 0.8104701266962507,
+    "rank3": 0.40277589507471734,
+    "softimpute_cv": 0.6210688790275903,
+    "katz": 0.8924046562479904
+   },
+   "Symptom-Lifestyle": {
+    "n": 72,
+    "product": 0.8126567624927649,
+    "hamacher": 0.7026175316740627,
+    "rank3": 0.3242035195577105,
+    "softimpute_cv": 0.5580423178339444,
+    "katz": 0.7997620425750854
+   },
+   "Symptom-Health": {
+    "n": 126,
+    "product": 0.8880763225751609,
+    "hamacher": 0.8230683510595699,
+    "rank3": 0.38274432967369987,
+    "softimpute_cv": 0.6406518794936032,
+    "katz": 0.888271298495635
+   },
+   "Socioeconomic-Socioeconomic": {
+    "n": 12,
+    "product": 0.8461538461538463,
+    "hamacher": 0.7202797202797203,
+    "rank3": 0.8181818181818183,
+    "softimpute_cv": 0.8671328671328673,
+    "katz": 0.3636363636363637
+   },
+   "Socioeconomic-Lifestyle": {
+    "n": 32,
+    "product": 0.369168730356271,
+    "hamacher": 0.23755842827295293,
+    "rank3": 0.5940793719387658,
+    "softimpute_cv": 0.6336724433175913,
+    "katz": 0.41554394822128415
+   },
+   "Socioeconomic-Health": {
+    "n": 56,
+    "product": 0.7111570915663921,
+    "hamacher": 0.5451937900547591,
+    "rank3": 0.33485394431140497,
+    "softimpute_cv": 0.45899714340578535,
+    "katz": 0.7224182663705322
+   },
+   "Lifestyle-Lifestyle": {
+    "n": 12,
+    "product": 0.5919448657459025,
+    "hamacher": 0.4763579984700754,
+    "rank3": 0.6164632921377448,
+    "softimpute_cv": 0.6830133066298876,
+    "katz": 0.4798606308117672
+   },
+   "Lifestyle-Health": {
+    "n": 56,
+    "product": 0.3404842685626435,
+    "hamacher": 0.2929524795287494,
+    "rank3": -0.5811510139540103,
+    "softimpute_cv": 0.12903011495043606,
+    "katz": 0.2231679802729948
+   },
+   "Health-Health": {
+    "n": 42,
+    "product": 0.8309699376063528,
+    "hamacher": 0.7812170812738027,
+    "rank3": 0.797585284822948,
+    "softimpute_cv": 0.7980714690867838,
+    "katz": 0.6750668503362774
+   }
+  },
+  "product_vs_rank3": {
+   "better": 7,
+   "n": 10,
+   "p": 0.34375
+  },
+  "product_vs_softimpute_cv": {
+   "better": 6,
+   "n": 10,
+   "p": 0.75390625
+  },
+  "product_vs_katz": {
+   "better": 5,
+   "n": 10,
+   "p": 1.0
+  },
+  "median_product": 0.8096983728857162,
+  "median_rank3": 0.4984276335067416,
+  "type_partition_Q_alt": 0.1765851604974597,
+  "type_partition_Q_main": 0.1573609586935291,
+  "leiden_Q_check": 0.21462736668863686
+ }
+}

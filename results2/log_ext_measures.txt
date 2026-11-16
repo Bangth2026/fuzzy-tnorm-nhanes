@@ -1,0 +1,13 @@
+[02:02:04] pearson
+[02:02:07] yule
+[02:02:09] glasso
+/usr/local/lib/python3.13/site-packages/sklearn/covariance/_graph_lasso.py:197: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -1.916e-03
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/sklearn/covariance/_graph_lasso.py:197: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -4.515e-04
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/sklearn/covariance/_graph_lasso.py:197: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -8.604e-04
+  warnings.warn(
+/home/claude/fuzzy-tnorm-nhanes/audit_extensions.py:55: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+/home/claude/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)

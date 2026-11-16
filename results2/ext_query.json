@@ -1,0 +1,1053 @@
+{
+ "query": {
+  "modifiable": [
+   "smoking",
+   "heavy_drinking",
+   "inactivity",
+   "short_sleep",
+   "obesity"
+  ],
+  "per_symptom": {
+   "anhedonia": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "inactivity",
+     "heavy_drinking",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.0639537539896346,
+     "heavy_drinking": 0.019143036852757932,
+     "inactivity": 0.02473852724996159,
+     "short_sleep": 0.0442427374496018,
+     "obesity": 0.009730908997211542
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.049550569985920466,
+      "heavy_drinking": 0.0172829191402583,
+      "inactivity": 0.011700877584139551,
+      "short_sleep": 0.02401618492688548,
+      "obesity": 0.006845155307482107
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08572085387280798,
+      "heavy_drinking": 0.05877234218266999,
+      "inactivity": 0.04476232241004406,
+      "short_sleep": 0.08041457955007358,
+      "obesity": 0.04058855304344172
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.09601271703320241,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.089338025810759
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.09742798688538903,
+      "heavy_drinking": 0.04158239875614641,
+      "inactivity": 0.025124442356003203,
+      "short_sleep": 0.06253805280733664,
+      "obesity": 0.01420782105424773
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.1179485147789905,
+      "heavy_drinking": 0.028123717886137618,
+      "inactivity": 0.020911803649199118,
+      "short_sleep": 0.04472894393407,
+      "obesity": 0.01461380750916256
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "inactivity",
+      "heavy_drinking",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08166327244052063,
+      "heavy_drinking": 0.023469157195981753,
+      "inactivity": 0.02399925165571161,
+      "short_sleep": 0.038794131160829304,
+      "obesity": 0.00824646849397936
+     }
+    }
+   },
+   "depressed_mood": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "inactivity",
+     "heavy_drinking",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.07427910895337887,
+     "heavy_drinking": 0.021555994503676568,
+     "inactivity": 0.023895597576269356,
+     "short_sleep": 0.05581960351450524,
+     "obesity": 0.008314755320710927
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.0412933346884835,
+      "heavy_drinking": 0.016566227808711868,
+      "inactivity": 0.011129376106355063,
+      "short_sleep": 0.02217769414546343,
+      "obesity": 0.0065646945627618955
+     }
+    },
+    "hamacher": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.07734729668366995,
+      "heavy_drinking": 0.061936548814541866,
+      "inactivity": 0.04378597076099949,
+      "short_sleep": 0.07789628928497733,
+      "obesity": 0.039784152508549844
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.09601271703320241,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.089338025810759
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.10812543882275504,
+      "heavy_drinking": 0.047387262033979666,
+      "inactivity": 0.020118142068110103,
+      "short_sleep": 0.07070337097607991,
+      "obesity": 0.009955053662547154
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08585254474107493,
+      "heavy_drinking": 0.029050076625985088,
+      "inactivity": 0.027770202566290283,
+      "short_sleep": 0.04201968778701363,
+      "obesity": 0.0060899647524441216
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.09262241647169368,
+      "heavy_drinking": 0.0323061013205391,
+      "inactivity": 0.02187186861806886,
+      "short_sleep": 0.03652262006694244,
+      "obesity": 0.004371136586711831
+     }
+    }
+   },
+   "sleep_problems": {
+    "heldout_order": [
+     "short_sleep",
+     "smoking",
+     "heavy_drinking",
+     "inactivity",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.09423208494392982,
+     "heavy_drinking": 0.037602809819731964,
+     "inactivity": 0.03622590946774198,
+     "short_sleep": 0.1687416174550709,
+     "obesity": 0.01293536949803939
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.04173188471079444,
+      "heavy_drinking": 0.020728143929482305,
+      "inactivity": 0.0163488892206596,
+      "short_sleep": 0.034895592552431416,
+      "obesity": 0.009936907799387678
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.09535504912921529,
+      "heavy_drinking": 0.07129580273737159,
+      "inactivity": 0.04983398731382393,
+      "short_sleep": 0.08226176627355025,
+      "obesity": 0.048389250821650555
+     }
+    },
+    "min": {
+     "order": [
+      "heavy_drinking",
+      "smoking",
+      "inactivity",
+      "obesity",
+      "short_sleep"
+     ],
+     "values": {
+      "smoking": 0.11452191723186608,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.10060229731005123,
+      "short_sleep": 0.09748077806758536,
+      "obesity": 0.10060229731005123
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "inactivity",
+      "heavy_drinking",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08658593260481079,
+      "heavy_drinking": 0.03577880486378822,
+      "inactivity": 0.03918097086711792,
+      "short_sleep": 0.056817770354426436,
+      "obesity": 0.024478684582600378
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11865581597380497,
+      "heavy_drinking": 0.044028079490526895,
+      "inactivity": 0.03628464935709362,
+      "short_sleep": 0.076904754655895,
+      "obesity": 0.02246864732312474
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.05765304538241972,
+      "inactivity": 0.022294599266640847,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.018935643979653603
+     }
+    }
+   },
+   "fatigue": {
+    "heldout_order": [
+     "short_sleep",
+     "smoking",
+     "inactivity",
+     "heavy_drinking",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.09535495510046686,
+     "heavy_drinking": 0.028072228779095553,
+     "inactivity": 0.0505045442654456,
+     "short_sleep": 0.12129434137182031,
+     "obesity": 0.022543935689027416
+    },
+    "product": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.05870096800896341,
+      "heavy_drinking": 0.029365608771620887,
+      "inactivity": 0.01502277222529832,
+      "short_sleep": 0.059323932107093844,
+      "obesity": 0.012511615260432218
+     }
+    },
+    "hamacher": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.10373097071052012,
+      "heavy_drinking": 0.07101775265905612,
+      "inactivity": 0.05461061696620322,
+      "short_sleep": 0.10472076703961518,
+      "obesity": 0.05125766546125125
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.10610262567865548,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.10610262567865548
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.09774015449797908,
+      "heavy_drinking": 0.04468559830068415,
+      "inactivity": 0.04138038586959625,
+      "short_sleep": 0.073028531650357,
+      "obesity": 0.02976177342342187
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "inactivity",
+      "heavy_drinking",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08249071693656021,
+      "heavy_drinking": 0.03325190993809715,
+      "inactivity": 0.03332945719181267,
+      "short_sleep": 0.05599665939142576,
+      "obesity": 0.028205793621640975
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11452191723186608,
+      "heavy_drinking": 0.04604106502081794,
+      "inactivity": 0.04504394683560238,
+      "short_sleep": 0.09614324218077656,
+      "obesity": 0.027377856720705262
+     }
+    }
+   },
+   "appetite": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "heavy_drinking",
+     "obesity",
+     "inactivity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.06632818503941208,
+     "heavy_drinking": 0.025481920676413593,
+     "inactivity": 0.025011857982786722,
+     "short_sleep": 0.060621509351504184,
+     "obesity": 0.02506612914176205
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.03302517270724678,
+      "heavy_drinking": 0.013590176292207379,
+      "inactivity": 0.009100105007400217,
+      "short_sleep": 0.025247359316412053,
+      "obesity": 0.005531073285946076
+     }
+    },
+    "hamacher": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08136574682272164,
+      "heavy_drinking": 0.05903674636090094,
+      "inactivity": 0.044921037075047764,
+      "short_sleep": 0.08197348933824491,
+      "obesity": 0.040719006446728885
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.09601271703320241,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.089338025810759
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08310723509734554,
+      "heavy_drinking": 0.032667748028243404,
+      "inactivity": 0.022186369711342024,
+      "short_sleep": 0.05183704836088403,
+      "obesity": 0.010561599174028876
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.097250217254866,
+      "heavy_drinking": 0.04280248501522129,
+      "inactivity": 0.028128758067456724,
+      "short_sleep": 0.06761383522867742,
+      "obesity": 0.015581157111487184
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "heavy_drinking",
+      "short_sleep",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08628448125203231,
+      "heavy_drinking": 0.04823740570189477,
+      "inactivity": 0.02618735196995169,
+      "short_sleep": 0.04147157948064027,
+      "obesity": 0.021809960746512678
+     }
+    }
+   },
+   "worthlessness": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "heavy_drinking",
+     "inactivity",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.05857277392813758,
+     "heavy_drinking": 0.025100937198331928,
+     "inactivity": 0.01716808339523704,
+     "short_sleep": 0.037877799308107654,
+     "obesity": 0.006887386583628099
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.04052529659254399,
+      "heavy_drinking": 0.014134962006349,
+      "inactivity": 0.009569648434418435,
+      "short_sleep": 0.016333203179841233,
+      "obesity": 0.005211394524759094
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.08276728688769572,
+      "heavy_drinking": 0.05736872141150826,
+      "inactivity": 0.03967069456214418,
+      "short_sleep": 0.07080584583609813,
+      "obesity": 0.03635729622554898
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.09601271703320241,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.089338025810759
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.0897772992455711,
+      "heavy_drinking": 0.037997752694117176,
+      "inactivity": 0.011019778749193552,
+      "short_sleep": 0.05355303585688238,
+      "obesity": 0.002241531847872319
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "heavy_drinking",
+      "short_sleep",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.0701859519536594,
+      "heavy_drinking": 0.029224264012735687,
+      "inactivity": 0.015742999164765275,
+      "short_sleep": 0.026472926233014407,
+      "obesity": 0.0025376647771821175
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "heavy_drinking",
+      "short_sleep",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.06585083439906947,
+      "heavy_drinking": 0.026418305333741697,
+      "inactivity": 0.012528126725174804,
+      "short_sleep": 0.026023306667367126,
+      "obesity": 0.004874688813351351
+     }
+    }
+   },
+   "concentration": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "heavy_drinking",
+     "inactivity",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.045053270614506376,
+     "heavy_drinking": 0.01680555094500038,
+     "inactivity": 0.012020906419163152,
+     "short_sleep": 0.0394847070010884,
+     "obesity": 0.003779232552998977
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.028883009349052458,
+      "heavy_drinking": 0.011104363106160272,
+      "inactivity": 0.006820437317892601,
+      "short_sleep": 0.01810058915544257,
+      "obesity": 0.004991975948062428
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.07690334416519265,
+      "heavy_drinking": 0.05448887839896683,
+      "inactivity": 0.04061063098050592,
+      "short_sleep": 0.0713241142029087,
+      "obesity": 0.03714521859874299
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.11524670232218495,
+      "inactivity": 0.09601271703320241,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.089338025810759
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.07007692324472158,
+      "heavy_drinking": 0.029936854600179773,
+      "inactivity": 0.01816583790627616,
+      "short_sleep": 0.04569999799372536,
+      "obesity": 0.009870221792447427
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.0692911424070064,
+      "heavy_drinking": 0.022678699728212532,
+      "inactivity": 0.011455215975192648,
+      "short_sleep": 0.036509269537330594,
+      "obesity": 0.006232965362228361
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.07050197066234089,
+      "heavy_drinking": 0.02338231074370252,
+      "inactivity": 0.01507643429029822,
+      "short_sleep": 0.02495499360211682,
+      "obesity": 0.0022066715575652053
+     }
+    }
+   },
+   "psychomotor": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "inactivity",
+     "heavy_drinking",
+     "obesity"
+    ],
+    "heldout_mu": {
+     "smoking": 0.0439187997295742,
+     "heavy_drinking": 0.008127777912772624,
+     "inactivity": 0.011352717160619058,
+     "short_sleep": 0.02809248922983109,
+     "obesity": 0.0030111674738387737
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.018059783550167734,
+      "heavy_drinking": 0.008183040451459199,
+      "inactivity": 0.0042646394698711634,
+      "short_sleep": 0.011230045090012672,
+      "obesity": 0.003185368198561154
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.06700087408843056,
+      "heavy_drinking": 0.04932374269166836,
+      "inactivity": 0.033884333895181626,
+      "short_sleep": 0.05894058561980906,
+      "obesity": 0.03085045494835989
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.09642026628538801,
+      "inactivity": 0.09450628340420922,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.07326053094124158
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.05035952367291394,
+      "heavy_drinking": 0.020834369388132424,
+      "inactivity": 0.015483200998111176,
+      "short_sleep": 0.03149050882857706,
+      "obesity": 0.008340859321645654
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.052606220035301625,
+      "heavy_drinking": 0.017348074705225643,
+      "inactivity": 0.012393434905535293,
+      "short_sleep": 0.02282584462601122,
+      "obesity": 0.005488322267681788
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.051954395972288764,
+      "heavy_drinking": 0.01250068078752121,
+      "inactivity": 0.005093507795407896,
+      "short_sleep": 0.024916011516702932,
+      "obesity": 0.0033755441894941026
+     }
+    }
+   },
+   "self_harm_thoughts": {
+    "heldout_order": [
+     "smoking",
+     "short_sleep",
+     "inactivity",
+     "obesity",
+     "heavy_drinking"
+    ],
+    "heldout_mu": {
+     "smoking": 0.012304323536463234,
+     "heavy_drinking": 0.0006182757178497254,
+     "inactivity": 0.004991101608387242,
+     "short_sleep": 0.006444846483383618,
+     "obesity": 0.001213346683283559
+    },
+    "product": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.00999295250651252,
+      "heavy_drinking": 0.0037965284081481958,
+      "inactivity": 0.0023597370124308864,
+      "short_sleep": 0.003940393931029591,
+      "obesity": 0.0011480675343294678
+     }
+    },
+    "hamacher": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.055430495371692826,
+      "heavy_drinking": 0.04095955200350205,
+      "inactivity": 0.028574512317094906,
+      "short_sleep": 0.048366843007500694,
+      "obesity": 0.02431358473745868
+     }
+    },
+    "min": {
+     "order": [
+      "short_sleep",
+      "smoking",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.11524670232218495,
+      "heavy_drinking": 0.09262241647169368,
+      "inactivity": 0.058492896879080845,
+      "short_sleep": 0.11646975809809113,
+      "obesity": 0.058492896879080845
+     }
+    },
+    "rank3": {
+     "order": [
+      "smoking",
+      "short_sleep",
+      "heavy_drinking",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.02217209347854192,
+      "heavy_drinking": 0.00908202067991861,
+      "inactivity": 0.003497396949052881,
+      "short_sleep": 0.012653213629902887,
+      "obesity": 0.0011312476481217621
+     }
+    },
+    "softimpute_logit_cv": {
+     "order": [
+      "smoking",
+      "heavy_drinking",
+      "short_sleep",
+      "inactivity",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.022940395837632417,
+      "heavy_drinking": 0.013168261499149576,
+      "inactivity": 0.001419921678344998,
+      "short_sleep": 0.004499788065593071,
+      "obesity": 0.0007493986110394068
+     }
+    },
+    "direct_dev_edge": {
+     "order": [
+      "smoking",
+      "inactivity",
+      "heavy_drinking",
+      "short_sleep",
+      "obesity"
+     ],
+     "values": {
+      "smoking": 0.015344478369642978,
+      "heavy_drinking": 0.003966888356854258,
+      "inactivity": 0.004328325515927865,
+      "short_sleep": 0.002546836252946832,
+      "obesity": 0.0016508039359914774
+     }
+    }
+   }
+  },
+  "summary": {
+   "product": {
+    "top1_agree": 8,
+    "top2_overlap_mean": 1.0000000000000002,
+    "rho_mean": 0.8999999999999999
+   },
+   "hamacher": {
+    "top1_agree": 6,
+    "top2_overlap_mean": 1.0000000000000002,
+    "rho_mean": 0.8777777777777778
+   },
+   "min": {
+    "top1_agree": 1,
+    "top2_overlap_mean": 0.9444444444444446,
+    "rho_mean": 0.6268642439681376
+   },
+   "rank3": {
+    "top1_agree": 7,
+    "top2_overlap_mean": 1.0000000000000002,
+    "rho_mean": 0.8777777777777778
+   },
+   "softimpute_logit_cv": {
+    "top1_agree": 7,
+    "top2_overlap_mean": 0.8888888888888891,
+    "rho_mean": 0.8555555555555554
+   },
+   "direct_dev_edge": {
+    "top1_agree": 8,
+    "top2_overlap_mean": 0.8333333333333335,
+    "rho_mean": 0.8666666666666666
+   }
+  }
+ }
+}

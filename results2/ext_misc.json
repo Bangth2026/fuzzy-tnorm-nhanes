@@ -1,0 +1,73 @@
+{
+ "misc": {
+  "neff": {
+   "min": 35.17537847472292,
+   "q25": 350.6830303796138,
+   "median": 656.8077007018408,
+   "q75": 1176.8247522644683,
+   "max": 4870.291452821901
+  },
+  "respondents_per_pair_dev": {
+   "min": 11925,
+   "max": 15574
+  },
+  "families": {
+   "hamacher_0.35": {
+    "rho": 0.8808348722940417,
+    "mae": 0.055621198348995336
+   },
+   "frank_0.1": {
+    "rho": 0.8805285932250537,
+    "mae": 0.05291366342433179
+   },
+   "ss_-0.25": {
+    "rho": 0.881216944994922,
+    "mae": 0.059233752710973496
+   }
+  },
+  "strength_scale": {
+   "median_pred": 4.5377785058826134,
+   "median_target": 0.062363862565529046
+  },
+  "life_health_block": {
+   "rank1": {
+    "rho": 0.19069196655963697,
+    "share_negative": 0.0,
+    "pred_min": 0.0008252409267541702,
+    "pred_max": 0.13209486250360575
+   },
+   "rank2": {
+    "rho": -0.5909610580597985,
+    "share_negative": 0.0,
+    "pred_min": 0.0011817378958261062,
+    "pred_max": 0.8886909293954495
+   },
+   "rank3": {
+    "rho": -0.6507169602372673,
+    "share_negative": 0.0,
+    "pred_min": 0.0,
+    "pred_max": 0.47163168915115067
+   },
+   "softimpute_cv": {
+    "rho": 0.328635732124381,
+    "lambda": 0.1
+   },
+   "target_range": [
+    0.0,
+    0.5012319556375208
+   ]
+  },
+  "block_names": [
+   "Symptom\u2013symptom",
+   "Symptom\u2013socioeconomic",
+   "Symptom\u2013lifestyle",
+   "Symptom\u2013health",
+   "Socioeconomic\u2013socioeconomic",
+   "Socioeconomic\u2013lifestyle",
+   "Socioeconomic\u2013health",
+   "Lifestyle\u2013lifestyle",
+   "Lifestyle\u2013health",
+   "Health\u2013health"
+  ]
+ }
+}

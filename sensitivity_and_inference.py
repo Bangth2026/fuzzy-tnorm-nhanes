@@ -10,7 +10,7 @@ Parts:
   coverage  - coverage of JRR and Rao-Wu percentile intervals in a clustered respondent-level simulation
   blocksum  - withheld-block summary against soft-impute (CV), Katz and prevalence-type regression with sign tests
   fastcheck - FastCompose (fast_compose.py) reproduces the enumerated predictions on the NHANES relation
-Writes results2/revision7_<part>.json."""
+Writes results2/sensinf_<part>.json."""
 import itertools, json, sys, time
 import numpy as np
 import pandas as pd
@@ -33,7 +33,7 @@ def tic(m):
 
 
 def save():
-    json.dump(OUT, open(f"results2/revision7_{part}.json", "w"), indent=1)
+    json.dump(OUT, open(f"results2/sensinf_{part}.json", "w"), indent=1)
 
 
 def prevalence(df):
@@ -258,29 +258,36 @@ if part == "coverage":
         E1, E2 = rel(d1), rel(d2)
         est = rq3_stats(E1, E2, None)
         jr = [rq3_stats(rel(d), E2, None) for d in jrr_replicates(d1)] + [rq3_stats(E1, rel(d), None) for d in jrr_replicates(d2)]
-        rw = [rq3_stats(rel(psu_boot(d1, g)), rel(psu_boot(d2, g)), None) for _ in range(20)]
+        NRW = int(sys.argv[4]) if len(sys.argv) > 4 else 20
+        rw = [rq3_stats(rel(psu_boot(d1, g)), rel(psu_boot(d2, g)), None) for _ in range(NRW)]
         row = {}
         for k in ["product", "product_minus_hamacher", "rank3_minus_product"]:
             se = np.sqrt(sum((x[k] - est[k]) ** 2 for x in jr))
-            v = np.array([x[k] for x in rw]); bias = v.mean() - est[k]
-            lo, hi = np.quantile(v, [0.025, 0.975]) - bias
+            if rw:
+                v = np.array([x[k] for x in rw]); bias = v.mean() - est[k]
+                lo, hi = np.quantile(v, [0.025, 0.975]) - bias
+            else:
+                lo, hi = np.nan, np.nan
             row[k] = {"truth": truth[k], "est": est[k], "jrr_cover": bool(abs(est[k] - truth[k]) <= 1.96 * se),
-                      "rw_shift_cover": bool(lo <= truth[k] <= hi), "jrr_se": float(se), "rw_width": float(hi - lo)}
+                      "rw_shift_cover": bool(lo <= truth[k] <= hi) if rw else None, "jrr_se": float(se), "rw_width": float(hi - lo) if rw else None}
         reps_out.append(row)
+        json.dump({"coverage": {"rows": reps_out, "partial": True}}, open(f"results2/sensinf_coverage_{START}.json", "w"), default=float)
         tic(f"rep {rep}")
     res = {}
     for k in reps_out[0]:
         res[k] = {"jrr_coverage": float(np.mean([x[k]["jrr_cover"] for x in reps_out])),
-                  "raowu_shifted_coverage": float(np.mean([x[k]["rw_shift_cover"] for x in reps_out])),
+                  "raowu_shifted_coverage": (float(np.mean([x[k]["rw_shift_cover"] for x in reps_out]))
+                                             if reps_out[0][k]["rw_shift_cover"] is not None else None),
                   "mean_bias": float(np.mean([x[k]["est"] - x[k]["truth"] for x in reps_out])),
                   "mean_jrr_se": float(np.mean([x[k]["jrr_se"] for x in reps_out])),
-                  "mean_raowu_width": float(np.mean([x[k]["rw_width"] for x in reps_out]))}
+                  "mean_raowu_width": (float(np.mean([x[k]["rw_width"] for x in reps_out]))
+                                       if reps_out[0][k]["rw_shift_cover"] is not None else None)}
     res["n_rep"] = len(reps_out)
     res["rows"] = reps_out
     res["design"] = {"strata": NS, "psu_per_stratum": NPSU, "respondents_per_psu": NPER, "icc_latent": 0.05,
                      "generator": "three-factor latent model, PHQ-like ordinal and binary measurement", "rao_wu_reps": 20}
     OUT["coverage"] = res
-    json.dump(OUT, open(f"results2/revision7_coverage_{START}.json", "w"), indent=1)
+    json.dump(OUT, open(f"results2/sensinf_coverage_{START}.json", "w"), indent=1)
 
 if part == "blocksum":
     B = json.load(open("results2/revision6_blocks.json"))["blocks"]
@@ -314,15 +321,18 @@ if part == "fastcheck":
 
 if part == "covsum":
     rows = []
-    for s in [0, 12]:
-        rows += json.load(open(f"results2/revision7_coverage_{s}.json"))["coverage"]["rows"]
+    starts = [int(x) for x in sys.argv[2].split(",")] if len(sys.argv) > 2 else [0, 12]
+    for s in starts:
+        rows += json.load(open(f"results2/sensinf_coverage_{s}.json"))["coverage"]["rows"]
     out = {"n_rep": len(rows)}
     for k in rows[0]:
         out[k] = {"jrr_cov": float(np.mean([x[k]["jrr_cover"] for x in rows])),
-                  "rw_cov": float(np.mean([x[k]["rw_shift_cover"] for x in rows])),
+                  "rw_cov": float(np.mean([x[k]["rw_shift_cover"] for x in rows])) if rows[0][k]["rw_shift_cover"] is not None else None,
                   "bias": float(np.mean([x[k]["est"] - x[k]["truth"] for x in rows])),
                   "jrr_se": float(np.mean([x[k]["jrr_se"] for x in rows])),
-                  "rw_w": float(np.mean([x[k]["rw_width"] for x in rows])),
+                  "rw_w": float(np.nanmean([x[k]["rw_width"] for x in rows])) if rows[0][k]["rw_shift_cover"] is not None else None,
                   "emp_sd": float(np.std([x[k]["est"] - x[k]["truth"] for x in rows], ddof=1)),
                   "truth": float(np.mean([x[k]["truth"] for x in rows]))}
-    json.dump(out, open("results2/revision7_coverage_summary.json", "w"), indent=1)
+    tag = sys.argv[3] if len(sys.argv) > 3 else "summary"
+    out["jrr_cov_mc_se"] = {k: float(np.sqrt(out[k]["jrr_cov"] * (1 - out[k]["jrr_cov"]) / len(rows))) for k in rows[0]}
+    json.dump(out, open(f"results2/sensinf_coverage_{tag}.json", "w"), indent=1)

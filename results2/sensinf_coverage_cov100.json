@@ -1,0 +1,35 @@
+{
+ "n_rep": 100,
+ "product": {
+  "jrr_cov": 0.74,
+  "rw_cov": null,
+  "bias": -0.01216349527052011,
+  "jrr_se": 0.009193757326249713,
+  "rw_w": null,
+  "emp_sd": 0.008853342135161887,
+  "truth": 0.9209700194534456
+ },
+ "product_minus_hamacher": {
+  "jrr_cov": 0.95,
+  "rw_cov": null,
+  "bias": -4.4759421317627226e-05,
+  "jrr_se": 0.006150520318375292,
+  "rw_w": null,
+  "emp_sd": 0.005680147150769078,
+  "truth": -0.0015516811651389705
+ },
+ "rank3_minus_product": {
+  "jrr_cov": 0.97,
+  "rw_cov": null,
+  "bias": 0.0019692790878218036,
+  "jrr_se": 0.009065133452645334,
+  "rw_w": null,
+  "emp_sd": 0.008829762226147373,
+  "truth": 0.066140175782773
+ },
+ "jrr_cov_mc_se": {
+  "product": 0.04386342439892262,
+  "product_minus_hamacher": 0.021794494717703377,
+  "rank3_minus_product": 0.017058722109231986
+ }
+}

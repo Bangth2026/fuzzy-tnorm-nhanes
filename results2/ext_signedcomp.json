@@ -1,0 +1,7 @@
+{
+ "signedcomp": {
+  "rank3_signed": 0.9151591818073346,
+  "softimpute_cv_signed": 0.9235731834501494,
+  "lambda": 0.1
+ }
+}

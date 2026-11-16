@@ -52,7 +52,7 @@ for c, (x, y) in pos.items():
         ax.add_patch(Circle((x, y), 0.11, fill=False, ls="--", lw=1.2, ec="black", zorder=4))
     ax.scatter([x], [y], s=150, color=TCOL[TYPE[c]], edgecolors=ec, linewidths=lw, linestyle=ls, zorder=3)
     dx = 0.09 if x >= centre[memb[c]][0] else -0.09
-    ax.text(x + dx, y, LABEL[c], fontsize=6.3, ha="left" if dx > 0 else "right", va="center", zorder=4)
+    ax.text(x + dx, y, LABEL[c], fontsize=7.2, ha="left" if dx > 0 else "right", va="center", zorder=4)
 for k, (x, y) in centre.items():
     name = {0: "Depressive symptoms", 1: "Somatic health", 2: "Social disadvantage and risk behavior"}[k]
     ax.text(x, y + (1.08 if k != 1 else -1.12) * (0.55 + 0.04 * sum(1 for m in M if m == k)) / 0.9 * (1 if k != 1 else 1),
@@ -63,7 +63,7 @@ h += [Line2D([0], [0], color="#555555", lw=1.5, label="within community"),
       Line2D([0], [0], marker="o", color="w", markerfacecolor="lightgrey", markeredgecolor="black", markeredgewidth=1.6,
              markersize=7, label="moves when grades are discarded"),
       Line2D([0], [0], color="black", lw=1.0, ls="--", label="least stable placement (dashed ring)")]
-ax.legend(handles=h, fontsize=6, loc="lower left", frameon=False, ncol=2, bbox_to_anchor=(-0.02, -0.08))
+ax.legend(handles=h, fontsize=7.5, loc="lower left", frameon=False, ncol=2, bbox_to_anchor=(-0.02, -0.08))
 ax.set_xlim(-2.9, 2.9); ax.set_ylim(-2.25, 2.15); ax.axis("off")
 fig.tight_layout()
 fig.savefig("figures/Fig2_network.pdf"); fig.savefig("figures/Fig2_network.png", dpi=300)

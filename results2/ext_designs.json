@@ -1,0 +1,23 @@
+{
+ "designs": {
+  "lambda_fixed": 0.6,
+  "swapped": 0.9132726915999241,
+  "split_half_mean": {
+   "si_logit": 0.9042780045606623,
+   "product": 0.8662601934164451
+  },
+  "split_half_share_si_above_product": 1.0,
+  "temporal": {
+   "rho": 0.9180853533656522,
+   "jrr_ci": [
+    0.8979133841568321,
+    0.9382573225744724
+   ],
+   "minus_product": 0.040099772091240604,
+   "minus_product_jrr_ci": [
+    0.020282716473198407,
+    0.059916827709282805
+   ]
+  }
+ }
+}

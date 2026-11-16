@@ -1,0 +1,115 @@
+{
+ "strong": {
+  "single_dyad": {
+   "product": {
+    "precision_at_K": 0.7971014492753623,
+    "K": 138,
+    "auc_top_quartile": 0.9405762094798013,
+    "rho": 0.8779855812744116
+   },
+   "hamacher": {
+    "precision_at_K": 0.7898550724637681,
+    "K": 138,
+    "auc_top_quartile": 0.9329272561786739,
+    "rho": 0.8537898559838168
+   },
+   "min": {
+    "precision_at_K": 0.6811594202898551,
+    "K": 138,
+    "auc_top_quartile": 0.8882762724917734,
+    "rho": 0.7297861226426839
+   },
+   "resource_alloc": {
+    "precision_at_K": 0.7318840579710145,
+    "K": 138,
+    "auc_top_quartile": 0.9177693761814745,
+    "rho": 0.8528637391624903
+   },
+   "katz": {
+    "precision_at_K": 0.6811594202898551,
+    "K": 138,
+    "auc_top_quartile": 0.8756388713855632,
+    "rho": 0.7698047309770613
+   },
+   "rank3": {
+    "precision_at_K": 0.8043478260869565,
+    "K": 138,
+    "auc_top_quartile": 0.9492578589932088,
+    "rho": 0.9076700619474513
+   },
+   "softimpute_logit_cv": {
+    "precision_at_K": 0.7971014492753623,
+    "K": 138,
+    "auc_top_quartile": 0.9582895750192535,
+    "rho": 0.9180853533656522
+   },
+   "reverse_odds": {
+    "precision_at_K": 0.8623188405797102,
+    "K": 138,
+    "auc_top_quartile": 0.9738850381572498,
+    "rho": 0.9532911155742693
+   },
+   "complex": {
+    "precision_at_K": 0.7898550724637681,
+    "K": 138,
+    "auc_top_quartile": 0.9499229853672198,
+    "rho": 0.8961297345979323
+   }
+  },
+  "blocks_pooled": {
+   "product": {
+    "precision_at_K": 0.5652173913043478,
+    "K": 138,
+    "auc_top_quartile": 0.8197857592942659,
+    "rho": 0.6795345867622526
+   },
+   "hamacher": {
+    "precision_at_K": 0.47101449275362317,
+    "K": 138,
+    "auc_top_quartile": 0.7520478890989287,
+    "rho": 0.516011859964787
+   },
+   "rank3": {
+    "precision_at_K": 0.35507246376811596,
+    "K": 138,
+    "auc_top_quartile": 0.6546418819575718,
+    "rho": 0.362802527469374
+   },
+   "softimpute_cv": {
+    "precision_at_K": 0.2463768115942029,
+    "K": 138,
+    "auc_top_quartile": 0.5000700133025275,
+    "rho": 0.19100651829495335
+   },
+   "katz": {
+    "precision_at_K": 0.717391304347826,
+    "K": 138,
+    "auc_top_quartile": 0.8892564587271581,
+    "rho": 0.7299393502960583
+   },
+   "complex": {
+    "precision_at_K": 0.42028985507246375,
+    "K": 138,
+    "auc_top_quartile": 0.6998704753903242,
+    "rho": 0.5089048866526831
+   }
+  },
+  "complex_per_block": {
+   "Symptom\u2013symptom": 0.8000192938452635,
+   "Symptom\u2013socioeconomic": 0.5649237893112098,
+   "Symptom\u2013lifestyle": 0.5206486397497633,
+   "Symptom\u2013health": 0.6305282387059493,
+   "Socioeconomic\u2013socioeconomic": 0.8251748251748254,
+   "Socioeconomic\u2013lifestyle": 0.7507644634302549,
+   "Socioeconomic\u2013health": 0.7559736844365496,
+   "Lifestyle\u2013lifestyle": 0.7741640557366681,
+   "Lifestyle\u2013health": 0.5436207509940653,
+   "Health\u2013health": 0.832258064516129
+  },
+  "product_vs_complex_blocks": {
+   "product_better": 5,
+   "sign_test_p": 1.0,
+   "median_complex": 0.7533690739334022
+  }
+ }
+}
