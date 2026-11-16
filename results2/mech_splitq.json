@@ -1,0 +1,112 @@
+{
+ "splitq": {
+  "half_to_half": {
+   "product": {
+    "mean": 7.9,
+    "min": 7.0,
+    "max": 9.0
+   },
+   "product_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "hamacher": {
+    "mean": 6.5,
+    "min": 4.0,
+    "max": 8.0
+   },
+   "hamacher_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "min": {
+    "mean": 2.65,
+    "min": 0.0,
+    "max": 5.5
+   },
+   "min_ties": {
+    "mean": 2.95,
+    "min": 0.0,
+    "max": 6.0
+   },
+   "rank3": {
+    "mean": 8.35,
+    "min": 7.0,
+    "max": 9.0
+   },
+   "rank3_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "direct_edge": {
+    "mean": 7.75,
+    "min": 7.0,
+    "max": 8.0
+   },
+   "direct_edge_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "product_above_min": 20,
+   "product_at_least_direct": 20
+  },
+  "half_to_heldout": {
+   "product": {
+    "mean": 7.45,
+    "min": 7.0,
+    "max": 8.0
+   },
+   "product_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "hamacher": {
+    "mean": 6.25,
+    "min": 4.0,
+    "max": 7.0
+   },
+   "hamacher_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "min": {
+    "mean": 3.0,
+    "min": 1.0,
+    "max": 5.5
+   },
+   "min_ties": {
+    "mean": 2.95,
+    "min": 0.0,
+    "max": 6.0
+   },
+   "rank3": {
+    "mean": 7.0,
+    "min": 7.0,
+    "max": 7.0
+   },
+   "rank3_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "direct_edge": {
+    "mean": 7.6,
+    "min": 7.0,
+    "max": 9.0
+   },
+   "direct_edge_ties": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "product_above_min": 20,
+   "product_at_least_direct": 17
+  }
+ }
+}

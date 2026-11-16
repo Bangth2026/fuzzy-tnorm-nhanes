@@ -30,5 +30,9 @@ python3 sensitivity_and_inference.py covsum 100,150 cov100
 for p in misc mask rankcv embed strong measures signedcomp query obesity initial uninsured designs; do python3 audit_extensions.py "$p"; done
 for p in sym holm measci sparse missing coldstart blockjrr query subgroup partner; do python3 generalization_checks.py "$p"; done
 python3 figures7.py
+for p in redirect holm2 splitq randthin scale blockextra simblock; do python3 mechanism_checks.py "$p"; done
+python3 scale_simulation.py
+python3 confirmatory/run_2005.py main
+python3 confirmatory/run_2005.py no_inactivity
 python3 figures8.py
 python3 fast_compose.py

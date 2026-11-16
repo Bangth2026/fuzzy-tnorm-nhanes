@@ -1,0 +1,10 @@
+[06:49:45] single dyad
+[06:50:57] random 0.1
+[06:53:11] random 0.25
+[06:56:31] random 0.5
+/home/claude/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[07:00:06] random 0.75
+[07:05:44] cold 1
+[07:08:33] cold 3
+[07:10:59] cold 6

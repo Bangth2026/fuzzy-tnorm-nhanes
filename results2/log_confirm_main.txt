@@ -1,0 +1,12 @@
+{
+ "n_adults": 4799,
+ "corr_dev_vs_2005": 0.8936003415095551,
+ "supported": {
+  "H1": false,
+  "H2": true,
+  "H3": true,
+  "H4": true,
+  "H5": true,
+  "H6": true
+ }
+}

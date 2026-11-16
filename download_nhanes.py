@@ -13,7 +13,7 @@ import pathlib
 import sys
 import urllib.request
 
-CYCLES = {"E": 2007, "F": 2009, "G": 2011, "H": 2013, "I": 2015, "J": 2017}
+CYCLES = {"D": 2005, "E": 2007, "F": 2009, "G": 2011, "H": 2013, "I": 2015, "J": 2017}
 FILES = ["DPQ", "DEMO", "SMQ", "BMX", "DIQ", "MCQ", "PAQ", "HIQ", "ALQ", "SLQ", "HSQ", "BPQ"]
 RAW = pathlib.Path(__file__).parent / "raw"
 

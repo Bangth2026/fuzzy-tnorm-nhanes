@@ -1,6 +1,7 @@
-"""Summary figure: path rules against completion and Katz as more of the relation matrix is missing (a) and
-when the development graph is thinned to its strongest edges (b). Reads results2/gen_*.json and
-results2/ext_*.json; writes figures/fig_missingness.pdf."""
+"""Summary figure: path rules against completion and Katz under four patterns of missing relations.
+(a) single dyads and random dyads withheld; (b) cold start, median over concepts; (c) whole relation types and
+simulated sources; (d) graphs thinned by strength or at random. Reads results2/gen_*.json, mech_*.json and
+ext_designs.json; writes figures/fig_missingness.pdf."""
 import json
 import numpy as np
 import matplotlib
@@ -8,62 +9,62 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 J = lambda p, k: json.load(open(f"results2/{p}.json"))[k]
-miss, cold, blk, sp = J("gen_missing", "missing"), J("gen_coldstart", "coldstart"), J("gen_blockjrr", "blockjrr"), J("gen_sparse", "sparse")
-holm = J("gen_holm", "holm")["jrr"]
-desi = J("ext_designs", "designs")
+miss, cold, blk = J("gen_missing", "missing"), J("gen_coldstart", "coldstart"), J("gen_blockjrr", "blockjrr")["jrr"]
+holm, sc, bx, rt = J("gen_holm", "holm")["jrr"], J("mech_scale", "scale"), J("mech_blockextra", "blockextra"), J("mech_randthin", "randthin")
 
 COL = {"product": "#2a78d6", "hamacher": "#eb6834", "min": "#1baf7a", "rank3": "#eda100", "katz": "#e87ba4", "si": "#008300"}
-LAB = {"product": "Product", "hamacher": "Hamacher", "min": "Minimum", "rank3": "Rank-3 completion",
-       "katz": "Katz", "si": "Soft-impute (CV)"}
+LAB = {"product": "Product", "hamacher": "Hamacher", "min": "Minimum", "rank3": "Rank-3 completion", "katz": "Katz",
+       "si": "Soft-impute (logit, CV)"}
 MK = {"product": "o", "hamacher": "s", "min": "v", "rank3": "D", "katz": "^", "si": "P"}
+nan = np.nan
 
-xs = ["1 dyad", "10%", "25%", "50%", "75%", "$m$=6", "$m$=3", "$m$=1", "all pairs"]
-val = {k: [] for k in COL}
-val["product"].append(holm["product"]["point"]); val["hamacher"].append(holm["hamacher"]["point"])
-val["min"].append(holm["min"]["point"]); val["rank3"].append(holm["rank3"]["point"])
-val["katz"].append(holm["katz"]["point"]); val["si"].append(desi["temporal"]["rho"])
+xa = ["1 dyad", "10%", "25%", "50%", "75%"]
+A = {k: [holm[k]["point"]] for k in ["product", "hamacher", "min", "rank3", "katz"]}
+A["si"] = [J("ext_designs", "designs")["temporal"]["rho"]]
 for f in ["0.1", "0.25", "0.5", "0.75"]:
-    for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("min", "min"), ("rank3", "rank3"), ("katz", "katz"), ("si", "softimpute_cv")]:
-        val[k].append(miss[f][kk]["mean"])
-for m in ["6", "3", "1"]:
-    for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("min", "min"), ("rank3", "rank3"), ("katz", "katz"), ("si", "softimpute_cv")]:
-        val[k].append(cold[m][kk])
-bj = blk["jrr"]
-for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("rank3", "rank3"), ("katz", "katz"), ("si", "softimpute_cv")]:
-    val[k].append(bj[f"weighted_mean_{kk}"]["point"])
-val["min"].append(np.nan)
+    for k in ["product", "hamacher", "min", "rank3", "katz"]:
+        A[k].append(miss[f][k]["mean"])
+    A["si"].append(sc[f"random_{f}"]["logit"])
+xb = ["$m$=6", "$m$=3", "$m$=1"]
+B = {k: [cold[m][f"median_per_concept_{k}"] for m in ["6", "3", "1"]] for k in ["product", "hamacher", "min", "rank3", "katz"]}
+B["si"] = [sc[f"coldstart_m{m}_median_per_concept"]["logit"] for m in ["6", "3", "1"]]
+xc = ["Type\nblocks", "Sources\nA", "Sources\nB"]
+sa, sb = rt["sources_SymSES_LifeHlth_SymHlth"], rt["sources_SymLife_SESHlth_SymSES"]
+C = {"product": [blk["weighted_mean_product"]["point"], sa["product"], sb["product"]],
+     "hamacher": [blk["weighted_mean_hamacher"]["point"], sa["hamacher"], sb["hamacher"]],
+     "min": [bx["min"]["weighted_mean"], sa["min"], sb["min"]],
+     "rank3": [blk["weighted_mean_rank3"]["point"], sa["rank3_absent_missing"], sb["rank3_absent_missing"]],
+     "katz": [blk["weighted_mean_katz"]["point"], sa["katz"], sb["katz"]],
+     "si": [sc["blocks_weighted"]["logit"], sa["softimpute_absent_missing"], sb["softimpute_absent_missing"]]}
+xd = ["Strength\n50%", "Strength\n25%", "Random\n50%", "Random\n25%"]
+s50, s25, r50, r25 = rt["strength_top50"], rt["strength_top25"], rt["random_keep_0.5"], rt["random_keep_0.25"]
+D = {"product": [s50["product"], s25["product"], r50["product"], r25["product"]],
+     "hamacher": [s50["hamacher"], s25["hamacher"], r50["hamacher"], r25["hamacher"]],
+     "min": [s50["min"], s25["min"], r50["min"], r25["min"]],
+     "rank3": [s50["rank3_absent_zero"], s25["rank3_absent_zero"], r50["rank3_absent_missing"], r25["rank3_absent_missing"]],
+     "katz": [s50["katz"], s25["katz"], r50["katz"], r25["katz"]],
+     "si": [nan, nan, r50["softimpute_absent_missing"], r25["softimpute_absent_missing"]]}
 
-plt.rcParams.update({"font.size": 7.5, "font.family": "serif", "axes.spines.top": False, "axes.spines.right": False})
-fig, (a, b) = plt.subplots(1, 2, figsize=(7.16, 2.55), gridspec_kw={"width_ratios": [2.15, 1]})
-x = np.arange(len(xs))
-for k in COL:
-    for g, (lo, hi) in enumerate([(0, 5), (5, 8), (8, 9)]):
-        a.plot(x[lo:hi], val[k][lo:hi], color=COL[k], marker=MK[k], ms=4.2, lw=1.6, label=LAB[k] if g == 0 else None,
-               mec="white", mew=0.6)
-for sep in [4.5, 7.5]:
-    a.axvline(sep, color="#c3c2b7", lw=0.6, zorder=0)
-for xx, t in [(2, "dyads withheld"), (6, "cold start"), (8, "type block")]:
-    a.text(xx, 0.255, t, ha="center", fontsize=6.6, color="#52514e")
-a.set_xticks(x); a.set_xticklabels(xs, fontsize=6.8)
-a.set_ylim(0.2, 0.95); a.set_ylabel(r"Spearman $\rho$ on withheld pairs")
-a.grid(axis="y", color="#e6e5e0", lw=0.5); a.set_axisbelow(True)
-a.set_title("(a) Increasing and structured missingness", fontsize=7.8, loc="left")
-
-lv = ["top50", "top25", "mu_ge_0.25"]
-lx = ["Top 50%", "Top 25%", r"$\mu\geq0.25$"]
-xb = np.arange(3)
-for k, kk in [("product", "product"), ("hamacher", "hamacher"), ("min", "min"), ("katz", "katz"), ("rank3", "rank3_absent_zero")]:
-    b.plot(xb, [sp[l]["rho_unrecorded"][kk] for l in lv], color=COL[k], marker=MK[k], ms=4.2, lw=1.6, mec="white", mew=0.6)
-b.plot(xb, [sp[l]["rho_unrecorded"]["rank3_absent_missing"] for l in lv], color=COL["rank3"], marker=MK["rank3"], ms=4.2,
-       lw=1.2, ls="--", mec="white", mew=0.6, label="Rank-3, absent = missing")
-b.axhline(0, color="#8a8984", lw=0.6)
-b.set_xticks(xb); b.set_xticklabels(lx, fontsize=6.8); b.set_xlim(-0.3, 2.3)
-b.set_ylabel(r"$\rho$ on unrecorded pairs"); b.set_ylim(-0.3, 0.7)
-b.grid(axis="y", color="#e6e5e0", lw=0.5); b.set_axisbelow(True)
-b.set_title("(b) Thinned graph", fontsize=7.8, loc="left")
-h1, l1 = a.get_legend_handles_labels(); h2, l2 = b.get_legend_handles_labels()
-fig.legend(h1 + h2, l1 + l2, loc="lower center", ncol=7, frameon=False, fontsize=6.8, bbox_to_anchor=(0.5, -0.02),
-           handlelength=1.6, columnspacing=1.0)
-fig.tight_layout(rect=(0, 0.08, 1, 1))
+plt.rcParams.update({"font.size": 7.3, "font.family": "serif", "axes.spines.top": False, "axes.spines.right": False})
+fig, axs = plt.subplots(1, 4, figsize=(7.16, 2.45), gridspec_kw={"width_ratios": [5, 3, 3, 4]}, sharey=True)
+panels = [(axs[0], xa, A, "(a) Dyads withheld", [(0, 1), (1, 5)]), (axs[1], xb, B, "(b) Cold start, median", [(0, 3)]),
+          (axs[2], xc, C, "(c) Types, sources", None), (axs[3], xd, D, "(d) Thinned graph", [(0, 2), (2, 4)])]
+for ax, xs, V, title, segs in panels:
+    x = np.arange(len(xs))
+    for k in COL:
+        if segs is None:
+            ax.plot(x, V[k], color=COL[k], marker=MK[k], ms=4.4, lw=0, mec="white", mew=0.6)
+        else:
+            for g, (lo, hi) in enumerate(segs):
+                ax.plot(x[lo:hi], V[k][lo:hi], color=COL[k], marker=MK[k], ms=4.2, lw=1.5, mec="white", mew=0.6,
+                        label=LAB[k] if (g == 0 and ax is axs[1]) else None)
+    ax.set_xticks(x); ax.set_xticklabels(xs, fontsize=6.4)
+    ax.set_xlim(-0.4, len(xs) - 0.6)
+    ax.grid(axis="y", color="#e6e5e0", lw=0.5); ax.set_axisbelow(True)
+    ax.set_title(title, fontsize=7.3, loc="left")
+axs[0].set_ylabel(r"Spearman $\rho$")
+axs[0].set_ylim(0.0, 0.95)
+h, l = axs[1].get_legend_handles_labels()
+fig.legend(h, l, loc="lower center", ncol=6, frameon=False, fontsize=6.8, bbox_to_anchor=(0.5, -0.02), handlelength=1.6)
+fig.tight_layout(rect=(0, 0.08, 1, 1), w_pad=0.5)
 fig.savefig("figures/fig_missingness.pdf"); fig.savefig("figures/fig_missingness.png", dpi=200)
-print({k: [round(v, 3) for v in vv] for k, vv in val.items()})

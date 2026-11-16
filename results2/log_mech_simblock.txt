@@ -1,0 +1,8 @@
+/home/claude/fuzzy-tnorm-nhanes/rq6lib.py:20: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[07:15:49] chain_ordinal_binary
+[07:19:09] factor1_ordinal_binary
+[07:21:29] factor3_ordinal_binary
+[07:25:22] chain_continuous
+[07:29:37] factor1_continuous
+[07:32:03] factor3_continuous
