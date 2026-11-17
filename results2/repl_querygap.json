@@ -1,0 +1,1444 @@
+{
+ "querygap": {
+  "anhedonia": {
+   "dev_values": {
+    "smoking": 0.08166327244052063,
+    "heavy_drinking": 0.023469157195981753,
+    "inactivity": 0.02399925165571161,
+    "short_sleep": 0.038794131160829304,
+    "obesity": 0.00824646849397936
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "short_sleep",
+   "dev_gap": 0.042869141279691325,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.0197110165400328,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.042046771404372,
+   "halves_corr_of_gap_deviations": -0.9963269055493732,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05943915780337263,
+     "top_B": "smoking",
+     "gap_B": 0.026118728487185293,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.034610376705001895,
+     "top_B": "smoking",
+     "gap_B": 0.05204712376699256,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.042161729547427605,
+     "top_B": "smoking",
+     "gap_B": 0.04371200552042669,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.038797377635757364,
+     "top_B": "smoking",
+     "gap_B": 0.04706604831049149,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.050282189265618366,
+     "top_B": "smoking",
+     "gap_B": 0.03529788441110769,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05717588976246514,
+     "top_B": "smoking",
+     "gap_B": 0.024792101815025135,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.030972068201247913,
+     "top_B": "smoking",
+     "gap_B": 0.05348996534726423,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.030209405964780174,
+     "top_B": "smoking",
+     "gap_B": 0.05391698045399244,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03781901172428275,
+     "top_B": "smoking",
+     "gap_B": 0.04138901672354583,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.057343097773670956,
+     "top_B": "smoking",
+     "gap_B": 0.03023545768540134,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03246247280607835,
+     "top_B": "smoking",
+     "gap_B": 0.053812994909129885,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05305486938162111,
+     "top_B": "smoking",
+     "gap_B": 0.03214577996215701,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05884412622652875,
+     "top_B": "smoking",
+     "gap_B": 0.02706878392412867,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0326648158835213,
+     "top_B": "smoking",
+     "gap_B": 0.05346351514621061,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05099665480245077,
+     "top_B": "smoking",
+     "gap_B": 0.03514976195971521,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.054681404715416264,
+     "top_B": "smoking",
+     "gap_B": 0.023919327858397045,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.032580544056496304,
+     "top_B": "smoking",
+     "gap_B": 0.05328274309254799,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03266330455449456,
+     "top_B": "smoking",
+     "gap_B": 0.05257129935792373,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.041400271426808195,
+     "top_B": "smoking",
+     "gap_B": 0.0442944086305532,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04398111478237034,
+     "top_B": "smoking",
+     "gap_B": 0.04193181326131639,
+     "same_top": true
+    }
+   ]
+  },
+  "depressed_mood": {
+   "dev_values": {
+    "smoking": 0.09262241647169368,
+    "heavy_drinking": 0.0323061013205391,
+    "inactivity": 0.02187186861806886,
+    "short_sleep": 0.03652262006694244,
+    "obesity": 0.004371136586711831
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "short_sleep",
+   "dev_gap": 0.05609979640475124,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.018459505438873633,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.05436518667062885,
+   "halves_corr_of_gap_deviations": -0.996614539491842,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.06265787290453355,
+     "top_B": "smoking",
+     "gap_B": 0.04657618695153662,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04117211651429594,
+     "top_B": "smoking",
+     "gap_B": 0.07272226666466475,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05762533234729113,
+     "top_B": "smoking",
+     "gap_B": 0.04949050723916416,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05161649846355267,
+     "top_B": "smoking",
+     "gap_B": 0.056979782095148,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.054396074725794205,
+     "top_B": "smoking",
+     "gap_B": 0.043545912226541014,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.06477278734806846,
+     "top_B": "smoking",
+     "gap_B": 0.02587008852986874,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02380140337372292,
+     "top_B": "smoking",
+     "gap_B": 0.07938039073458619,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.045557486640064246,
+     "top_B": "smoking",
+     "gap_B": 0.06523744742559154,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05248565955088074,
+     "top_B": "smoking",
+     "gap_B": 0.05081544071419094,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.07509201759311415,
+     "top_B": "smoking",
+     "gap_B": 0.039586571361710704,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.048601173647572465,
+     "top_B": "smoking",
+     "gap_B": 0.06388586643266456,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05714205252127256,
+     "top_B": "smoking",
+     "gap_B": 0.04265323131681519,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.06516308460644654,
+     "top_B": "smoking",
+     "gap_B": 0.035997888650969846,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0372048627207415,
+     "top_B": "smoking",
+     "gap_B": 0.07579851944576294,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0625825396481281,
+     "top_B": "smoking",
+     "gap_B": 0.05009225738947333,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05914520163237542,
+     "top_B": "smoking",
+     "gap_B": 0.04402049685858887,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05433429861546349,
+     "top_B": "smoking",
+     "gap_B": 0.057032038180755425,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.056949291110432045,
+     "top_B": "smoking",
+     "gap_B": 0.05528361406392941,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04240393023180178,
+     "top_B": "smoking",
+     "gap_B": 0.06657259878629393,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.035755354181695835,
+     "top_B": "smoking",
+     "gap_B": 0.061730845321987846,
+     "same_top": true
+    }
+   ]
+  },
+  "sleep_problems": {
+   "dev_values": {
+    "smoking": 0.11524670232218495,
+    "heavy_drinking": 0.05765304538241972,
+    "inactivity": 0.022294599266640847,
+    "short_sleep": 0.11646975809809113,
+    "obesity": 0.018935643979653603
+   },
+   "dev_top1": "short_sleep",
+   "dev_top2": "smoking",
+   "dev_gap": 0.0012230557759061733,
+   "hold_top1": "short_sleep",
+   "hold_top2": "smoking",
+   "hold_gap": 0.07450953251114109,
+   "halves_same_top_share": 0.0,
+   "halves_median_gap": 0.015778927611539775,
+   "halves_corr_of_gap_deviations": -0.9951910562602327,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.022191513827299086,
+     "top_B": "short_sleep",
+     "gap_B": 0.02148895819596776,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.0036703997759730406,
+     "top_B": "smoking",
+     "gap_B": 0.0010372574931696021,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.02685469541475609,
+     "top_B": "smoking",
+     "gap_B": 0.02650345347025447,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.014725519416542682,
+     "top_B": "smoking",
+     "gap_B": 0.011806653633577358,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.0023512618036836685,
+     "top_B": "smoking",
+     "gap_B": 0.00024000462539962297,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.019975928286472933,
+     "top_B": "short_sleep",
+     "gap_B": 0.02396093108485628,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.022952491019141222,
+     "top_B": "short_sleep",
+     "gap_B": 0.022145552838963425,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0179884286223482,
+     "top_B": "short_sleep",
+     "gap_B": 0.01719955117371577,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.024409445421225848,
+     "top_B": "smoking",
+     "gap_B": 0.018854179358329115,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.01683233580653687,
+     "top_B": "short_sleep",
+     "gap_B": 0.017380997621900512,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.013740107213962238,
+     "top_B": "smoking",
+     "gap_B": 0.010808916569058982,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.0116481147907255,
+     "top_B": "smoking",
+     "gap_B": 0.008040557524153877,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0008893844779530452,
+     "top_B": "short_sleep",
+     "gap_B": 0.002892118589023371,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.002168191891470897,
+     "top_B": "short_sleep",
+     "gap_B": 0.005909780784877805,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.01175511222802332,
+     "top_B": "smoking",
+     "gap_B": 0.008311913717711991,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.007729803716530204,
+     "top_B": "short_sleep",
+     "gap_B": 0.009365059722286267,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.017178553879604735,
+     "top_B": "short_sleep",
+     "gap_B": 0.018736717529805047,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.02121474534434155,
+     "top_B": "smoking",
+     "gap_B": 0.01786739889547212,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.021204765370518533,
+     "top_B": "short_sleep",
+     "gap_B": 0.025206827762095554,
+     "same_top": false
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.004579980520025229,
+     "top_B": "smoking",
+     "gap_B": 0.001800011630508913,
+     "same_top": false
+    }
+   ]
+  },
+  "fatigue": {
+   "dev_values": {
+    "smoking": 0.11452191723186608,
+    "heavy_drinking": 0.04604106502081794,
+    "inactivity": 0.04504394683560238,
+    "short_sleep": 0.09614324218077656,
+    "obesity": 0.027377856720705262
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "short_sleep",
+   "dev_gap": 0.01837867505108952,
+   "hold_top1": "short_sleep",
+   "hold_top2": "smoking",
+   "hold_gap": 0.02593938627135345,
+   "halves_same_top_share": 0.75,
+   "halves_median_gap": 0.018787550263135153,
+   "halves_corr_of_gap_deviations": -0.9972309468504866,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04240129489333226,
+     "top_B": "short_sleep",
+     "gap_B": 0.002268446025611409,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.010583887573145837,
+     "top_B": "smoking",
+     "gap_B": 0.027219386828033154,
+     "same_top": true
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.003521801590757531,
+     "top_B": "smoking",
+     "gap_B": 0.041338839858962875,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.01914566262354435,
+     "top_B": "smoking",
+     "gap_B": 0.017699029833332575,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0190303854654654,
+     "top_B": "smoking",
+     "gap_B": 0.018544715060804906,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03218460410728073,
+     "top_B": "smoking",
+     "gap_B": 0.003433289755363153,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04802508732178688,
+     "top_B": "short_sleep",
+     "gap_B": 0.00801521681198615,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03873471081730581,
+     "top_B": "smoking",
+     "gap_B": 0.00132996386395981,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02326757896974016,
+     "top_B": "smoking",
+     "gap_B": 0.013787011758635503,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.029744353456870473,
+     "top_B": "smoking",
+     "gap_B": 0.00805620162251848,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.017067371710487236,
+     "top_B": "smoking",
+     "gap_B": 0.02017428039687484,
+     "same_top": true
+    },
+    {
+     "top_A": "short_sleep",
+     "gap_A": 0.010917072551642024,
+     "top_B": "smoking",
+     "gap_B": 0.046189367311519666,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.024897787078298123,
+     "top_B": "smoking",
+     "gap_B": 0.012488488651931418,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03079125705025708,
+     "top_B": "smoking",
+     "gap_B": 0.00615807386716731,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03362620556064565,
+     "top_B": "smoking",
+     "gap_B": 0.004282733024013455,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.010358595145854826,
+     "top_B": "smoking",
+     "gap_B": 0.026894663804646696,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03890879059395978,
+     "top_B": "short_sleep",
+     "gap_B": 0.0017358376475463677,
+     "same_top": false
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0330879719186849,
+     "top_B": "smoking",
+     "gap_B": 0.004479748851133558,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.021114968689734795,
+     "top_B": "smoking",
+     "gap_B": 0.015491217868908502,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.022670111076099272,
+     "top_B": "smoking",
+     "gap_B": 0.01434983007227622,
+     "same_top": true
+    }
+   ]
+  },
+  "appetite": {
+   "dev_values": {
+    "smoking": 0.08628448125203231,
+    "heavy_drinking": 0.04823740570189477,
+    "inactivity": 0.02618735196995169,
+    "short_sleep": 0.04147157948064027,
+    "obesity": 0.021809960746512678
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "heavy_drinking",
+   "dev_gap": 0.03804707555013754,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.005706675687907899,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.03709331997483695,
+   "halves_corr_of_gap_deviations": -0.9983022647572953,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03327960523454613,
+     "top_B": "smoking",
+     "gap_B": 0.04182088258098412,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04852261084361528,
+     "top_B": "smoking",
+     "gap_B": 0.025806553271206158,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.01795027792872296,
+     "top_B": "smoking",
+     "gap_B": 0.058724105682952124,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03468564587585554,
+     "top_B": "smoking",
+     "gap_B": 0.04149234915902209,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03812083993346749,
+     "top_B": "smoking",
+     "gap_B": 0.03783568486705221,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.040731539306738035,
+     "top_B": "smoking",
+     "gap_B": 0.03395169434262652,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03245902138816173,
+     "top_B": "smoking",
+     "gap_B": 0.03392266983390259,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03425126640162149,
+     "top_B": "smoking",
+     "gap_B": 0.03807067933119785,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03112215308676615,
+     "top_B": "smoking",
+     "gap_B": 0.04045260241545987,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03089478016500862,
+     "top_B": "smoking",
+     "gap_B": 0.0439288676444074,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04449894820139598,
+     "top_B": "smoking",
+     "gap_B": 0.031481873411760695,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05334533987331989,
+     "top_B": "smoking",
+     "gap_B": 0.02188317473632389,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.038716079628803655,
+     "top_B": "smoking",
+     "gap_B": 0.037051507836355704,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03841692417429292,
+     "top_B": "smoking",
+     "gap_B": 0.03713513211331819,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04963722920647985,
+     "top_B": "smoking",
+     "gap_B": 0.026993843859346695,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03500780776997543,
+     "top_B": "smoking",
+     "gap_B": 0.034745947502090896,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04219140387103694,
+     "top_B": "smoking",
+     "gap_B": 0.03377437524751594,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.020364238584914124,
+     "top_B": "smoking",
+     "gap_B": 0.05300895495416609,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04604379502261142,
+     "top_B": "smoking",
+     "gap_B": 0.028371023410911016,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04076566787665737,
+     "top_B": "smoking",
+     "gap_B": 0.03543185102367936,
+     "same_top": true
+    }
+   ]
+  },
+  "worthlessness": {
+   "dev_values": {
+    "smoking": 0.06585083439906947,
+    "heavy_drinking": 0.026418305333741697,
+    "inactivity": 0.012528126725174804,
+    "short_sleep": 0.026023306667367126,
+    "obesity": 0.004874688813351351
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "heavy_drinking",
+   "dev_gap": 0.03943252906532777,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.020694974620029928,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.03743690007019569,
+   "halves_corr_of_gap_deviations": -0.997257014507655,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0392588650611449,
+     "top_B": "smoking",
+     "gap_B": 0.029892452298119924,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.029016168774462857,
+     "top_B": "smoking",
+     "gap_B": 0.04287303078222055,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03243771334915613,
+     "top_B": "smoking",
+     "gap_B": 0.04616755809031513,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.028750731265586842,
+     "top_B": "smoking",
+     "gap_B": 0.041813246271915676,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04289344881377779,
+     "top_B": "smoking",
+     "gap_B": 0.025072109905825916,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03889190199044005,
+     "top_B": "smoking",
+     "gap_B": 0.032487093592080324,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.028947570852576134,
+     "top_B": "smoking",
+     "gap_B": 0.04527680201732034,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.033364494345027196,
+     "top_B": "smoking",
+     "gap_B": 0.04074740785316868,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04426845803406111,
+     "top_B": "smoking",
+     "gap_B": 0.026049224069870563,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04165602443820135,
+     "top_B": "smoking",
+     "gap_B": 0.03713158563693595,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03925775519609066,
+     "top_B": "smoking",
+     "gap_B": 0.03628612411734629,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.037327979356737054,
+     "top_B": "smoking",
+     "gap_B": 0.03788501078317855,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.033717374094014,
+     "top_B": "smoking",
+     "gap_B": 0.03754582078365432,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03406542099470399,
+     "top_B": "smoking",
+     "gap_B": 0.0430210547376766,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.039807089013835645,
+     "top_B": "smoking",
+     "gap_B": 0.033876552907000555,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.028653583698547848,
+     "top_B": "smoking",
+     "gap_B": 0.04400488869208974,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03756767467684204,
+     "top_B": "smoking",
+     "gap_B": 0.0299645558261629,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04197304604880719,
+     "top_B": "smoking",
+     "gap_B": 0.03527524264547931,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03154192202995787,
+     "top_B": "smoking",
+     "gap_B": 0.0469788338612428,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.031696451341715004,
+     "top_B": "smoking",
+     "gap_B": 0.03919749699701716,
+     "same_top": true
+    }
+   ]
+  },
+  "concentration": {
+   "dev_values": {
+    "smoking": 0.07050197066234089,
+    "heavy_drinking": 0.02338231074370252,
+    "inactivity": 0.01507643429029822,
+    "short_sleep": 0.02495499360211682,
+    "obesity": 0.0022066715575652053
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "short_sleep",
+   "dev_gap": 0.045546977060224064,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.005568563613417975,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.042313905539478266,
+   "halves_corr_of_gap_deviations": -0.9965085078688648,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.050335238346670995,
+     "top_B": "smoking",
+     "gap_B": 0.04137624656410003,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04301200521897478,
+     "top_B": "smoking",
+     "gap_B": 0.047306772746915936,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04081227556123024,
+     "top_B": "smoking",
+     "gap_B": 0.04031650515128941,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05191625406168847,
+     "top_B": "smoking",
+     "gap_B": 0.038717274600408774,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.045194021836984524,
+     "top_B": "smoking",
+     "gap_B": 0.0385304189058495,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05141888013954994,
+     "top_B": "smoking",
+     "gap_B": 0.02072149680543845,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.029035298940580274,
+     "top_B": "smoking",
+     "gap_B": 0.057646994430990514,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04301317876952675,
+     "top_B": "smoking",
+     "gap_B": 0.04043127126106645,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0463762710642418,
+     "top_B": "smoking",
+     "gap_B": 0.033146535366708,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.05448652240430635,
+     "top_B": "smoking",
+     "gap_B": 0.03510343680073111,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.041153128815714944,
+     "top_B": "smoking",
+     "gap_B": 0.047287253542280305,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04607057611033739,
+     "top_B": "smoking",
+     "gap_B": 0.04028749598652833,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.050577282519936595,
+     "top_B": "smoking",
+     "gap_B": 0.04083171649490744,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03249185363024282,
+     "top_B": "smoking",
+     "gap_B": 0.05647340874475151,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.054705585368206466,
+     "top_B": "smoking",
+     "gap_B": 0.03231852318523734,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04760858096349552,
+     "top_B": "smoking",
+     "gap_B": 0.026252198509173964,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0404083229864888,
+     "top_B": "smoking",
+     "gap_B": 0.050565798726246336,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.04869408852789707,
+     "top_B": "smoking",
+     "gap_B": 0.03883965337885317,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.041615805859981744,
+     "top_B": "smoking",
+     "gap_B": 0.04758233964408726,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.039887781386615424,
+     "top_B": "smoking",
+     "gap_B": 0.04657851078070361,
+     "same_top": true
+    }
+   ]
+  },
+  "psychomotor": {
+   "dev_values": {
+    "smoking": 0.051954395972288764,
+    "heavy_drinking": 0.01250068078752121,
+    "inactivity": 0.005093507795407896,
+    "short_sleep": 0.024916011516702932,
+    "obesity": 0.0033755441894941026
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "short_sleep",
+   "dev_gap": 0.02703838445558583,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.01582631049974311,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.02687485211043974,
+   "halves_corr_of_gap_deviations": -0.9950200412469267,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03467695730464721,
+     "top_B": "smoking",
+     "gap_B": 0.020391681778317065,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02791683609039704,
+     "top_B": "smoking",
+     "gap_B": 0.025832868130482432,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.018324586654566977,
+     "top_B": "smoking",
+     "gap_B": 0.03621585702513985,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.018512310898597697,
+     "top_B": "smoking",
+     "gap_B": 0.03521548408304774,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.01681763929629339,
+     "top_B": "smoking",
+     "gap_B": 0.038679426128046576,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.038066435492757525,
+     "top_B": "smoking",
+     "gap_B": 0.014165027627721975,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.019907830289789555,
+     "top_B": "smoking",
+     "gap_B": 0.032865975572745995,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.037910355779168056,
+     "top_B": "smoking",
+     "gap_B": 0.017665900134928747,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.022177645866549793,
+     "top_B": "smoking",
+     "gap_B": 0.031049934655150557,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03419641065257993,
+     "top_B": "smoking",
+     "gap_B": 0.02074345698164104,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.023408573456284432,
+     "top_B": "smoking",
+     "gap_B": 0.03106803768559192,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02208125495810255,
+     "top_B": "smoking",
+     "gap_B": 0.032108924535523824,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02386314579772717,
+     "top_B": "smoking",
+     "gap_B": 0.029748163215537176,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.014970315993661942,
+     "top_B": "smoking",
+     "gap_B": 0.037306474316242386,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03052000956250614,
+     "top_B": "smoking",
+     "gap_B": 0.023845785503834614,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.03381668056709096,
+     "top_B": "smoking",
+     "gap_B": 0.020500028811273285,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.02857099723355578,
+     "top_B": "smoking",
+     "gap_B": 0.025811855545645596,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.016575797579728862,
+     "top_B": "smoking",
+     "gap_B": 0.036673504602857676,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.035406497993928254,
+     "top_B": "smoking",
+     "gap_B": 0.018032909060080673,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.024619359246971534,
+     "top_B": "smoking",
+     "gap_B": 0.028971147826084617,
+     "same_top": true
+    }
+   ]
+  },
+  "self_harm_thoughts": {
+   "dev_values": {
+    "smoking": 0.015344478369642978,
+    "heavy_drinking": 0.003966888356854258,
+    "inactivity": 0.004328325515927865,
+    "short_sleep": 0.002546836252946832,
+    "obesity": 0.0016508039359914774
+   },
+   "dev_top1": "smoking",
+   "dev_top2": "inactivity",
+   "dev_gap": 0.011016152853715114,
+   "hold_top1": "smoking",
+   "hold_top2": "short_sleep",
+   "hold_gap": 0.005859477053079616,
+   "halves_same_top_share": 1.0,
+   "halves_median_gap": 0.00984836883966976,
+   "halves_corr_of_gap_deviations": -0.9955103910398466,
+   "halves": [
+    {
+     "top_A": "smoking",
+     "gap_A": 0.014210961689118529,
+     "top_B": "smoking",
+     "gap_B": 0.006881205845024118,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.007271769392693975,
+     "top_B": "smoking",
+     "gap_B": 0.01442295638415194,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.00814754893836326,
+     "top_B": "smoking",
+     "gap_B": 0.013434565748046776,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.005104022551240002,
+     "top_B": "smoking",
+     "gap_B": 0.016715178537094113,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.01006252854744345,
+     "top_B": "smoking",
+     "gap_B": 0.010900220204242715,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.010443441761898865,
+     "top_B": "smoking",
+     "gap_B": 0.009875782074542962,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.003693631661016007,
+     "top_B": "smoking",
+     "gap_B": 0.017428381382634184,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.007791482679761812,
+     "top_B": "smoking",
+     "gap_B": 0.013867908769943989,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.00922457830591444,
+     "top_B": "smoking",
+     "gap_B": 0.008912332860808806,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.004536748681628068,
+     "top_B": "smoking",
+     "gap_B": 0.012801619630996876,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.010562481020892165,
+     "top_B": "smoking",
+     "gap_B": 0.00982095560479656,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.005348842143036605,
+     "top_B": "smoking",
+     "gap_B": 0.013632706747771794,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.00839764060578228,
+     "top_B": "smoking",
+     "gap_B": 0.007830997892074198,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0052470531504769805,
+     "top_B": "smoking",
+     "gap_B": 0.015756716887298412,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.00864097060814099,
+     "top_B": "smoking",
+     "gap_B": 0.012131252847589332,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.009451562459865614,
+     "top_B": "smoking",
+     "gap_B": 0.010656045519422386,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.009044968837336758,
+     "top_B": "smoking",
+     "gap_B": 0.010401952199267565,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.012696095804206834,
+     "top_B": "smoking",
+     "gap_B": 0.008564697322585229,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0071223207042569224,
+     "top_B": "smoking",
+     "gap_B": 0.01104746318834541,
+     "same_top": true
+    },
+    {
+     "top_A": "smoking",
+     "gap_A": 0.0060082566496593975,
+     "top_B": "smoking",
+     "gap_B": 0.014076391416250453,
+     "same_top": true
+    }
+   ]
+  }
+ }
+}

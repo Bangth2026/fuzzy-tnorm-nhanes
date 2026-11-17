@@ -1,4 +1,4 @@
-"""Checks added in response to the third review round (v1.9.0).
+"""Scale, power and recalibration checks (v1.9.0).
 Parts:
   power     - probability that each registered decision rule is met when the true difference is 0, 0.03 or 0.05,
               from the JRR standard errors of the 2005-2006 test (normal approximation)
