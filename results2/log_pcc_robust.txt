@@ -1,0 +1,1 @@
+[03:05:30] minimax choice lam=0.03 mu=2.0
