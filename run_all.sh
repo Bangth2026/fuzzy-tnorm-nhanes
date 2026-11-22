@@ -42,5 +42,6 @@ for p in dyad robust robust_jrr robust_extra c05; do python3 pcc_experiments.py 
 for p in grid grid0 dev target summary jrr jrr05 diag variants tnormsym runtime; do python3 pcc_checks.py "$p"; done
 python3 download_nhanes.py L
 for p in c21 c21regimes; do python3 pcc_checks.py "$p"; done
+for p in conv lam0 tostn means s1; do python3 pcc_limits.py "$p"; done
 python3 figures8.py
 python3 fast_compose.py

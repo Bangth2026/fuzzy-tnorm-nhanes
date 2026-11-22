@@ -1,0 +1,3 @@
+[08:36:40] {"pcc_lam0_cap_2007": 0.8779990342872288, "pcc_lam0_long_2007": 0.8779990342872288, "pcc_lam0_cap_2021": 0.7715160417290606, "pcc_lam0_long_2021": 0.7715160417290606, "rho_pcc_lam0_vs_path2": 0.9999997859640655, "max_abs_pcc_lam0_minus_path2": 7.786580380253483e-06, "iters_median": 53.0, "share_reached_tol": 1.0, "rho_pcc_selected_vs_path2": 0.9988317918703158, "rho_pcc_selected_vs_path23": 0.9988307930359556}
+[08:37:10] 2007 {"dyad_path2": 0.878, "dyad_path23": 0.878, "block_path2": 0.7112, "block_path23": 0.7109, "dyad_path2_minus_path23": 0.0, "block_path2_minus_path23": 0.0002}
+[08:37:26] 2021 {"dyad_path2": 0.7715, "dyad_path23": 0.7715, "block_path2": 0.6033, "block_path23": 0.603, "dyad_path2_minus_path23": 0.0, "block_path2_minus_path23": 0.0003}
