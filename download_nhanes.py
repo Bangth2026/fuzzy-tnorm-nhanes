@@ -1,7 +1,9 @@
 """Download the 72 NHANES XPT files used by the analysis into raw/ and check them
 against raw/MANIFEST.md5 (the exact files the published results were computed from).
 
-Usage:  python3 download_nhanes.py
+Usage:  python3 download_nhanes.py        (cycles D-J, as used in the paper)
+        python3 download_nhanes.py L      (NHANES August 2021-August 2023, plan in confirmatory/PLAN_2021.md;
+                                           HUQ is added because HSQ_L has no general-health item)
 
 CDC has moved the NHANES files more than once. The script tries the current
 location first and then the older one; if both fail, download the files by hand
@@ -15,6 +17,9 @@ import urllib.request
 
 CYCLES = {"D": 2005, "E": 2007, "F": 2009, "G": 2011, "H": 2013, "I": 2015, "J": 2017}
 FILES = ["DPQ", "DEMO", "SMQ", "BMX", "DIQ", "MCQ", "PAQ", "HIQ", "ALQ", "SLQ", "HSQ", "BPQ"]
+if len(sys.argv) > 1 and sys.argv[1] == "L":
+    CYCLES = {"L": 2021}
+    FILES = FILES + ["HUQ"]
 RAW = pathlib.Path(__file__).parent / "raw"
 
 
