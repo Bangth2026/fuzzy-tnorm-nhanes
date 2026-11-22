@@ -18,12 +18,16 @@ Parts (results2/pcc2_<part>.json):
   variants  the two variants set aside during development, re-run on the 2013-2018 cross-validation and on the target
   tnormsym  the t-norm inside PCC on the symmetric relation (276 dyads)
   runtime   time per PCC fit for n = 24 and simulated relations with n = 100, 200, 400
-  target21  NHANES August 2021-August 2023 as a further target (plan: confirmatory/PLAN_2021.md); parts c21 and c21jrr
+  grid0     the lambda grid continued down to 0.001, 0.0003 and 0
+  summary   regret of every method under every regime on 2007-2012, worst cases, leave-one-regime-out
+  jrr05     as jrr with NHANES 2005-2006 as target
+  c21       NHANES August 2021-August 2023 as target, pre-specified in confirmatory/PLAN_2021.md (JRR over 45 + 15 strata)
+  c21regimes  the descriptive regimes of that plan on 2021-2023
 
 Blends (comparators for the path term): blend_rank(w) = w * rank(product) + (1 - w) * rank(logit soft-impute), ranks
 taken over the cells withheld by one mask (over all 552 cells in the single-dyad design); blend_mu(w) the same on the
-relation scale; blend_raw(w) = w * rank(product) + (1 - w) * rank(raw-scale soft-impute at the PCC lambda, i.e. PCC with
-gamma = 0). w is chosen on 2013-2018 by the minimax-regret rule used for PCC.
+relation scale; blend_raw(w) = w * rank(product) + (1 - w) * rank(raw-scale soft-impute with lambda = 0.03, i.e. PCC
+with gamma = 0 at the lambda of the original grid). w is chosen on 2013-2018 by the minimax-regret rule used for PCC.
 """
 import json, sys, time, os
 from multiprocessing import Pool
@@ -519,7 +523,7 @@ def jrr_stats(E1, E2, S):
     dy = {"pcc": _pcc_dyad_theta(E1, lam, mu), "product": L.path_features(E1)["prod_max"]}
     ll, _ = L.choose_lambda(E1, LAM_SI, transform="logit")
     dy["si_logit"] = L.softimpute_dyad(E1, ll, transform="logit")
-    dy["si_raw_pcclam"] = _pcc_dyad_theta(E1, lam, 0.0)
+    dy["si_raw_pcclam"] = _pcc_dyad_theta(E1, 0.03, 0.0)
     dy["katz"] = L.katz(E1)
     dy["rank3"] = X.lowrank_baseline(E1, 3, dyad=True)
     for k in ["pcc", "product", "si_logit", "katz", "rank3"]:
@@ -548,7 +552,7 @@ def jrr_stats(E1, E2, S):
               "rank3": X.soft_impute(E1, obs, 3)}
         l2 = L.choose_lambda(E1, LAM_SI, base=obs, transform="logit")[0]
         pr["si_logit"] = L.soft_impute_reg(E1, obs, l2, transform="logit")
-        pr["si_raw_pcclam"] = pcc(E1, obs, lb, 0.0)
+        pr["si_raw_pcclam"] = pcc(E1, obs, 0.03, 0.0)
         for k in ["pcc", "product", "si_logit", "katz", "rank3"]:
             pb[k].append(r(pr[k][H], E2[H]))
         for bk, w in S["block_w"][b].items():
@@ -867,3 +871,53 @@ if part == "grid0":
     OUT["grid0"] = {"cv_dyad": sc["dyad"], "cv_block": sc["block"], "chosen": c, "regret": rg}
     tic(f"grid with lambda down to 0: {c} {rg[c]:.4f}")
     save()
+
+# ================================================================= regret summaries across regimes (2007-2012 target)
+if part == "summary":
+    T0 = json.load(open("results2/pcc2_target.json"))["target"]["mean"]
+    D = json.load(open("results2/pcc2_dev.json"))["dev"]
+    ch = D["choices"]
+    # the two selection regimes: values of the JRR part (type blocks with settings re-chosen without each block)
+    T = json.loads(json.dumps(T0))
+    F = json.load(open("results2/pcc2_jrr.json"))["jrr"]["full"]
+    for nm, k in [("pcc", ch["two"]["pcc"]), ("blend_rank", f"blend_rank|{ch['two']['blend_rank']}"),
+                  ("blend_mu", f"blend_mu|{ch['two']['blend_mu']}"), ("blend_raw", f"blend_raw|{ch['two']['blend_raw']}"),
+                  ("product", "product"), ("katz", "katz"), ("si_logit", "si_logit"), ("rank3", "rank3")]:
+        T["dyad"][k] = F[f"dyad_{nm}"]; T["block"][k] = F[f"block_{nm}"]
+    R0 = json.load(open("results2/pcc_robust_jrr.json"))["robust_jrr"]["full"]
+    T["block"]["0.03|2.0"] = R0["block_pcc"]; T["dyad"]["0.03|2.0"] = R0["dyad_pcc"]
+    REGS = list(T.keys())
+    MAIN = [x for x in REGS if not x.startswith("thin_strength")]
+    meth = {"pcc": ch["two"]["pcc"], "blend_rank": f"blend_rank|{ch['two']['blend_rank']}",
+            "blend_mu": f"blend_mu|{ch['two']['blend_mu']}", "blend_raw": f"blend_raw|{ch['two']['blend_raw']}",
+            "pcc_0.03_2": "0.03|2.0", "pcc_all5": ch["all5"]["pcc"], "blend_rank_all5": f"blend_rank|{ch['all5']['blend_rank']}",
+            "product": "product", "hamacher": "hamacher", "katz": "katz", "si_logit": "si_logit", "rank3": "rank3"}
+    REF = ["pcc", "product", "katz", "si_logit", "rank3", "blend_rank"]
+    best = {g: max(T[g][meth[m]] for m in REF) for g in REGS}
+    o = {"methods": meth, "reference_set": REF, "rho": {m: {g: T[g][k] for g in REGS} for m, k in meth.items()},
+         "best": best}
+    reg = {m: {g: best[g] - T[g][k] for g in REGS} for m, k in meth.items()}
+    o["regret"] = reg
+    o["worst_two"] = {m: max(reg[m]["dyad"], reg[m]["block"]) for m in meth}
+    o["worst_main"] = {m: max(reg[m][g] for g in MAIN) for m in meth}
+    o["worst_main_regime"] = {m: max(MAIN, key=lambda g: reg[m][g]) for m in meth}
+    o["worst_with_strength"] = {m: max(reg[m][g] for g in REGS) for m in meth}
+    o["sd"] = json.load(open("results2/pcc2_target.json"))["target"]["sd"]
+    # leave one development regime out: choose on the other four, score the regret on the left-out regime's target
+    loro = {}
+    tmap = {"dyad": "dyad", "block": "block", "random_0.25": "random_0.25", "random_0.5": "random_0.5", "cold_1": "cold_1"}
+    for left in DEV_REGIMES:
+        c = ch[f"without_{left}"]
+        g = tmap[left]
+        b0 = max(T0[g][meth[m]] for m in REF)   # one global setting for every block in this check
+        loro[left] = {"pcc_setting": c["pcc"], "pcc_regret": b0 - T0[g][c["pcc"]],
+                      "blend_rank_w": c["blend_rank"], "blend_rank_regret": b0 - T0[g][f"blend_rank|{c['blend_rank']}"],
+                      "product_regret": b0 - T0[g]["product"]}
+    o["leave_one_regime_out"] = loro
+    o["loro_worst"] = {k: max(v[k] for v in loro.values()) for k in ["pcc_regret", "blend_rank_regret", "product_regret"]}
+    OUT["summary"] = o
+    save()
+    for m in meth:
+        print(f"{m:16s} two={o['worst_two'][m]:.3f} main={o['worst_main'][m]:.3f} ({o['worst_main_regime'][m]}) "
+              f"strength={o['worst_with_strength'][m]:.3f}")
+    print(json.dumps(loro, indent=0)); print(o["loro_worst"])

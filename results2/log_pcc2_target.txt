@@ -1,0 +1,13 @@
+[06:02:24] single dyad
+[06:06:39] block
+[06:06:57] random_0.25
+[06:07:37] random_0.5
+[06:08:16] cold_1
+[06:11:30] cold_3
+[06:15:00] cold_6
+[06:18:16] sources_A
+[06:18:20] sources_B
+[06:18:24] thin_random_0.5
+[06:19:02] thin_random_0.25
+[06:19:43] thin_strength_top50
+[06:19:47] thin_strength_top25
