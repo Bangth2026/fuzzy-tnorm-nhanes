@@ -38,5 +38,6 @@ for p in direction nested querytab runtime equivalence counts; do python3 rigor_
 for p in power blocks blocks05 recalib grid coldstart randthin crisp; do python3 scale_checks.py "$p"; done
 for p in blockreps querygap; do python3 replicate_checks.py "$p"; done
 python3 figures9.py
+for p in dyad robust robust_jrr robust_extra c05; do python3 pcc_experiments.py "$p"; done
 python3 figures8.py
 python3 fast_compose.py

@@ -1,0 +1,9 @@
+/home/claude/fuzzy-tnorm-nhanes/pcc_experiments.py:52: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(a, b).statistic)
+[03:43:21] coldstart rep 0
+[03:43:39] coldstart rep 1
+[03:43:58] coldstart rep 2
+[03:44:16] coldstart rep 3
+[03:44:35] coldstart rep 4
+[03:44:50] random 0.25
+[03:45:06] random 0.5
