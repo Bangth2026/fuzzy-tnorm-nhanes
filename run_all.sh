@@ -39,5 +39,8 @@ for p in power blocks blocks05 recalib grid coldstart randthin crisp; do python3
 for p in blockreps querygap; do python3 replicate_checks.py "$p"; done
 python3 figures9.py
 for p in dyad robust robust_jrr robust_extra c05; do python3 pcc_experiments.py "$p"; done
+for p in grid grid0 dev target summary jrr jrr05 diag variants tnormsym runtime; do python3 pcc_checks.py "$p"; done
+python3 download_nhanes.py L
+for p in c21 c21regimes; do python3 pcc_checks.py "$p"; done
 python3 figures8.py
 python3 fast_compose.py

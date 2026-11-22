@@ -1,0 +1,11 @@
+[05:49:32] extended grid choice 0.003|0.5 regret 0.0047
+[05:49:51] block 0: 0.03|1.0 (original grid 0.03|1.0)
+[05:50:11] block 1: 0.03|5.0 (original grid 0.03|5.0)
+[05:50:32] block 2: 0.01|1.0 (original grid 0.03|2.0)
+[05:50:55] block 3: 0.01|1.0 (original grid 0.03|2.0)
+[05:51:15] block 4: 0.03|2.0 (original grid 0.03|2.0)
+[05:51:35] block 5: 0.03|2.0 (original grid 0.03|2.0)
+[05:51:55] block 6: 0.01|2.0 (original grid 0.03|5.0)
+[05:52:13] block 7: 0.03|2.0 (original grid 0.03|2.0)
+[05:52:33] block 8: 0.003|0.5 (original grid 0.03|5.0)
+[05:52:54] block 9: 0.03|1.0 (original grid 0.03|1.0)
