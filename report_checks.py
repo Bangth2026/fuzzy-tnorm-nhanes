@@ -1,4 +1,4 @@
-"""Checks on reported quantities (v2.3.0; extended in v2.3.1 and v2.3.2).
+"""Checks on reported quantities (v2.3.0; extended in v2.3.1, v2.3.2 and v2.3.3).
 
 Reads existing result files only; no model is refitted.
 
@@ -33,6 +33,11 @@ over regimes, so that its nine-regime value on 2021-2023 is available beside
 the 11-regime value on 2007-2012. The 2005-2006 levels of the six reference
 methods in the single-dyad and type-block designs are under
 2005_2006/levels_4dp.
+
+Added in v2.3.3: the order of the three blends (rank, relation-scale, raw)
+by worst-case regret over regimes in each period (blend_order, smallest
+first), which shows that the order reverses between 2007-2012 and
+2021-2023.
 
 Output: results2/report_checks.json
 """
@@ -85,6 +90,8 @@ def worst_case(rho, regimes):
         if not rounded:
             out["worst_regime"] = worst
     g = out["g"]
+    blends = ["blend_rank", "blend_mu", "blend_raw"]
+    out["blend_order"] = [{"method": b, "g": round(g[b], 4)} for b in sorted(blends, key=lambda b: g[b])]
     out["gaps_to_raw_blend"] = {"product": round(g["product"] - g["blend_raw"], 4),
                                 "blend_rank": round(g["blend_rank"] - g["blend_raw"], 4)}
     return out
@@ -165,6 +172,8 @@ def main():
     print(res["product_paths_2021_2023_single_dyads"])
     for c, v in res["worst_case_over_regimes"].items():
         print(c, {m: round(x, 4) for m, x in v["g"].items()}, v["gaps_to_raw_blend"])
+        print("  blend order (smallest worst case first):",
+              ", ".join(f"{b['method']} {b['g']:.4f}" for b in v["blend_order"]))
     print(res["cold_start_one_anchor"])
 
 
