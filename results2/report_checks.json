@@ -363,5 +363,93 @@
     "rank3_minus_product_2021": 0.08917840428622914
    }
   }
+ },
+ "worst_case_over_regimes": {
+  "2007_2012_11_regimes": {
+   "g": {
+    "pcc": 0.14134962902698595,
+    "blend_rank": 0.10097043176185733,
+    "blend_raw": 0.05238005184390743,
+    "product": 0.08365062922362071,
+    "katz": 0.2046049334011868,
+    "si_logit": 0.3685194862715117,
+    "rank3": 0.2985473582937888
+   },
+   "worst_regime": {
+    "pcc": "cold_1",
+    "blend_rank": "sources_A",
+    "blend_raw": "sources_A",
+    "product": "thin_random_0.25",
+    "katz": "sources_A",
+    "si_logit": "sources_A",
+    "rank3": "block"
+   },
+   "g_from_rounded_levels": {
+    "pcc": 0.14100000000000001,
+    "blend_rank": 0.10100000000000003,
+    "blend_raw": 0.05299999999999999,
+    "product": 0.08400000000000002,
+    "katz": 0.20500000000000002,
+    "si_logit": 0.369,
+    "rank3": 0.298
+   },
+   "gaps_to_raw_blend": {
+    "product": 0.0313,
+    "blend_rank": 0.0486
+   }
+  },
+  "2021_2023_9_regimes": {
+   "g": {
+    "pcc": 0.1541453449458306,
+    "blend_rank": 0.09422336748577542,
+    "blend_raw": 0.08883748342071643,
+    "product": 0.0944017877120561,
+    "katz": 0.24492904660384468,
+    "si_logit": 0.21060815399650884,
+    "rank3": 0.26139386450633595
+   },
+   "worst_regime": {
+    "pcc": "cold_1",
+    "blend_rank": "sources_B",
+    "blend_raw": "sources_B",
+    "product": "random_0.5",
+    "katz": "sources_A",
+    "si_logit": "cold_1",
+    "rank3": "block"
+   },
+   "g_from_rounded_levels": {
+    "pcc": 0.15399999999999997,
+    "blend_rank": 0.09500000000000003,
+    "blend_raw": 0.08900000000000002,
+    "product": 0.09499999999999997,
+    "katz": 0.245,
+    "si_logit": 0.21099999999999997,
+    "rank3": 0.262
+   },
+   "gaps_to_raw_blend": {
+    "product": 0.0056,
+    "blend_rank": 0.0054
+   }
+  }
+ },
+ "cold_start_one_anchor": {
+  "five_repetitions_regime_comparison": {
+   "product": 0.5923384186680372,
+   "hamacher": 0.568108223196108,
+   "katz": 0.6298524278009869,
+   "rank3": 0.5999415711735107,
+   "si_logit": 0.3885149100997129,
+   "pcc": 0.488502798774001,
+   "blend_rank": 0.5857205123779845,
+   "blend_raw": 0.612604122268945
+  },
+  "ten_repetitions_earlier_analysis": {
+   "product": 0.5600527476718241,
+   "hamacher": 0.5620146223487026,
+   "katz": 0.6207904113025089,
+   "rank3": 0.5869328371593401,
+   "si_logit": 0.41337641073273357
+  },
+  "note": "gen_coldstart softimpute_cv is the soft-impute variant chosen by cross-validation in that analysis; pcc2_summary si_logit is logit soft-impute"
  }
 }
