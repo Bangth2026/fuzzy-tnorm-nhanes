@@ -396,6 +396,20 @@
     "si_logit": 0.369,
     "rank3": 0.298
    },
+   "blend_order": [
+    {
+     "method": "blend_raw",
+     "g": 0.0524
+    },
+    {
+     "method": "blend_rank",
+     "g": 0.101
+    },
+    {
+     "method": "blend_mu",
+     "g": 0.126
+    }
+   ],
    "gaps_to_raw_blend": {
     "product": 0.0313,
     "blend_rank": 0.0486
@@ -432,6 +446,20 @@
     "si_logit": 0.21099999999999997,
     "rank3": 0.262
    },
+   "blend_order": [
+    {
+     "method": "blend_mu",
+     "g": 0.0788
+    },
+    {
+     "method": "blend_raw",
+     "g": 0.0888
+    },
+    {
+     "method": "blend_rank",
+     "g": 0.0942
+    }
+   ],
    "gaps_to_raw_blend": {
     "product": 0.0056,
     "blend_rank": 0.0054
