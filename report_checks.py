@@ -1,4 +1,4 @@
-"""Checks on reported quantities (v2.3.0; extended in v2.3.1).
+"""Checks on reported quantities (v2.3.0; extended in v2.3.1 and v2.3.2).
 
 Reads existing result files only; no model is refitted.
 
@@ -27,6 +27,12 @@ Added in v2.3.1:
     rho of every method in the five repetitions of the regime comparison
     (pcc2_summary.json) beside the ten repetitions of the earlier cold-start
     analysis (gen_coldstart.json).
+
+Added in v2.3.2: the relation-scale blend (w = 0.8) in the worst-case regret
+over regimes, so that its nine-regime value on 2021-2023 is available beside
+the 11-regime value on 2007-2012. The 2005-2006 levels of the six reference
+methods in the single-dyad and type-block designs are under
+2005_2006/levels_4dp.
 
 Output: results2/report_checks.json
 """
@@ -60,6 +66,7 @@ def analyse(full, rounded=False):
 
 
 METHOD_KEYS = {"pcc": "0.003|0.5", "blend_rank": "blend_rank|0.5", "blend_raw": "blend_raw|0.6",
+               "blend_mu": "blend_mu|0.8",
                "product": "product", "katz": "katz", "si_logit": "si_logit", "rank3": "rank3"}
 
 
